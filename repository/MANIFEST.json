@@ -1,0 +1,21 @@
+{
+  "created": "2026-07-10 14:44:10",
+  "items": [
+    "apps",
+    "config",
+    "templates",
+    "locale",
+    "plugins",
+    "themes",
+    "static",
+    "deploy",
+    "manage.py",
+    "requirements.txt",
+    "install.py",
+    "deploy.py",
+    "README.md",
+    "config.ini.example"
+  ],
+  "sha256": "894f9eebc0939ed766598e1dea26635c3e319fbdaea62dd23d3e0ea406566563",
+  "size": 2045698
+}
