@@ -1,0 +1,50 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Review invitation" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-2xl">
+  <div class="label mb-3">{% trans "Peer review invitation" %}</div>
+  <h1 class="display font-extrabold text-3xl md:text-4xl mb-2">{{ rtitle }}</h1>
+  <p class="text-sm mb-8" style="color:var(--ink-soft)">
+    {% trans "You have been invited to review this manuscript." %}
+    {% if a.date_due %} · {% trans "Due" %}: <b>{{ a.date_due|date:"j M Y" }}</b>{% endif %}
+    · {{ a.get_review_mode_display }}
+  </p>
+  {% if rabstract %}
+  <section class="surface hairline rounded-xl p-5 mb-8">
+    <h2 class="label mb-2">{% trans "Abstract" %}</h2>
+    <p class="text-sm leading-relaxed">{{ rabstract }}</p>
+  </section>
+  {% endif %}
+  {% if rfiles %}
+  <section class="mb-8">
+    <h2 class="label mb-3">{% trans "Files" %}</h2>
+    <ul class="text-sm space-y-1">
+      {% for f in rfiles %}
+      <li><a class="navlink" style="color:var(--accent)"
+             href="{% url 'review_public:file' token=a.access_token file_id=f.pk %}">{{ f.original_filename|default:f }}</a>
+          <span style="opacity:.55">· {{ f.get_file_stage_display }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  <form method="post" x-data="{declining:false}">
+    {% csrf_token %}
+    <div class="flex gap-3">
+      <button class="btn" name="action" value="accept">{% trans "Accept review" %}</button>
+      <button class="btn-ghost" type="button" x-show="!declining"
+              @click="declining=true">{% trans "Decline" %}</button>
+    </div>
+    <div x-show="declining" x-cloak class="mt-5 surface hairline rounded-xl p-4 space-y-3">
+      <p class="text-sm" style="color:var(--ink-soft)">
+        {% trans "No problem — could you suggest a colleague? (optional but hugely helpful)" %}</p>
+      <div class="grid md:grid-cols-2 gap-2">
+        <input class="field" name="suggest_name" placeholder="{% trans 'Colleague name' %}">
+        <input class="field" type="email" name="suggest_email" placeholder="{% trans 'Colleague email' %}">
+      </div>
+      <input class="field w-full" name="suggest_note" placeholder="{% trans 'Why suitable (optional)' %}">
+      <button class="btn" name="action" value="decline">{% trans "Confirm decline" %}</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

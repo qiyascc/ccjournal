@@ -1,0 +1,67 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Review" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-2xl">
+  <div class="label mb-3">{% trans "Peer review" %}</div>
+  <h1 class="display font-extrabold text-3xl mb-8">{{ rtitle }}</h1>
+  {% if rfiles %}
+  <section class="mb-8">
+    <h2 class="label mb-3">{% trans "Files" %}</h2>
+    <ul class="text-sm space-y-1">
+      {% for f in rfiles %}
+      <li><a class="navlink" style="color:var(--accent)"
+             href="{% url 'review_public:file' token=a.access_token file_id=f.pk %}">{{ f.original_filename|default:f }}</a>
+          <span style="opacity:.55">· {{ f.get_file_stage_display }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  <form method="post" enctype="multipart/form-data" class="space-y-8">
+    {% csrf_token %}
+    <fieldset>
+      <legend class="label mb-3">{{ form.recommendation.label }} *</legend>
+      <div class="space-y-2">
+        {% for radio in form.recommendation %}
+          <label class="flex items-center gap-2.5 text-sm cursor-pointer">{{ radio.tag }} {{ radio.choice_label }}</label>
+        {% endfor %}
+      </div>
+      {% if form.recommendation.errors %}<p class="text-sm mt-2" style="color:var(--accent)">{{ form.recommendation.errors.0 }}</p>{% endif %}
+    </fieldset>
+    <div>
+      <label class="label block mb-1.5">{{ form.comments_for_editor.label }}</label>
+      {{ form.comments_for_editor }}
+    </div>
+    <div>
+      <label class="label block mb-1.5">{{ form.comments_for_author.label }}</label>
+      {{ form.comments_for_author }}
+    </div>
+    {% if form.custom_fields %}
+    <fieldset class="space-y-6 border rule rounded-xl p-5" style="background:var(--paper-2)">
+      <legend class="label px-2">{{ review_form_tpl.title }}</legend>
+      {% if review_form_tpl.description %}<p class="text-sm" style="color:var(--ink-soft)">{{ review_form_tpl.description }}</p>{% endif %}
+      {% for field in form.custom_fields %}
+      <div>
+        <label class="label block mb-1.5">{{ field.label }}{% if field.field.required %} *{% endif %}</label>
+        {% if field.help_text %}<p class="text-xs mb-1.5" style="opacity:.6">{{ field.help_text }}</p>{% endif %}
+        {% if field.field.widget.input_type == "radio" or field.field.widget.input_type == "checkbox" %}
+          <div class="space-y-1.5">
+            {% for sub in field %}
+            <label class="flex items-center gap-2.5 text-sm cursor-pointer">{{ sub.tag }} {{ sub.choice_label }}</label>
+            {% endfor %}
+          </div>
+        {% else %}{{ field }}{% endif %}
+        {% if field.errors %}<p class="text-sm mt-1" style="color:var(--accent)">{{ field.errors.0 }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </fieldset>
+    {% endif %}
+    <div>
+      <label class="label block mb-1.5">{{ form.attachment.label }}</label>
+      {{ form.attachment }}
+      {% if form.attachment.errors %}<p class="text-sm mt-1" style="color:var(--accent)">{{ form.attachment.errors.0 }}</p>{% endif %}
+    </div>
+    <button class="btn" type="submit">{% trans "Submit review" %}</button>
+  </form>
+</div>
+{% endblock %}

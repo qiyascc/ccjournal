@@ -1,0 +1,23 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Thank you" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-xl py-10 text-center mx-auto">
+  <div class="w-14 h-14 rounded-full mx-auto mb-6 flex items-center justify-center" style="background:var(--accent);color:var(--accent-ink)">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>
+  </div>
+  <h1 class="display font-extrabold text-3xl mb-4">{% trans "Thank you" %}</h1>
+  <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">
+    {% if a.declined %}{% trans "Your response has been recorded. We appreciate you letting us know." %}
+    {% else %}{% trans "Your review has been submitted to the editorial team. We are grateful for your contribution." %}{% endif %}
+  </p>
+  {% if a.date_completed %}
+  <p class="mt-8">
+    <a class="btn" href="{% url 'review_public:certificate' a.access_token %}">
+      🎓 {% trans "Download your review certificate (PDF)" %}</a>
+  </p>
+  <p class="text-xs mt-2" style="color:var(--ink-soft)">
+    {% trans "Suitable for promotion and tenure files. Thank you for strengthening peer review." %}</p>
+  {% endif %}
+</div>
+{% endblock %}
