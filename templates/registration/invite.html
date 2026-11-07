@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Invitation" %} — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+{% if state == "invalid" %}
+<h1 class="display text-3xl font-semibold mb-4">{% trans "Invitation expired" %}</h1>
+<p class="max-w-md">{% trans "This invitation link is no longer valid (already used or older than 14 days). Please ask the editor to send a new one." %}</p>
+
+{% elif state == "login_required" %}
+<h1 class="display text-3xl font-semibold mb-4">{% trans "Sign in to accept" %}</h1>
+<p class="max-w-md mb-6">{% blocktrans with email=inv.email role=role_label %}This invitation ({{ role }}) belongs to the account {{ email }}. Please sign in with that account to accept it.{% endblocktrans %}</p>
+<a class="btn" href="{% url 'login' %}?next={{ request.path|urlencode }}">{% trans "Sign in" %}</a>
+
+{% elif state == "confirm" %}
+<h1 class="display text-3xl font-semibold mb-4">{% trans "Accept invitation" %}</h1>
+<p class="max-w-md mb-6">{% blocktrans with role=role_label %}You have been invited to take the {{ role }} role. Accept?{% endblocktrans %}</p>
+<form method="post">{% csrf_token %}
+  <button class="btn" type="submit">{% trans "Accept role" %}</button>
+</form>
+
+{% else %}
+<h1 class="display text-3xl font-semibold mb-2">{% trans "You're invited" %}</h1>
+<p class="max-w-md mb-8" style="opacity:.75">{% blocktrans with role=role_label email=inv.email %}Create your account to join as {{ role }} ({{ email }}).{% endblocktrans %}</p>
+<form method="post" class="space-y-5 max-w-md">
+  {% csrf_token %}
+  {% for field in form %}
+    <div>
+      <div class="label mb-1">{{ field.label }}</div>
+      {{ field }}
+      {% if field.errors %}<p class="text-sm" style="color:var(--accent)">{{ field.errors.0 }}</p>{% endif %}
+    </div>
+  {% endfor %}
+  <div class="pt-1"><button class="btn" type="submit">{% trans "Create account & accept" %}</button></div>
+</form>
+<script>document.querySelectorAll("input").forEach(e=>e.classList.add("field"));</script>
+{% endif %}
+{% endblock %}

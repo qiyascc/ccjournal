@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Register — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+<h1 class="display text-3xl font-semibold mb-8">Create an account</h1>
+<form method="post" class="space-y-5 max-w-md">
+  {% csrf_token %}
+  {% for field in form %}
+    <div>
+      <div class="label mb-1">{{ field.label }}</div>
+      {{ field }}
+      {% if field.errors %}<p class="text-sm" style="color:var(--accent)">{{ field.errors.0 }}</p>{% endif %}
+    </div>
+  {% endfor %}
+  <div class="pt-1"><button class="btn" type="submit">Register</button></div>
+</form>
+<script>document.querySelectorAll("input").forEach(e=>e.classList.add("field"));</script>
+{% endblock %}

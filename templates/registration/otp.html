@@ -1,0 +1,63 @@
+{% load i18n %}
+<!doctype html>
+<html lang="{{ cloc|default:'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% trans "Two-factor authentication" %}</title>
+  <style>
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0e0e11;color:#f4f4f5;
+         margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{background:#17171b;border:1px solid #27272a;border-radius:16px;max-width:420px;width:100%;padding:32px}
+    h1{font-size:20px;margin:0 0 6px}
+    p{color:#a1a1aa;font-size:14px;line-height:1.5;margin:0 0 18px}
+    .qr{background:#fff;border-radius:12px;padding:14px;display:inline-block;margin:6px 0 16px}
+    .qr img{display:block;width:200px;height:200px}
+    .secret{font-family:ui-monospace,monospace;font-size:12px;color:#d4d4d8;background:#0e0e11;
+            border:1px solid #27272a;border-radius:8px;padding:8px 10px;word-break:break-all;margin-bottom:16px}
+    label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+    input[name=token]{width:100%;font-size:22px;letter-spacing:.3em;text-align:center;
+         padding:12px;border-radius:10px;border:1px solid #3f3f46;background:#0e0e11;color:#fff;font-family:ui-monospace,monospace}
+    input[name=token]:focus{outline:none;border-color:#6d83ff}
+    button{margin-top:16px;width:100%;padding:12px;border:0;border-radius:10px;background:#6d83ff;color:#fff;
+           font-weight:600;font-size:15px;cursor:pointer}
+    button:hover{filter:brightness(1.08)}
+    .err{background:#3b1d1d;border:1px solid #7f1d1d;color:#fca5a5;border-radius:8px;padding:10px 12px;font-size:13px;margin-bottom:14px}
+    .steps{font-size:13px;color:#a1a1aa;margin:0 0 16px;padding-left:18px}
+    .steps li{margin:4px 0}
+    .logo{font-weight:800;letter-spacing:-.02em;font-size:15px;color:#6d83ff;margin-bottom:18px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">{{ issuer }}</div>
+    {% if mode == "setup" %}
+      <h1>{% trans "Set up two-factor authentication" %}</h1>
+      <p>{% trans "Your account requires 2FA. Scan the QR code with Google Authenticator (or any TOTP app), then enter the 6-digit code to confirm." %}</p>
+      <ol class="steps">
+        <li>{% trans "Open Google Authenticator on your phone." %}</li>
+        <li>{% trans "Tap + and scan this QR code." %}</li>
+        <li>{% trans "Enter the 6-digit code shown in the app." %}</li>
+      </ol>
+      <div class="qr"><img src="{{ qr }}" alt="QR"></div>
+      <div class="secret">{% trans "Manual key (Base32)" %}: {{ secret }}</div>
+      <p style="font-size:12px;color:#a1a1aa;margin:-6px 0 14px">{% trans "If entering by hand, choose “Time based” as the key type." %}</p>
+    {% else %}
+      <h1>{% trans "Two-factor authentication" %}</h1>
+      <p>{% trans "Enter the 6-digit code from your authenticator app to continue." %}</p>
+    {% endif %}
+
+    {% if error %}<div class="err">{{ error }}</div>{% endif %}
+
+    <form method="post">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ next }}">
+      <label for="token">{% trans "Authentication code" %}</label>
+      <input id="token" name="token" inputmode="numeric" autocomplete="one-time-code"
+             pattern="[0-9 ]*" maxlength="9" autofocus placeholder="000000">
+      <button type="submit">{% if mode == "setup" %}{% trans "Confirm & enable" %}{% else %}{% trans "Verify" %}{% endif %}</button>
+    </form>
+  </div>
+</body>
+</html>
