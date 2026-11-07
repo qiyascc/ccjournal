@@ -1,0 +1,35 @@
+/* Queen CC — palette only. Base classes/fonts live in the theme's
+   partials/theme.html override. Warm ivory paper, deep aubergine ink,
+   regal gold accent. Refined, scholarly, calm. */
+:root{
+  --paper:#fbf8f3;       /* warm ivory */
+  --paper-2:#f3ede3;
+  --paper-3:#ebe2d4;
+  --ink:#2a1f2d;         /* deep aubergine-ink */
+  --ink-soft:#6b5a66;
+  --ink-faint:#9b8a93;
+  --line:#e6dccd;
+  --line-strong:#2a1f2d;
+  --accent:#9a7b34;      /* regal gold */
+  --accent-soft:#b89953;
+  --accent-ink:#fbf8f3;
+  --gilt:#c9a64a;        /* brighter gilt for fine lines/sheen */
+  --ok:#3f7d52;
+  --warn:#a8602a;
+}
+.dark{
+  --paper:#1a141c;       /* near-black aubergine */
+  --paper-2:#231b26;
+  --paper-3:#2d2330;
+  --ink:#f4ece2;         /* warm parchment text */
+  --ink-soft:#c2b1bd;
+  --ink-faint:#8c7c87;
+  --line:#352a39;
+  --line-strong:#f4ece2;
+  --accent:#d8b659;      /* luminous gold on dark */
+  --accent-soft:#e6cd84;
+  --accent-ink:#1a141c;
+  --gilt:#e6cd84;
+  --ok:#5cc183;
+  --warn:#e0934e;
+}

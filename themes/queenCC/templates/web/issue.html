@@ -1,0 +1,31 @@
+{% extends "web/base.html" %}
+{% load i18n cc %}
+{% block title %}{{ issue }} — {% with t=journal|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block content %}
+{% with it=issue|tr:cloc %}
+<header class="mb-10 pb-8 border-b rule">
+  <div class="label mb-3">{% trans "Issue" %}</div>
+  <h1 class="display font-extrabold text-3xl md:text-4xl leading-tight">{{ it.title|default:issue }}</h1>
+  <div class="mt-2 text-sm" style="color:var(--ink-soft)">{{ issue }}{% if issue.date_published %} · {{ issue.date_published|date:"F Y" }}{% endif %}</div>
+  {% if it.description %}<div class="prose-cc mt-5">{{ it.description|safe }}</div>{% endif %}
+</header>
+{% endwith %}
+{% for group in toc %}
+  <section class="mb-10">
+    <h2 class="label border-b rule pb-2 mb-5">{{ group.section }}</h2>
+    <ul class="divide-y rule">
+      {% for p in group.items %}{% with t=p|tr:cloc %}
+        <li class="py-4">
+          <a class="display font-semibold text-lg leading-snug hover:text-[color:var(--accent)]" href="{% url 'web:article' p.submission_id %}">{{ t.title }}{% if t.subtitle %}: {{ t.subtitle }}{% endif %}</a>
+          <div class="text-sm mt-1 flex justify-between gap-4" style="color:var(--ink-soft)">
+            <span>{% for a in p.authors.all %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</span>
+            {% if p.pages %}<span class="shrink-0" style="color:var(--ink-faint)">{{ p.pages }}</span>{% endif %}
+          </div>
+        </li>
+      {% endwith %}{% endfor %}
+    </ul>
+  </section>
+{% empty %}
+  <p style="color:var(--ink-soft)">{% trans "No articles in this issue." %}</p>
+{% endfor %}
+{% endblock %}

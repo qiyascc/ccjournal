@@ -1,0 +1,283 @@
+{% load static %}
+{# Queen CC design system — refined academic. Overrides the base partial. #}
+<script>
+  /* No-flash theme init — runs before paint */
+  (function(){
+    try{
+      var s=localStorage.getItem('cc-theme');
+      var d=s ? s==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(d) document.documentElement.classList.add('dark');
+    }catch(e){}
+  })();
+  window.ccToggleTheme=function(){
+    var el=document.documentElement, dark=el.classList.toggle('dark');
+    try{localStorage.setItem('cc-theme', dark?'dark':'light');}catch(e){}
+    document.querySelectorAll('[data-theme-toggle]').forEach(function(b){
+      b.setAttribute('aria-pressed', dark?'true':'false');
+    });
+  };
+</script>
+<link rel="stylesheet" href="{% static 'css/tailwind.build.css' %}">
+<script defer src="{% static 'vendor/alpine.min.js' %}"></script>
+<script src="{% static 'vendor/htmx.min.js' %}"></script>
+<!-- Motion libraries (CDN): GSAP (+ScrollTrigger), Anime.js, Motion One, Lottie -->
+<script src="{% static 'vendor/gsap.min.js' %}"></script>
+<script src="{% static 'vendor/ScrollTrigger.min.js' %}"></script>
+<script src="{% static 'vendor/anime.min.js' %}"></script>
+<script src="{% static 'vendor/motion.min.js' %}"></script>
+<script src="{% static 'vendor/lottie.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+<style>
+  *,*::before,*::after{box-sizing:border-box;}
+  html{background:var(--paper);color:var(--ink);
+       transition:background-color .3s ease,color .3s ease;
+       -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  body{font-family:"Newsreader","Georgia",serif;font-size:18px;
+       line-height:1.62;letter-spacing:.002em;}
+  .display{font-family:"Fraunces","Newsreader",serif;
+           font-optical-sizing:auto;letter-spacing:-0.012em;line-height:1.06;}
+  /* small caps eyebrow uses Inter for crisp tracking */
+
+  /* Rules / surfaces */
+  .rule{border-color:var(--line);}
+  .surface{background:var(--paper-2);}
+  .hairline{border:1px solid var(--line);}
+
+  /* Gilt hairline — a fine gold rule used as a refined accent */
+  .gilt-rule{height:1px;background:linear-gradient(90deg,transparent,
+             var(--gilt),transparent);border:0;}
+
+  /* Eyebrow / label */
+  .label{font-family:"Inter",sans-serif;font-weight:600;font-size:.7rem;
+         color:var(--accent);text-transform:uppercase;letter-spacing:.2em;}
+
+  /* Links */
+  .link{color:var(--accent);text-decoration:underline;
+        text-decoration-thickness:1px;text-underline-offset:3px;
+        text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent);
+        transition:color .18s ease,text-decoration-color .18s ease;}
+  .link:hover{color:var(--accent-soft);text-decoration-color:var(--accent);}
+
+  /* Fields */
+  .field{background:var(--paper);color:var(--ink);border:1px solid var(--line);
+         border-radius:.4rem;padding:.62rem .9rem;width:100%;font:inherit;font-size:1rem;
+         transition:border-color .18s ease,box-shadow .18s ease;}
+  .field::placeholder{color:var(--ink-faint);}
+  .field:focus{outline:none;border-color:var(--accent);
+               box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent);}
+
+  /* Buttons */
+  .btn{background:var(--accent);color:var(--accent-ink);padding:.64rem 1.4rem;
+       border-radius:.4rem;font-family:"Inter",sans-serif;font-weight:600;font-size:.92rem;
+       letter-spacing:.01em;display:inline-flex;align-items:center;gap:.45rem;
+       border:1px solid transparent;position:relative;overflow:hidden;
+       transition:filter .18s ease,transform .06s ease,box-shadow .25s ease;cursor:pointer;}
+  .btn:hover{filter:brightness(1.06);box-shadow:0 6px 22px -10px color-mix(in srgb,var(--accent) 70%,transparent);}
+  .btn:active{transform:translateY(1px);}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);
+             padding:.6rem 1.3rem;border-radius:.4rem;font-family:"Inter",sans-serif;
+             font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:.45rem;
+             transition:border-color .18s ease,background-color .18s ease;cursor:pointer;}
+  .btn-ghost:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,transparent);}
+
+  /* Pills / tags */
+  .pill{display:inline-flex;align-items:center;gap:.35rem;font-family:"Inter",sans-serif;
+        font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;
+        padding:.2rem .6rem;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);}
+
+  /* Prose */
+  .prose-cc{max-width:68ch;}
+  .prose-cc p{margin:1.05rem 0;}
+  .prose-cc h2,.prose-cc h3{font-family:"Fraunces",serif;
+        letter-spacing:-0.01em;margin:1.9rem 0 .6rem;font-weight:600;}
+  .prose-cc a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;}
+  .prose-cc ul,.prose-cc ol{margin:1rem 0;padding-left:1.3rem;}
+  .prose-cc li{margin:.32rem 0;}
+  .prose-cc blockquote{border-left:2px solid var(--accent);padding-left:1.1rem;
+        font-style:italic;color:var(--ink-soft);margin:1.3rem 0;}
+
+  /* Drop-cap for the first paragraph of article bodies (refined touch) */
+  .article-body > p:first-of-type::first-letter{font-family:"Fraunces",serif;
+        font-weight:600;float:left;font-size:3.3rem;line-height:.82;
+        padding:.1rem .55rem 0 0;color:var(--accent);}
+
+  /* Accessibility */
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:.2rem;}
+  .skip-link{position:absolute;left:.75rem;top:-3rem;z-index:60;background:var(--accent);
+             color:var(--accent-ink);padding:.55rem 1rem;border-radius:.5rem;font-weight:600;
+             transition:top .15s ease;}
+  .skip-link:focus{top:.75rem;}
+
+  /* Header */
+  .site-head{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 85%,transparent);
+             backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line);}
+  .navlink{color:var(--ink-soft);font-family:"Inter",sans-serif;font-weight:500;
+           font-size:.9rem;transition:color .18s ease;}
+  .navlink:hover{color:var(--accent);}
+
+  /* Motion primitives — JS-driven, additive. No initial opacity:0 in CSS so the
+     page is fully readable even if scripts fail to load (progressive enhancement). */
+  .qn-gilt-line{display:block;height:1px;width:7rem;margin:1rem 0 0;transform:scaleX(0);
+                transform-origin:left center;
+                background:linear-gradient(90deg,var(--gilt),transparent);}
+  html.no-motion .qn-gilt-line{transform:scaleX(1);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms!important;transition-duration:.001ms!important;}
+    html{scroll-behavior:auto;}
+  }
+  [x-cloak]{display:none!important;}
+
+  /* DOCX'ten gelen içerik: tablolar ve görseller (parser çıktısı) */
+  .article-body .cc-table-wrap{overflow-x:auto;margin:1.2rem 0;}
+  .article-body table.cc-table{border-collapse:collapse;width:100%;font-size:.95em;}
+  .article-body table.cc-table th,.article-body table.cc-table td{
+    border:1px solid var(--line,#ddd);padding:.5rem .7rem;text-align:left;vertical-align:top;}
+  .article-body table.cc-table th{background:var(--paper-2,#f4f4f4);font-weight:600;}
+  .article-body table.cc-table tr:nth-child(even) td{background:color-mix(in srgb,var(--paper-2,#f0f0f0) 45%,transparent);}
+  .article-body img,.article-body .cc-figure-img{max-width:100%;height:auto;border-radius:6px;margin:1rem 0;display:block;}
+  .article-body figure{margin:1.2rem 0;}
+  .article-body figcaption{font-size:.85em;color:var(--ink-soft,#666);margin-top:.4rem;text-align:center;}
+</style>
+
+<script>
+/* HTMX boost guard — boost'u yalnız dahili HTML sayfalarına uygula.
+   PDF, XML (OAI/sitemap/feed), galley görüntüleme, dışa aktarma, indirme, yeni
+   sekme ve harici bağlantılar boost DIŞI bırakılır; tarayıcı bunları normal açar.
+   Aksi halde HTMX bu içerikleri <body>'ye gömmeye çalışıp sayfayı bozardı. */
+(function(){
+  var SKIP_RE = /\.(pdf|xml|zip|csv|json|docx?|xlsx?|pptx?|png|jpe?g|gif|svg)(\?|#|$)/i;
+  var SKIP_PATH = /(\/galley\/|\/view\/|\/feed\b|\/oai\b|\/export\b|\/sitemap|robots\.txt|\/media\/|\/static\/)/i;
+
+  function shouldSkip(a){
+    if(!a) return false;
+    if(a.hasAttribute('download')) return true;
+    if(a.getAttribute('target') === '_blank') return true;
+    if(a.getAttribute('hx-boost') === 'false') return true;
+    var href = a.getAttribute('href') || '';
+    if(!href || href.charAt(0) === '#') return false;
+    if(href.indexOf('mailto:')===0 || href.indexOf('tel:')===0) return true;
+    if(SKIP_RE.test(href) || SKIP_PATH.test(href)) return true;
+    try { var u = new URL(a.href, location.href);
+          if(u.host && u.host !== location.host) return true; } catch(e){}
+    return false;
+  }
+
+  /* 1) İşaretle: eşleşen linklere hx-boost="false" koy (sayfa yüklemede + her swap'te). */
+  function markLinks(root){
+    (root||document).querySelectorAll('a[href]:not([data-boost-checked])').forEach(function(a){
+      a.setAttribute('data-boost-checked','1');
+      if(shouldSkip(a)) a.setAttribute('hx-boost','false');
+    });
+  }
+
+  /* 2) Emniyet kemeri: yine de bir boost isteği tetiklenirse ve hedef özel ise iptal et
+        ve tarayıcının normal gezinmesine izin ver. */
+  document.body.addEventListener('htmx:beforeRequest', function(evt){
+    var el = evt.detail && evt.detail.elt;
+    if(el && el.tagName === 'A' && shouldSkip(el)){
+      evt.preventDefault();
+      window.location.href = el.href;
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function(){ markLinks(document); });
+  document.body.addEventListener('htmx:afterSwap', function(e){ markLinks(e.target || document); });
+})();
+</script>
+<script>
+/* ============================================================
+   Queen CC — motion engine.
+   Tasteful, academic: scroll-reveals (GSAP ScrollTrigger), a gilt
+   line that draws in (Anime.js), a gentle hero title rise (Motion One),
+   and an optional Lottie ornament. All guarded for reduced-motion and
+   re-run after HTMX boosted navigation. Never flashy.
+   ============================================================ */
+(function(){
+  var REDUCED = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Reveal targets are chosen by SELECTOR — no template edits needed. This keeps
+     the theme's templates byte-identical to a known-good baseline, so a markup
+     change can never break page rendering; motion is purely additive on top. */
+  var REVEAL_SELECTOR = 'main section, main article > *, main .hairline, main li';
+
+  function collectReveals(){
+    if(REDUCED || !window.gsap || !window.ScrollTrigger) return [];
+    var nodes = [].slice.call(document.querySelectorAll(REVEAL_SELECTOR));
+    return nodes.filter(function(el){
+      if(el.__qnSeen) return false;
+      el.__qnSeen = true;
+      // skip tiny/inline or already-animated wrappers
+      return el.offsetHeight > 8;
+    });
+  }
+
+  function reveals(){
+    var els = collectReveals();
+    if(!els.length) return;
+    gsap.registerPlugin(ScrollTrigger);
+    els.forEach(function(el){
+      gsap.fromTo(el, {opacity:0, y:16},
+        {opacity:1, y:0, duration:.6, ease:'power2.out',
+         scrollTrigger:{ trigger:el, start:'top 90%', once:true }});
+    });
+  }
+
+  function heroRise(){
+    var hero = document.querySelector('main h1');
+    if(!hero || hero.__qnHero) return;
+    hero.__qnHero = true;
+    if(REDUCED || !window.Motion || !window.Motion.animate) return;
+    Motion.animate(hero, {opacity:[0,1], transform:['translateY(12px)','translateY(0px)']},
+                   {duration:.8, easing:[.22,.61,.36,1]});
+  }
+
+  function giltUnderline(){
+    /* Anime.js draws a fine gold rule under the first hero heading. */
+    if(REDUCED || !window.anime) return;
+    var h = document.querySelector('main h1');
+    if(!h || h.__qnGilt) return;
+    h.__qnGilt = true;
+    var line = document.createElement('span');
+    line.className = 'qn-gilt-line';
+    h.parentNode.insertBefore(line, h.nextSibling);
+    anime({ targets: line, scaleX: [0,1], easing:'easeInOutQuart', duration:1100, delay:200 });
+  }
+
+  function lottieOrnament(){
+    var el = document.querySelector('[data-lottie]');
+    if(!el || el.__qnLottie || REDUCED || !window.lottie) return;
+    var src = el.getAttribute('data-lottie'); if(!src) return;
+    el.__qnLottie = true;
+    try{ lottie.loadAnimation({container:el, renderer:'svg', loop:true, autoplay:true, path:src}); }catch(e){}
+  }
+
+  function magneticButtons(){
+    if(REDUCED || window.__qnMag) return; window.__qnMag = true;
+    document.addEventListener('pointermove', function(e){
+      var b=e.target.closest && e.target.closest('.btn'); if(!b) return;
+      var r=b.getBoundingClientRect();
+      b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.12)+'px,'+((e.clientY-r.top-r.height/2)*.12)+'px)';
+    });
+    document.addEventListener('pointerout', function(e){
+      var b=e.target.closest && e.target.closest('.btn'); if(b) b.style.transform='';
+    });
+  }
+
+  function qnInit(){
+    try{ reveals(); }catch(e){}
+    try{ heroRise(); }catch(e){}
+    try{ giltUnderline(); }catch(e){}
+    try{ lottieOrnament(); }catch(e){}
+    try{ magneticButtons(); }catch(e){}
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', qnInit);
+  else qnInit();
+  document.addEventListener('htmx:afterSwap', function(){
+    window.scrollTo(0,0);
+    if(window.ScrollTrigger){ try{ ScrollTrigger.getAll().forEach(function(s){s.kill();}); }catch(e){} }
+    qnInit();
+  });
+})();
+</script>

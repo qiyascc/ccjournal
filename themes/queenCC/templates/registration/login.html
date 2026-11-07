@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Sign in" %} — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+<div class="max-w-md mx-auto py-6">
+  <h1 class="display font-extrabold text-3xl mb-1">{% trans "Sign in" %}</h1>
+  <p class="mb-8 text-sm" style="color:var(--ink-soft)">{% trans "Access your editorial dashboard and submissions." %}</p>
+  <form method="post" class="space-y-5">
+    {% csrf_token %}
+    {% if form.errors %}<div class="px-4 py-3 rounded-lg hairline text-sm" style="background:color-mix(in srgb,var(--accent) 10%,transparent)">{% trans "Invalid email or password." %}</div>{% endif %}
+    <div><label class="label block mb-1.5" for="id_username">{% trans "Email" %}</label>
+      <input id="id_username" class="field" type="email" name="username" autocomplete="email" autofocus required></div>
+    <div><label class="label block mb-1.5" for="id_password">{% trans "Password" %}</label>
+      <input id="id_password" class="field" type="password" name="password" autocomplete="current-password" required></div>
+    <input type="hidden" name="next" value="{{ next }}">
+    <button class="btn w-full justify-center" type="submit">{% trans "Sign in" %}</button>
+  </form>
+  <p class="mt-6 text-sm" style="color:var(--ink-soft)">{% trans "No account?" %}
+    <a href="/accounts/register/" class="link">{% trans "Create one" %}</a></p>
+</div>
+{% endblock %}

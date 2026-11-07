@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Register" %} — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+<div class="max-w-md mx-auto py-6">
+  <h1 class="display font-extrabold text-3xl mb-1">{% trans "Create an account" %}</h1>
+  <p class="mb-8 text-sm" style="color:var(--ink-soft)">{% trans "Register to submit manuscripts and track their progress." %}</p>
+  <form method="post" class="space-y-5">
+    {% csrf_token %}
+    {% for field in form %}
+      <div>
+        <label class="label block mb-1.5" for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {{ field }}
+        {% if field.help_text %}<p class="text-xs mt-1" style="color:var(--ink-faint)">{{ field.help_text }}</p>{% endif %}
+        {% if field.errors %}<p class="text-sm mt-1" style="color:var(--accent)">{{ field.errors.0 }}</p>{% endif %}
+      </div>
+    {% endfor %}
+    <button class="btn w-full justify-center" type="submit">{% trans "Register" %}</button>
+  </form>
+  <p class="mt-6 text-sm" style="color:var(--ink-soft)">{% trans "Already have an account?" %}
+    <a href="/accounts/login/" class="link">{% trans "Sign in" %}</a></p>
+  <script>document.querySelectorAll("form input").forEach(e=>{if(!e.classList.contains('field'))e.classList.add("field");});</script>
+</div>
+{% endblock %}
