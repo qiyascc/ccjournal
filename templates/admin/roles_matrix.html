@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h1 style="margin-bottom:.5rem">Role permission matrix</h1>
+<p style="color:#666;margin-bottom:1rem">OJS-style capabilities per role. Editable by superusers and Developers.
+Defaults ship seeded from the role catalog.</p>
+<form method="post">
+  {% csrf_token %}
+  <div style="overflow-x:auto;border:1px solid var(--line,#e6e6e3);border-radius:8px">
+  <table style="border-collapse:collapse;font-size:13px;min-width:max-content">
+    <thead>
+      <tr>
+        <th rowspan="2" style="position:sticky;left:0;background:var(--paper,#fff);padding:8px 12px;text-align:left;border-bottom:1px solid #ddd;z-index:2">Role</th>
+        {% for c in cols %}<th colspan="{{ c.perms|length }}" style="padding:6px 10px;border-left:1px solid #eee;border-bottom:1px solid #ddd;text-align:center;white-space:nowrap">{{ c.model }}</th>{% endfor %}
+      </tr>
+      <tr>
+        {% for c in cols %}{% for perm, act in c.perms %}
+          <th style="padding:4px 6px;border-left:1px solid #f2f2f2;border-bottom:1px solid #ddd;font-weight:500;color:#666;text-transform:capitalize">{{ act }}</th>
+        {% endfor %}{% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in group_rows %}
+      <tr>
+        <td style="position:sticky;left:0;background:var(--paper,#fff);padding:6px 12px;font-weight:600;border-bottom:1px solid #f2f2f2;white-space:nowrap;z-index:1">{{ row.group.name }}</td>
+        {% for c in cols %}{% for perm, act in c.perms %}
+          <td style="text-align:center;border-left:1px solid #f7f7f7;border-bottom:1px solid #f2f2f2;padding:4px">
+            <input type="checkbox" name="perm_{{ row.group.id }}_{{ perm.id }}" {% if perm.id in row.owned %}checked{% endif %}>
+          </td>
+        {% endfor %}{% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <div style="margin-top:1rem"><button type="submit" class="button" style="background:#1f3df2;color:#fff;border:none;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer">Save matrix</button></div>
+</form>
+{% endblock %}

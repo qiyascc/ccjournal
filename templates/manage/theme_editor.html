@@ -1,0 +1,43 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:560px">
+  <h1>🎨 {% trans "Theme colors" %}</h1>
+  <p style="color:var(--body-quiet-color)">
+    {% trans "Override the active theme's palette without touching any files. Leave a field empty to keep the theme default." %}
+  </p>
+  {% if messages %}{% for m in messages %}
+    <p style="padding:.5rem .75rem;border:1px solid var(--hairline-color,#ddd);border-radius:6px">{{ m }}</p>
+  {% endfor %}{% endif %}
+  <form method="post">
+    {% csrf_token %}
+    <table style="border-collapse:collapse">
+      {% for f in fields %}
+      <tr>
+        <td style="padding:.4rem .8rem .4rem 0"><label for="id_{{ f.key }}">{{ f.label }}</label></td>
+        <td style="padding:.4rem 0">
+          <input type="color" id="id_{{ f.key }}" name="{{ f.key }}"
+                 value="{{ f.value|default:'#000000' }}"
+                 {% if not f.value %}data-empty="1"{% endif %}
+                 style="width:52px;height:32px;border:1px solid #ccc;border-radius:6px;cursor:pointer">
+          <input type="text" value="{{ f.value }}" placeholder="{% trans 'theme default' %}"
+                 oninput="document.getElementById('id_{{ f.key }}').value=this.value"
+                 onchange="document.getElementById('id_{{ f.key }}').name=this.value?'{{ f.key }}':''"
+                 style="width:110px;padding:.3rem .5rem;margin-left:.5rem;border:1px solid #ccc;border-radius:6px;font-family:monospace">
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <div class="submit-row" style="margin-top:1rem">
+      <input type="submit" value="{% trans 'Save colors' %}" class="default" style="padding:.45rem 1rem">
+      {% if has_overrides %}
+      <button type="submit" name="action" value="reset"
+              style="margin-left:.6rem;padding:.45rem 1rem;cursor:pointer">
+        {% trans "Reset to theme defaults" %}</button>
+      {% endif %}
+    </div>
+  </form>
+  <p style="font-size:.85rem;opacity:.7;margin-top:1rem">
+    {% trans "Changes apply instantly to /theme.css (reader cache is refreshed)." %}</p>
+</div>
+{% endblock %}

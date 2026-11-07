@@ -1,0 +1,41 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:760px">
+  <h1>{% trans "Pre-publish checklist" %} — {{ issue }}</h1>
+  {% if ready and not issue_problems %}
+  <p style="color:#1a7f37;font-weight:700">✓ {% trans "Everything looks ready — you can publish this issue." %}</p>
+  {% else %}
+  <p style="color:var(--body-quiet-color)">{% trans "Fix the items below before publishing (article problems block publication; issue-level notes are recommendations)." %}</p>
+  {% endif %}
+
+  {% if issue_problems %}
+  <h2 style="margin-top:1rem">{% trans "Issue level" %}</h2>
+  <ul>{% for p in issue_problems %}<li>⚠ {{ p }}</li>{% endfor %}</ul>
+  {% endif %}
+
+  <h2 style="margin-top:1rem">{% trans "Articles" %} ({{ rows|length }})</h2>
+  <table style="width:100%;border-collapse:collapse">
+    <tr style="text-align:left;border-bottom:2px solid var(--hairline-color,#ccc)">
+      <th style="padding:.35rem .5rem">{% trans "Article" %}</th>
+      <th style="padding:.35rem .5rem">{% trans "Status" %}</th>
+    </tr>
+    {% for r in rows %}
+    <tr style="border-bottom:1px solid var(--hairline-color,#eee)">
+      <td style="padding:.4rem .5rem">
+        <a href="{% url 'admin:publications_publication_change' r.pub.pk %}">{{ r.title }}</a>
+      </td>
+      <td style="padding:.4rem .5rem">
+        {% if r.problems %}
+          {% for p in r.problems %}<div style="color:#9a6a00">⚠ {{ p }}</div>{% endfor %}
+        {% else %}<span style="color:#1a7f37">✓ {% trans "ready" %}</span>{% endif %}
+      </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="2" style="padding:.5rem;opacity:.6;font-style:italic">{% trans "No articles assigned to this issue." %}</td></tr>
+    {% endfor %}
+  </table>
+  <p style="margin-top:1rem">
+    <a href="{% url 'admin:journals_issue_changelist' %}">← {% trans "Back to issues" %}</a></p>
+</div>
+{% endblock %}

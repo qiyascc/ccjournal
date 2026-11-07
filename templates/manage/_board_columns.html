@@ -1,0 +1,25 @@
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+  {% for col in columns %}
+  <section class="bg-base-100 rounded-xl p-3">
+    <div class="flex items-center justify-between mb-3 px-1">
+      <h2 class="text-xs font-semibold uppercase tracking-wide text-base-500">{{ col.label }}</h2>
+      <span class="text-xs bg-base-200 text-base-700 rounded-full px-2 py-0.5">{{ col.count }}</span>
+    </div>
+    <div class="space-y-2">
+      {% for c in col.cards %}
+      <a href="{{ c.url }}" class="block bg-white rounded-lg p-3 shadow-sm hover:shadow border border-base-200">
+        <div class="text-sm font-medium text-base-900 line-clamp-2">{{ c.title }}</div>
+        <div class="mt-1 text-xs text-base-500">#{{ c.id }}{% if c.submitter %} · {{ c.submitter }}{% endif %}</div>
+        <div class="mt-2 flex items-center gap-3 text-xs">
+          <span class="text-base-400">{{ c.days }}d</span>
+          {% if c.assigned %}<span class="text-base-600">{{ c.completed }}/{{ c.assigned }} reviews</span>{% endif %}
+          {% if c.overdue %}<span class="text-red-600 font-semibold">{{ c.overdue }} overdue</span>{% endif %}
+        </div>
+      </a>
+      {% empty %}
+      <p class="text-xs text-base-400 px-1 py-6 text-center">No submissions</p>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>

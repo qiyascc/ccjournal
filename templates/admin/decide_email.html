@@ -1,0 +1,67 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:680px">
+  <h1>{% trans "Record decision" %} — {{ stitle }}</h1>
+  <form method="post">
+    {% csrf_token %}
+    {% for pub in publications %}
+      <input type="hidden" name="{{ action_checkbox_name }}" value="{{ pub.pk }}">
+    {% endfor %}
+    <input type="hidden" name="action" value="action_decide_with_email">
+
+    {% if step == 1 %}
+    <p style="color:var(--body-quiet-color)">
+      {% trans "Step 1 of 2 — choose the decision and an optional note. On the next step you will preview and edit the email before anything is sent." %}
+    </p>
+    <p>
+      <label for="id_decision"><b>{% trans "Decision" %}:</b></label><br>
+      <select name="decision" id="id_decision" required style="min-width:320px;padding:.4rem">
+        {% for val, label in decisions %}<option value="{{ val }}">{{ label }}</option>{% endfor %}
+      </select>
+    </p>
+    <p>
+      <label for="id_note"><b>{% trans "Note to the author (fills the email template)" %}:</b></label><br>
+      <textarea name="note" id="id_note" rows="5" style="width:100%;padding:.4rem"></textarea>
+    </p>
+    <p>
+      <label><input type="checkbox" name="include_reviews" checked>
+        {% trans "Append reviewer comments for the author (anonymised as Reviewer 1, 2, …)" %}</label>
+    </p>
+    <div class="submit-row">
+      <input type="submit" name="preview" value="{% trans 'Preview email →' %}" class="default">
+      <a href="{% url 'admin:submissions_submission_changelist' %}">{% trans "Cancel" %}</a>
+    </div>
+
+    {% else %}
+    <p style="color:var(--body-quiet-color)">
+      {% trans "Step 2 of 2 — decision" %}: <b>{{ decision_label }}</b>.
+      {% if author_email %}{% trans "The email below goes to" %} <b>{{ author_email }}</b>.
+      {% else %}<b>{% trans "The author has no email address — no email can be sent." %}</b>{% endif %}
+    </p>
+    <input type="hidden" name="decision" value="{{ decision }}">
+    <input type="hidden" name="note" value="{{ note }}">
+    {% if not has_template %}
+    <p style="color:var(--body-quiet-color)">{% trans "No author email is normally sent for this decision; you may write one below or uncheck sending." %}</p>
+    {% endif %}
+    <p>
+      <label for="id_subject"><b>{% trans "Subject" %}:</b></label><br>
+      <input type="text" name="subject" id="id_subject" value="{{ subject }}" style="width:100%;padding:.4rem">
+    </p>
+    <p>
+      <label for="id_body"><b>{% trans "Message" %}:</b></label><br>
+      <textarea name="body" id="id_body" rows="12" style="width:100%;padding:.4rem">{{ body }}</textarea>
+    </p>
+    <p>
+      <label><input type="checkbox" name="send_email" {% if author_email and subject %}checked{% endif %}
+                    {% if not author_email %}disabled{% endif %}>
+        {% trans "Send this email to the author" %}</label>
+    </p>
+    <div class="submit-row">
+      <input type="submit" name="apply" value="{% trans 'Apply decision' %}" class="default">
+      <a href="{% url 'admin:submissions_submission_changelist' %}">{% trans "Cancel" %}</a>
+    </div>
+    {% endif %}
+  </form>
+</div>
+{% endblock %}

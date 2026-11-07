@@ -1,0 +1,79 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:1100px">
+  <h1>{% trans "Files" %} — {{ stitle }}</h1>
+  <p style="color:var(--body-quiet-color)">
+    {% trans "Files grouped by workflow stage. Upload into a stage, or copy a file to its next stage — the previous version is kept and chained (like OJS file rounds)." %}
+    · <a href="{% url 'admin:submissions_submission_change' sub.pk %}">{% trans "Back to submission" %}</a>
+  </p>
+
+  {% if messages %}{% for m in messages %}
+    <p style="padding:.5rem .75rem;border:1px solid var(--hairline-color,#ddd);border-radius:6px">{{ m }}</p>
+  {% endfor %}{% endif %}
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;margin-top:1rem">
+    {% for col in columns %}
+    <div style="border:1px solid var(--hairline-color,#ddd);border-radius:8px;padding:.75rem">
+      <h2 style="margin:0 0 .5rem;font-size:.95rem">{{ col.label }}
+        <span style="opacity:.55">({{ col.files|length }})</span></h2>
+      {% for f in col.files %}
+      <div style="padding:.45rem 0;border-top:1px solid var(--hairline-color,#eee)">
+        <a href="{% url 'manage_files_download' sub.pk f.pk %}"><b>{{ f.original_filename }}</b></a>
+        <div style="font-size:.78rem;opacity:.65">
+          {{ f.created_at|date:"j M Y H:i" }}
+          {% if f.uploader %} · {{ f.uploader.full_name }}{% endif %}
+          {% if f.source_file %} · {% trans "from" %} #{{ f.source_file_id }}{% endif %}
+        </div>
+        <div style="display:flex;gap:.4rem;margin-top:.25rem">
+        {% if col.next %}
+        <form method="post" style="margin:0">
+          {% csrf_token %}
+          <input type="hidden" name="action" value="promote">
+          <input type="hidden" name="file_id" value="{{ f.pk }}">
+          <button type="submit" style="font-size:.78rem;padding:.15rem .5rem;cursor:pointer">
+            → {% trans "Copy to next stage" %}</button>
+        </form>
+        {% endif %}
+        {% if col.stage == 11 %}{# production-ready → tek tıkla galley #}
+        <form method="post" style="margin:0">
+          {% csrf_token %}
+          <input type="hidden" name="action" value="make_galley">
+          <input type="hidden" name="file_id" value="{{ f.pk }}">
+          <button type="submit" style="font-size:.78rem;padding:.15rem .5rem;cursor:pointer">
+            ✚ {% trans "Create galley" %}</button>
+        </form>
+        {% endif %}
+        </div>
+      </div>
+      {% empty %}
+      <p style="opacity:.5;font-size:.85rem;font-style:italic">{% trans "Empty" %}</p>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2 style="margin-top:1.5rem">{% trans "Upload a file" %}</h2>
+  <form method="post" enctype="multipart/form-data"
+        style="display:flex;gap:.75rem;align-items:center;flex-wrap:wrap">
+    {% csrf_token %}
+    <input type="hidden" name="action" value="upload">
+    <input type="file" name="file" required>
+    <select name="stage" required style="padding:.35rem">
+      {% for val, label in stages %}<option value="{{ val }}">{{ label }}</option>{% endfor %}
+    </select>
+    <button type="submit" class="default" style="padding:.35rem .9rem;cursor:pointer">
+      {% trans "Upload" %}</button>
+  </form>
+
+  {% if other %}
+  <h2 style="margin-top:1.5rem">{% trans "Other files" %} <span style="opacity:.55">({% trans "discussion attachments, dependent files" %})</span></h2>
+  <ul>
+    {% for f in other %}
+    <li><a href="{% url 'manage_files_download' sub.pk f.pk %}">{{ f.original_filename }}</a>
+        <span style="opacity:.6">· {{ f.get_file_stage_display }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endblock %}

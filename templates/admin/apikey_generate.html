@@ -1,0 +1,29 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:640px">
+  <h1>{% trans "Generate API key" %}</h1>
+
+  {% if raw_key %}
+  <div style="border:1px solid var(--border-color);border-radius:10px;padding:16px;margin:16px 0;background:var(--darkened-bg)">
+    <p style="margin:0 0 8px"><b>{% trans "Your new API key" %}</b> — {% trans "copy it now, it won't be shown again:" %}</p>
+    <pre id="rawkey" style="user-select:all;white-space:pre-wrap;word-break:break-all;padding:10px;border:1px solid var(--border-color);border-radius:8px;font-size:13px">{{ raw_key }}</pre>
+    <button type="button" class="button" onclick="navigator.clipboard.writeText(document.getElementById('rawkey').innerText).then(()=>this.innerText='{% trans "Copied ✓" %}')">{% trans "Copy key" %}</button>
+    <p style="margin-top:12px"><a href="{{ changelist_url }}">← {% trans "Back to API keys" %}</a></p>
+  </div>
+  {% else %}
+  <p style="color:var(--body-quiet-color)">
+    {% trans "Create an API key for a user. Use it with the header" %}
+    <code>Authorization: Api-Key &lt;key&gt;</code>. {% trans "The raw key is shown only once." %}
+  </p>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="submit-row">
+      <input type="submit" value="{% trans 'Generate key' %}" class="default">
+      <a href="{{ changelist_url }}">{% trans "Cancel" %}</a>
+    </div>
+  </form>
+  {% endif %}
+</div>
+{% endblock %}

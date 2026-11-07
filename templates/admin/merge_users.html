@@ -1,0 +1,32 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:640px">
+  <h1>{% trans "Merge accounts" %}</h1>
+  <p style="color:var(--body-quiet-color)">
+    {% trans "All records (submissions, reviews, discussions, notifications, API keys, memberships) of the other accounts are reassigned to the TARGET account. Source accounts are deactivated, not deleted. This cannot be undone from the UI." %}
+  </p>
+  <form method="post">
+    {% csrf_token %}
+    {% for u in users %}
+      <input type="hidden" name="{{ action_checkbox_name }}" value="{{ u.pk }}">
+    {% endfor %}
+    <input type="hidden" name="action" value="action_merge_users">
+    <p><b>{% trans "Keep this account (target)" %}:</b></p>
+    <ul style="list-style:none;padding:0;line-height:2">
+      {% for u in users %}
+      <li><label>
+        <input type="radio" name="target" value="{{ u.pk }}" {% if forloop.first %}checked{% endif %}>
+        {{ u.email }} — {{ u.full_name }}
+        {% if u.is_superuser %}<b>(superuser)</b>{% endif %}
+        <span style="opacity:.6">· {% trans "joined" %} {{ u.created_at|date:"Y" }}</span>
+      </label></li>
+      {% endfor %}
+    </ul>
+    <div class="submit-row">
+      <input type="submit" name="apply" value="{% trans 'Merge accounts' %}" class="default">
+      <a href="{% url 'admin:accounts_user_changelist' %}">{% trans "Cancel" %}</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

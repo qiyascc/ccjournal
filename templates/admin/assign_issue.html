@@ -1,0 +1,33 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:640px">
+  <h1>{% trans "Assign articles to an issue" %}</h1>
+  <p style="color:var(--body-quiet-color)">
+    {% trans "OJS-style flow: articles are published as part of an issue. Assign these articles to an issue; if the issue is already published they go live immediately, otherwise they become SCHEDULED and are released when you publish the issue." %}
+  </p>
+  <form method="post">
+    {% csrf_token %}
+    {% for pub in publications %}
+      <input type="hidden" name="{{ action_checkbox_name }}" value="{{ pub.pk }}">
+    {% endfor %}
+    <input type="hidden" name="action" value="action_assign_issue">
+    <ul style="margin:1rem 0">
+      {% for pub in publications %}<li>{{ pub }}{% if pub.issue %} <span style="opacity:.6">({% trans "currently" %}: {{ pub.issue }})</span>{% endif %}</li>{% endfor %}
+    </ul>
+    <p>
+      <label for="id_issue"><b>{% trans "Issue" %}:</b></label><br>
+      <select name="issue" id="id_issue" required style="min-width:320px;padding:.4rem">
+        <option value="">— {% trans "Select an issue" %} —</option>
+        {% for iss in issues %}
+          <option value="{{ iss.pk }}">{{ iss }}{% if iss.is_published %} ✓ {% trans "published" %}{% else %} · {% trans "unpublished" %}{% endif %}</option>
+        {% endfor %}
+      </select>
+    </p>
+    <div class="submit-row">
+      <input type="submit" name="apply" value="{% trans 'Assign to issue' %}" class="default">
+      <a href="{% url 'admin:publications_publication_changelist' %}">{% trans "Cancel" %}</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<div style="max-width:640px">
+  <p style="margin-bottom:1rem">
+    Upload a plugin packaged as a <strong>.zip</strong> containing a single package
+    folder (e.g. <code>myplugin/__init__.py</code>) that exposes a <code>plugin</code> instance.
+    Only superusers can install plugins; plugin code runs on the server.
+  </p>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="package" accept=".zip" required
+           style="display:block;margin-bottom:1rem">
+    <button type="submit" class="default">Install</button>
+    <a href="../" style="margin-left:1rem">Cancel</a>
+  </form>
+</div>
+{% endblock %}

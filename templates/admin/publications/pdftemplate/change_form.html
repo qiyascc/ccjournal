@@ -1,0 +1,260 @@
+{% extends "admin/change_form.html" %}
+{% load i18n static %}
+
+{% block extrahead %}{{ block.super }}
+<script src="{% static 'vendor/Sortable.min.js' %}"></script>
+<style>
+  .field-design{display:none;}
+  .epd-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:8px 0 4px;}
+  @media(max-width:1100px){.epd-wrap{grid-template-columns:1fr;}}
+  .epd-panel{border:1px solid var(--border-color,#e0e0e0);border-radius:12px;padding:18px;background:var(--body-bg,#fff);}
+  .epd-h{font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--body-quiet-color,#666);margin:0 0 14px;}
+  .epd-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--hairline-color,#f0f0f0);}
+  .epd-row:last-child{border-bottom:none;}
+  .epd-row label{font-size:13px;color:var(--body-fg,#333);}
+  .epd-color{width:42px;height:28px;border:1px solid #ccc;border-radius:6px;padding:0;cursor:pointer;background:none;}
+  .epd-sel,.epd-num,.epd-txt{padding:6px 9px;border:1px solid var(--border-color,#ccc);border-radius:7px;font-size:13px;background:var(--body-bg,#fff);color:var(--body-fg,#333);}
+  .epd-num{width:74px;}
+  .epd-txt{min-width:170px;}
+  .epd-sec{list-style:none;margin:0;padding:0;}
+  .epd-sec li{display:flex;align-items:center;gap:10px;padding:9px 11px;margin-bottom:7px;border:1px solid var(--border-color,#e0e0e0);border-radius:9px;background:var(--darkened-bg,#fafafa);cursor:grab;}
+  .epd-sec li.epd-off{opacity:.45;}
+  .epd-grip{color:#bbb;font-size:16px;line-height:1;cursor:grab;user-select:none;}
+  .epd-move{display:flex;flex-direction:column;gap:2px;}
+  .epd-move button{border:1px solid var(--border-color,#ccc);background:var(--body-bg,#fff);
+    color:var(--body-fg,#555);border-radius:5px;width:24px;height:17px;line-height:1;font-size:9px;
+    cursor:pointer;padding:0;}
+  .epd-move button:hover{border-color:var(--primary,#1f3df2);color:var(--primary,#1f3df2);}
+  .epd-sec .name{flex:1;font-size:13px;}
+  .epd-switch{position:relative;width:38px;height:22px;display:inline-block;}
+  .epd-switch input{opacity:0;width:0;height:0;}
+  .epd-track{position:absolute;inset:0;background:#ccc;border-radius:999px;transition:.2s;}
+  .epd-switch input:checked + .epd-track{background:var(--primary,#1f3df2);}
+  .epd-track::before{content:"";position:absolute;width:16px;height:16px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s;}
+  .epd-switch input:checked + .epd-track::before{transform:translateX(16px);}
+  .epd-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 16px;}
+  .epd-btn{background:var(--primary,#1f3df2);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;}
+  .epd-btn.ghost{background:transparent;color:var(--primary,#1f3df2);border:1px solid var(--primary,#1f3df2);}
+  .epd-hint{font-size:12px;color:var(--body-quiet-color,#888);margin:0 0 14px;}
+  #epd-frame{width:100%;height:78vh;border:1px solid var(--border-color,#ddd);border-radius:10px;background:#fff;margin-top:10px;}
+  .epd-modewarn{display:none;background:#fff8e6;border:1px solid #f0d894;border-radius:9px;padding:11px 14px;font-size:13px;margin:10px 0;color:#7a5b00;}
+</style>
+{% endblock %}
+
+{% block after_field_sets %}{{ block.super }}
+<div id="epd-app" data-default='{{ pdf_default_design }}'>
+  <div class="epd-modewarn" id="epd-modewarn">
+    {% trans "This template is in Custom HTML/CSS mode — the visual designer is disabled. Switch Mode to “Visual designer” to use the controls." %}
+  </div>
+  <div id="epd-visual">
+    <div class="epd-toolbar">
+      {% if pdf_preview_url %}<button type="button" class="epd-btn" data-preview onclick="epdPreview()">{% trans "Preview PDF" %}</button>{% endif %}
+      <button type="button" class="epd-btn ghost" onclick="epdReset()">{% trans "Reset to default" %}</button>
+      <span class="epd-hint" style="margin:0">
+        {% if pdf_preview_url %}{% trans "Changes apply to the preview instantly; click Save to keep them." %}
+        {% else %}{% trans "Save the template once to enable the live PDF preview." %}{% endif %}
+      </span>
+    </div>
+    <div class="epd-wrap">
+      <div>
+        <div class="epd-panel" style="margin-bottom:16px">
+          <p class="epd-h">{% trans "Colors" %}</p>
+          <div class="epd-row"><label>{% trans "Accent (titles, links, rule)" %}</label><input type="color" class="epd-color" data-c="accent"></div>
+          <div class="epd-row"><label>{% trans "Secondary accent" %}</label><input type="color" class="epd-color" data-c="accent2"></div>
+          <div class="epd-row"><label>{% trans "Body text" %}</label><input type="color" class="epd-color" data-c="text"></div>
+          <div class="epd-row"><label>{% trans "Muted text" %}</label><input type="color" class="epd-color" data-c="muted_text"></div>
+          <div class="epd-row"><label>{% trans "Meta panel background" %}</label><input type="color" class="epd-color" data-c="panel"></div>
+        </div>
+        <div class="epd-panel" style="margin-bottom:16px">
+          <p class="epd-h">{% trans "Typography & logo" %}</p>
+          <div class="epd-row"><label>{% trans "Heading font" %}</label><select class="epd-sel" data-f="heading"><option value="sans">Sans-serif</option><option value="serif">Serif</option></select></div>
+          <div class="epd-row"><label>{% trans "Body font" %}</label><select class="epd-sel" data-f="body"><option value="serif">Serif</option><option value="sans">Sans-serif</option></select></div>
+          <div class="epd-row"><label>{% trans "Logo position" %}</label><select class="epd-sel" data-logo="position"><option value="left">{% trans "Left" %}</option><option value="center">{% trans "Center" %}</option><option value="right">{% trans "Right" %}</option><option value="hidden">{% trans "Hidden" %}</option></select></div>
+          <div class="epd-row"><label>{% trans "Logo height (px)" %}</label><input type="number" class="epd-num" data-logo="size" min="16" max="120"></div>
+        </div>
+        <div class="epd-panel" style="margin-bottom:16px">
+          <p class="epd-h">{% trans "Badge & rule" %}</p>
+          <div class="epd-row"><label>{% trans "Show badge (e.g. RESEARCH ARTICLE)" %}</label><label class="epd-switch"><input type="checkbox" data-badge="show"><span class="epd-track"></span></label></div>
+          <div class="epd-row"><label>{% trans "Badge text" %}</label><input type="text" class="epd-txt" data-badge="text"></div>
+          <div class="epd-row"><label>{% trans "Badge color" %}</label><input type="color" class="epd-color" data-badge="color"></div>
+          <div class="epd-row"><label>{% trans "Header underline" %}</label><label class="epd-switch"><input type="checkbox" data-rule="show"><span class="epd-track"></span></label></div>
+        </div>
+        <div class="epd-panel">
+          <p class="epd-h">{% trans "Page" %}</p>
+          <div class="epd-row"><label>{% trans "Size" %}</label><select class="epd-sel" data-page="size"><option>A4</option><option>Letter</option><option>A5</option></select></div>
+          <div class="epd-row"><label>{% trans "Top / bottom margin (cm)" %}</label><span><input type="number" step="0.1" class="epd-num" data-page="margin_top"> / <input type="number" step="0.1" class="epd-num" data-page="margin_bottom"></span></div>
+          <div class="epd-row"><label>{% trans "Side margin (cm)" %}</label><input type="number" step="0.1" class="epd-num" data-page="margin_x"></div>
+          <div class="epd-row"><label>{% trans "Footer text" %}</label><input type="text" class="epd-txt" data-page="footer"></div>
+          <div class="epd-row"><label>{% trans "Show page numbers" %}</label><label class="epd-switch"><input type="checkbox" data-page="page_numbers"><span class="epd-track"></span></label></div>
+        </div>
+      </div>
+      <div>
+        <div class="epd-panel" style="margin-bottom:16px">
+          <p class="epd-h">{% trans "Sections — drag to reorder, toggle to show/hide" %}</p>
+          <p class="epd-hint">{% trans "The order here is the order on the page." %}</p>
+          <ul class="epd-sec" id="epd-sections"></ul>
+        </div>
+        {% if pdf_preview_url %}
+        <div class="epd-panel">
+          <p class="epd-h">{% trans "Live preview" %}</p>
+          <button type="button" class="epd-btn" data-preview onclick="epdPreview()">{% trans "Refresh preview" %}</button>
+          <iframe id="epd-frame" title="PDF preview"></iframe>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  function epdBoot(){
+  var app=document.getElementById('epd-app'); if(!app) return;
+  var SECTION_LABELS = {
+    brand: "{% trans 'Journal name + logo' %}", badge: "{% trans 'Badge' %}",
+    title: "{% trans 'Title' %}", subtitle: "{% trans 'Subtitle' %}",
+    authors: "{% trans 'Authors' %}", affiliations: "{% trans 'Affiliations' %}",
+    meta: "{% trans 'Meta (DOI, date, license)' %}", abstract: "{% trans 'Abstract' %}",
+    keywords: "{% trans 'Keywords' %}", body: "{% trans 'Full text body' %}"
+  };
+  var jsonInput=document.querySelector('[name=design]');
+  var modeSel=document.querySelector('[name=mode]');
+  var DEFAULT=JSON.parse(app.dataset.default||'{}');
+  var design;
+  function load(){
+    var raw=(jsonInput&&jsonInput.value||'').trim();
+    try{ design=raw?JSON.parse(raw):JSON.parse(JSON.stringify(DEFAULT)); }
+    catch(e){ design=JSON.parse(JSON.stringify(DEFAULT)); }
+    ['colors','fonts','logo','badge','rule','page'].forEach(function(k){
+      design[k]=Object.assign({},DEFAULT[k]||{},design[k]||{});
+    });
+    if(!Array.isArray(design.sections)||!design.sections.length)
+      design.sections=JSON.parse(JSON.stringify(DEFAULT.sections));
+  }
+  function sync(){ if(jsonInput) jsonInput.value=JSON.stringify(design); }
+  function bindGroup(attr,obj){
+    document.querySelectorAll('['+attr+']').forEach(function(el){
+      var key=el.getAttribute(attr);
+      if(el.type==='checkbox') el.checked=!!obj[key];
+      else if(obj[key]!==undefined) el.value=obj[key];
+      var ev=(el.type==='color'||el.type==='checkbox'||el.tagName==='SELECT')?'change':'input';
+      el.addEventListener(ev,function(){
+        if(el.type==='checkbox') obj[key]=el.checked;
+        else if(el.type==='number'){
+          var v=parseFloat(el.value);
+          if(!isNaN(v)) obj[key]=v;
+        }
+        else obj[key]=el.value;
+        sync();
+      });
+    });
+  }
+  function renderSections(){
+    var ul=document.getElementById('epd-sections'); if(!ul) return; ul.innerHTML='';
+    var hasSortable=(typeof window.Sortable==='function');
+    design.sections.forEach(function(s, idx){
+      var li=document.createElement('li'); li.dataset.id=s.id;
+      if(!s.show) li.classList.add('epd-off');
+      // Sortable varsa tutamaç; yoksa yukarı/aşağı düğmeleri (her durumda çalışır)
+      var mover = hasSortable
+        ? '<span class="epd-grip">&#x22EE;&#x22EE;</span>'
+        : '<span class="epd-move"><button type="button" class="epd-up" title="Up">&#9650;</button>'
+          + '<button type="button" class="epd-down" title="Down">&#9660;</button></span>';
+      li.innerHTML=mover+'<span class="name">'+
+        (SECTION_LABELS[s.id]||s.id)+'</span><label class="epd-switch"><input type="checkbox" '+
+        (s.show?'checked':'')+'><span class="epd-track"></span></label>';
+      li.querySelector('input[type=checkbox]').addEventListener('change',function(e){
+        s.show=e.target.checked; li.classList.toggle('epd-off',!s.show); sync();
+      });
+      if(!hasSortable){
+        li.querySelector('.epd-up').addEventListener('click',function(){ moveSection(idx,-1); });
+        li.querySelector('.epd-down').addEventListener('click',function(){ moveSection(idx,1); });
+      }
+      ul.appendChild(li);
+    });
+    if(hasSortable){
+      try{
+        new Sortable(ul,{animation:150,handle:'.epd-grip',onEnd:function(){
+          var order=[].map.call(ul.children,function(li){return li.dataset.id;});
+          design.sections.sort(function(a,b){return order.indexOf(a.id)-order.indexOf(b.id);});
+          sync();
+        }});
+      }catch(e){ /* Sortable init başarısız olsa bile butonlu sıralama devrede kalır */ }
+    }
+  }
+  function moveSection(idx, delta){
+    var j=idx+delta;
+    if(j<0||j>=design.sections.length) return;
+    var tmp=design.sections[idx]; design.sections[idx]=design.sections[j]; design.sections[j]=tmp;
+    sync(); renderSections();
+  }
+  function hideDesignRow(){
+    if(!jsonInput) return;
+    var row=jsonInput.closest('.field-design');
+    if(row){ row.style.display='none'; return; }
+    jsonInput.style.display='none';
+    var lb=document.querySelector('label[for=id_design]');
+    if(lb&&lb.parentElement) lb.parentElement.style.display='none';
+  }
+  function advancedFieldset(){
+    var probe=document.querySelector('.field-body_html')
+      ||document.querySelector('[name=body_html]');
+    return probe?probe.closest('fieldset'):null;
+  }
+  function applyModeUI(){
+    var visual=(modeSel&&modeSel.value==='visual')||!modeSel;
+    document.getElementById('epd-visual').style.display=visual?'':'none';
+    document.getElementById('epd-modewarn').style.display=visual?'none':'block';
+    var fs=advancedFieldset();
+    if(fs) fs.style.display=visual?'none':'';
+  }
+  window.epdPreview=function(){
+    var url='{{ pdf_preview_url|default:"" }}'; if(!url) return; sync();
+    var fd=new FormData();
+    fd.append('design',jsonInput?jsonInput.value:'');
+    fd.append('mode',modeSel?modeSel.value:'visual');
+    var ta=document.querySelector('[name=body_html]'); if(ta) fd.append('body_html',ta.value);
+    var cs=document.querySelector('[name=css]'); if(cs) fd.append('css',cs.value);
+    var csrf=document.querySelector('[name=csrfmiddlewaretoken]'); if(csrf) fd.append('csrfmiddlewaretoken',csrf.value);
+    var frame=document.getElementById('epd-frame');
+    var btns=document.querySelectorAll('.epd-btn[data-preview]');
+    btns.forEach(function(b){ b.disabled=true; b.dataset.label=b.textContent;
+      b.textContent="{% trans 'Rendering…' %}"; });
+    fetch(url,{method:'POST',body:fd}).then(function(r){
+      if(!r.ok) throw new Error('HTTP '+r.status);
+      return r.blob();
+    }).then(function(b){
+      if(frame){
+        if(frame.dataset.url) URL.revokeObjectURL(frame.dataset.url);
+        var u=URL.createObjectURL(b); frame.dataset.url=u; frame.src=u;
+      }
+    }).catch(function(e){
+      alert("{% trans 'Preview failed:' %} "+e.message);
+    }).finally(function(){
+      btns.forEach(function(b){ b.disabled=false; b.textContent=b.dataset.label; });
+    });
+  };
+  window.epdReset=function(){
+    if(!confirm("{% trans 'Reset all visual settings to the default design?' %}")) return;
+    design=JSON.parse(JSON.stringify(DEFAULT)); sync(); initControls(); renderSections();
+  };
+  function initControls(){
+    bindGroup('data-c',design.colors); bindGroup('data-f',design.fonts);
+    bindGroup('data-logo',design.logo); bindGroup('data-badge',design.badge);
+    bindGroup('data-rule',design.rule); bindGroup('data-page',design.page);
+  }
+  // Her adımı ayrı ayrı koru: biri patlasa bile diğerleri çalışsın.
+  try{ hideDesignRow(); }catch(e){}
+  try{ load(); }catch(e){ design=JSON.parse(JSON.stringify(DEFAULT)); }
+  try{ sync(); }catch(e){}
+  try{ initControls(); }catch(e){}
+  try{ renderSections(); }catch(e){}
+  try{ applyModeUI(); }catch(e){}
+  if(modeSel) modeSel.addEventListener('change',applyModeUI);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',epdBoot);
+  else epdBoot();
+  document.body.addEventListener('htmx:afterSwap', epdBoot);
+})();
+</script>
+{% endblock %}

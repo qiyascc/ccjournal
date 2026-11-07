@@ -1,0 +1,78 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editorial board</title>
+  <link rel="stylesheet" href="{% static 'css/tailwind.build.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+  <script defer src="{% static 'vendor/alpine.min.js' %}"></script>
+  <script src="{% static 'vendor/htmx.min.js' %}"></script>
+  <style>[x-cloak]{display:none!important} body{font-family:Inter,system-ui,sans-serif}</style>
+</head>
+<body class="h-full bg-base-50 text-base-900" x-data="board()" x-init="init()">
+  <header class="flex items-center justify-between px-6 py-4 border-b border-base-200 bg-white sticky top-0 z-10">
+    <div class="flex items-center gap-3">
+      <a href="/admin/" class="text-sm text-base-500 hover:text-base-900">&larr; Admin</a>
+      <h1 class="text-lg font-semibold">Editorial board</h1>
+      <span class="text-xs text-base-400" title="Auto-refreshes every 15s">live</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="flex -space-x-2" title="Active now">
+        {% for u in present %}
+        <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-base-800 text-white text-xs ring-2 ring-white" title="{{ u }}">{{ u|slice:":1"|upper }}</span>
+        {% endfor %}
+      </div>
+      <button @click="open()" class="text-sm px-3 py-1.5 rounded-md border border-base-300 text-base-600 hover:bg-base-100">
+        Search <kbd class="ml-1 text-xs text-base-400">&#8984;K</kbd>
+      </button>
+    </div>
+  </header>
+
+  <main class="p-6">
+    <div id="board" hx-get="/manage/board/columns/" hx-trigger="every 15s" hx-swap="innerHTML">
+      {% include "manage/_board_columns.html" %}
+    </div>
+  </main>
+
+  <div x-show="palette" x-cloak @keydown.escape.window="palette=false"
+       class="fixed inset-0 bg-black/40 flex items-start justify-center pt-32 z-50" @click.self="palette=false">
+    <div class="w-full max-w-lg bg-white rounded-xl shadow-2xl overflow-hidden">
+      <input x-model="q" x-ref="qi" placeholder="Jump to submission # or title&hellip;"
+             class="w-full px-4 py-3 text-base outline-none border-b border-base-200">
+      <ul class="max-h-80 overflow-auto">
+        <template x-for="c in filtered()" :key="c.id">
+          <li><a :href="c.url" class="flex justify-between gap-4 px-4 py-2 hover:bg-base-100 text-sm">
+            <span class="truncate" x-text="c.title"></span>
+            <span class="text-base-400 shrink-0" x-text="'#'+c.id"></span></a></li>
+        </template>
+        <li x-show="!filtered().length" class="px-4 py-3 text-sm text-base-400">No matches</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function board(){
+      return {
+        palette:false, q:'', cards: {{ cards_json|safe }},
+        filtered(){
+          const q=this.q.trim().toLowerCase();
+          const base = q ? this.cards.filter(c => (''+c.id).includes(q) || c.title.toLowerCase().includes(q)) : this.cards;
+          return base.slice(0,25);
+        },
+        open(){ this.palette=true; this.$nextTick(()=>this.$refs.qi.focus()); },
+        _csrf(){ return (document.cookie.split('; ').find(c=>c.startsWith('csrftoken='))||'').split('=')[1]||''; },
+        _ping(){ fetch('/manage/board/ping/',{method:'POST',headers:{'X-CSRFToken':this._csrf()}}).catch(()=>{}); },
+        init(){
+          window.addEventListener('keydown', e=>{
+            if((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){ e.preventDefault(); this.open(); }
+          });
+          this._ping();
+          setInterval(()=>this._ping(), 20000);
+        }
+      }
+    }
+  </script>
+</body>
+</html>

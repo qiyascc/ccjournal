@@ -1,0 +1,84 @@
+{% extends "admin/index.html" %}
+{% load i18n unfold %}
+{% block content %}
+{% component "unfold/components/container.html" %}
+
+  {% if setup_health and setup_health.missing %}
+  <div class="mb-8">
+    {% component "unfold/components/card.html" %}
+      {% component "unfold/components/text.html" %}
+        <span class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined md-18">checklist</span>
+          {% trans "Setup health" %} — {{ setup_health.missing }} {% trans "item(s) need attention" %}
+        </span>
+      {% endcomponent %}
+      <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1.5">
+        {% for it in setup_health.items %}
+        <a href="{{ it.url }}" class="flex items-start gap-2 text-sm py-0.5 group">
+          {% if it.ok %}
+            <span class="material-symbols-outlined md-18 text-green-600 dark:text-green-400">check_circle</span>
+            <span class="text-base-500">{{ it.label }}</span>
+          {% else %}
+            <span class="material-symbols-outlined md-18 text-amber-600 dark:text-amber-400">error</span>
+            <span class="text-base-700 dark:text-base-200 group-hover:text-primary-600">{{ it.label }}
+              {% if it.hint %}<span class="block text-xs text-base-400">{{ it.hint }}</span>{% endif %}</span>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+      {% if failed_jobs %}
+      <div class="mt-3 text-sm">
+        <a href="/admin/tasks/job/?status__exact=4" class="text-amber-600 dark:text-amber-400">
+          ⚠ {{ failed_jobs }} {% trans "failed background job(s) — click to inspect/requeue" %}</a>
+      </div>
+      {% endif %}
+    {% endcomponent %}
+  </div>
+  {% endif %}
+
+  {% if kpi %}
+  <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 mb-8">
+    {% for stat in kpi %}
+      {% component "unfold/components/card.html" %}
+        {% component "unfold/components/text.html" %}
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined md-18">{{ stat.icon }}</span>{{ stat.title }}
+          </span>
+        {% endcomponent %}
+        {% component "unfold/components/title.html" %}{{ stat.metric }}{% endcomponent %}
+      {% endcomponent %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if kanban %}
+  {% component "unfold/components/title.html" with class="mb-4" %}{% trans "Editorial pipeline" %}{% endcomponent %}
+  <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4 mb-8 items-start">
+    {% for colmn in kanban %}
+      {% component "unfold/components/card.html" %}
+        {% component "unfold/components/text.html" %}
+          <span class="flex items-center justify-between w-full">
+            <span class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined md-18">{{ colmn.icon }}</span>{{ colmn.title }}
+            </span>
+            <span class="text-xs rounded-full px-2 py-0.5 border border-base-200 dark:border-base-700">{{ colmn.count }}</span>
+          </span>
+        {% endcomponent %}
+        <div class="mt-3 flex flex-col gap-2">
+          {% for it in colmn.items %}
+            <a href="{{ it.url }}" class="block rounded-md border border-base-200 dark:border-base-700 px-3 py-2 hover:border-primary-500 transition-colors">
+              <div class="text-sm font-medium text-base-700 dark:text-base-200 leading-snug">{{ it.label }}</div>
+              <div class="text-xs text-base-400 mt-0.5">{{ it.meta }}</div>
+            </a>
+          {% empty %}
+            <div class="text-xs text-base-400 italic py-2">{% trans "Empty" %}</div>
+          {% endfor %}
+        </div>
+      {% endcomponent %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+{% endcomponent %}
+{{ block.super }}
+{% endblock %}

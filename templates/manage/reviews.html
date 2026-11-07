@@ -1,0 +1,107 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:1200px">
+  <h1>{% trans "Reviews" %} — {{ stitle }}</h1>
+  <p style="color:var(--body-quiet-color)">
+    {% trans "All review assignments side by side. Confidential editor comments are marked." %}
+    · <a href="{% url 'admin:submissions_submission_change' sub.pk %}">{% trans "Back to submission" %}</a>
+    · <a href="/manage/files/{{ sub.pk }}/">{% trans "Files" %}</a>
+  </p>
+
+  {% for r in rounds %}
+  <h2 style="margin-top:1.25rem">{% trans "Round" %} {{ r.round.round }}
+    <span style="opacity:.6;font-size:.85rem">· {{ r.round.get_status_display }}</span></h2>
+  {% if not r.cards %}<p style="opacity:.6;font-style:italic">{% trans "No reviewers assigned." %}</p>{% endif %}
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:1rem">
+    {% for c in r.cards %}
+    <div style="border:1px solid var(--hairline-color,#ddd);border-radius:10px;padding:.9rem">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <b>{% trans "Reviewer" %} {{ c.n }}</b>
+        <span style="font-size:.75rem;padding:.1rem .5rem;border-radius:999px;border:1px solid var(--hairline-color,#ccc)">
+          {{ c.status }}</span>
+      </div>
+      <div style="font-size:.8rem;opacity:.7;margin:.2rem 0 .5rem">
+        {{ c.reviewer.full_name }} · {{ c.reviewer.email }}<br>
+        {% trans "Assigned" %} {{ c.a.date_assigned|date:"j M" }}
+        {% if c.a.date_due %} · {% trans "due" %} {{ c.a.date_due|date:"j M" }}{% endif %}
+        {% if c.a.date_completed %} · {% trans "done" %} {{ c.a.date_completed|date:"j M" }}{% endif %}
+      </div>
+      {% if c.a.recommendation %}
+      <p style="margin:.3rem 0"><b>{% trans "Recommendation" %}:</b> {{ c.a.get_recommendation_display }}</p>
+      {% endif %}
+      {% if c.a.comments_for_author %}
+      <p style="margin:.5rem 0 .2rem;font-weight:600;font-size:.85rem">{% trans "For the author" %}</p>
+      <p style="margin:0;font-size:.87rem;white-space:pre-wrap">{{ c.a.comments_for_author }}</p>
+      {% endif %}
+      {% if c.a.comments_for_editor %}
+      <p style="margin:.6rem 0 .2rem;font-weight:600;font-size:.85rem;color:#b3542e">
+        {% trans "For the editor (confidential)" %}</p>
+      <p style="margin:0;font-size:.87rem;white-space:pre-wrap">{{ c.a.comments_for_editor }}</p>
+      {% endif %}
+      {% if c.responses %}
+      <p style="margin:.6rem 0 .2rem;font-weight:600;font-size:.85rem">{% trans "Review form" %}</p>
+      <dl style="margin:0;font-size:.85rem">
+        {% for rrow in c.responses %}
+        <dt style="font-weight:600;margin-top:.3rem">{{ rrow.label }}</dt>
+        <dd style="margin:0">{{ rrow.value }}</dd>
+        {% endfor %}
+      </dl>
+      {% endif %}
+      {% if c.attachments %}
+      <p style="margin:.6rem 0 .2rem;font-weight:600;font-size:.85rem">{% trans "Attachments" %}</p>
+      <ul style="margin:0;padding-left:1rem;font-size:.85rem">
+        {% for f in c.attachments %}
+        <li><a href="/manage/files/{{ sub.pk }}/dl/{{ f.pk }}/">{{ f.original_filename }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% empty %}
+  <p style="opacity:.6;font-style:italic">{% trans "No review rounds yet." %}</p>
+  {% endfor %}
+
+  {% if author_suggested or suggestions %}
+  <h2 style="margin-top:1.6rem">{% trans "Suggested reviewers" %}</h2>
+  {% if author_suggested %}
+  <p style="font-size:.85rem;opacity:.75;margin:.2rem 0 .4rem">{% trans "From the author / declining reviewers:" %}</p>
+  <ul style="margin:0 0 .8rem;padding-left:1rem;font-size:.9rem">
+    {% for r in author_suggested %}
+    <li><b>{{ r.name }}</b>{% if r.email %} &lt;{{ r.email }}&gt;{% endif %}
+      {% if r.reason %} — {{ r.reason }}{% endif %}
+      {% if r.source %} <span style="opacity:.55">({{ r.source }})</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if suggestions %}
+  <p style="font-size:.85rem;opacity:.75;margin:.2rem 0 .4rem">
+    {% trans "From the reviewer pool (keyword match + history − current load; deterministic, no AI):" %}</p>
+  <table style="border-collapse:collapse;width:100%;font-size:.9rem">
+    <tr style="text-align:left;border-bottom:1px solid var(--hairline-color,#ccc)">
+      <th style="padding:.3rem .5rem">{% trans "Reviewer" %}</th>
+      <th style="padding:.3rem .5rem">{% trans "Score" %}</th>
+      <th style="padding:.3rem .5rem">{% trans "Done" %}</th>
+      <th style="padding:.3rem .5rem">{% trans "Open" %}</th>
+      <th style="padding:.3rem .5rem">COI</th>
+    </tr>
+    {% for sg in suggestions %}
+    <tr style="border-bottom:1px solid var(--hairline-color,#eee)">
+      <td style="padding:.3rem .5rem">{{ sg.user.full_name }}
+        <span style="opacity:.6">· {{ sg.profile.affiliation|default:"—" }}</span></td>
+      <td style="padding:.3rem .5rem"><b>{{ sg.score }}</b></td>
+      <td style="padding:.3rem .5rem">{{ sg.completed }}</td>
+      <td style="padding:.3rem .5rem">{{ sg.pending }}</td>
+      <td style="padding:.3rem .5rem">
+        {% for c in sg.coi %}<span style="color:#9a6a00">⚠ {{ c }}</span>{% empty %}—{% endfor %}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p style="font-size:.8rem;opacity:.65;margin-top:.4rem">
+    {% trans "Assign via the round's admin page (autocomplete by name/email)." %}</p>
+  {% endif %}
+  {% endif %}
+  {% if plugin_html %}{{ plugin_html|safe }}{% endif %}
+</div>
+{% endblock %}

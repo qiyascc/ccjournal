@@ -1,0 +1,31 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+    {% include "unfold/helpers/site_branding.html" %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block footer %}{{ block.super }}
+{% if request.user.is_staff and webpush_public_key %}
+<script>
+// Web Push aboneliği (yalnız VAPID public key tanımlıysa; izin kullanıcıya sorulur)
+(async () => {
+  try {
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return;
+    const reg = await navigator.serviceWorker.register("/static/push/sw.js");
+    const perm = await Notification.requestPermission();
+    if (perm !== "granted") return;
+    const key = "{{ webpush_public_key }}";
+    const conv = (s)=>{const p="=".repeat((4-s.length%4)%4);const b=(s+p).replace(/-/g,"+").replace(/_/g,"/");const r=atob(b);return Uint8Array.from([...r].map(c=>c.charCodeAt(0)));};
+    let sub = await reg.pushManager.getSubscription();
+    if (!sub) sub = await reg.pushManager.subscribe({userVisibleOnly:true, applicationServerKey: conv(key)});
+    await fetch("/push/subscribe/", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(sub)});
+  } catch (e) { /* sessiz */ }
+})();
+</script>
+{% endif %}
+{% endblock %}
