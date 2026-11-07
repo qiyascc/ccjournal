@@ -1,0 +1,43 @@
+{% extends "web/base.html" %}
+{% load i18n cc %}
+{% block title %}{% trans "Search" %} — {% with t=journal|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block content %}
+<h1 class="display font-extrabold text-3xl md:text-4xl mb-6">{% trans "Search" %}</h1>
+<form method="get" class="flex gap-2 mb-10" role="search">
+  <input class="field" type="search" name="q" value="{{ q }}" placeholder="{% trans 'Search titles, authors, keywords…' %}" autofocus aria-label="{% trans 'Search' %}">
+  <button class="btn" type="submit">{% trans "Search" %}</button>
+</form>
+{% if results is not None %}
+  {% if facet_years or facet_sections %}
+  <form method="get" class="flex flex-wrap items-center gap-2 mb-6 text-sm">
+    <input type="hidden" name="q" value="{{ q }}">
+    {% if facet_years %}
+    <select class="field" name="year" style="width:auto" onchange="this.form.submit()">
+      <option value="">{% trans "All years" %}</option>
+      {% for y in facet_years %}<option value="{{ y }}" {% if f_year == y|stringformat:"s" %}selected{% endif %}>{{ y }}</option>{% endfor %}
+    </select>
+    {% endif %}
+    {% if facet_sections %}
+    <select class="field" name="section" style="width:auto" onchange="this.form.submit()">
+      <option value="">{% trans "All sections" %}</option>
+      {% for sct in facet_sections %}<option value="{{ sct.id }}" {% if f_section == sct.id|stringformat:"s" %}selected{% endif %}>{{ sct.title }}</option>{% endfor %}
+    </select>
+    {% endif %}
+  </form>
+  {% endif %}
+  <p class="text-sm mb-6" style="color:var(--ink-soft)">{{ results|length }} {% blocktrans count n=results|length %}result{% plural %}results{% endblocktrans %} · “{{ q }}”</p>
+  <ul class="divide-y rule">
+    {% for p in results %}{% with t=p|tr:cloc %}
+      <li class="py-4">
+        <a class="display font-semibold text-lg hover:text-[color:var(--accent)]" href="{% url 'web:article' p.submission_id %}">{{ t.title }}</a>
+        <div class="text-sm mt-1" style="color:var(--ink-soft)">
+          {% for a in p.authors.all|slice:":4" %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+          {% if p.date_published %} · {{ p.date_published|date:"M Y" }}{% endif %}
+        </div>
+      </li>
+    {% endwith %}{% empty %}
+      <li class="py-4" style="color:var(--ink-soft)">{% trans "Nothing found." %}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}

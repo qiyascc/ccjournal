@@ -1,0 +1,172 @@
+{% load static %}
+{# Broadsheet design system — overrides the base partial for the whole site #}
+<script>
+  /* No-flash theme init — runs before paint */
+  (function(){
+    try{
+      var s=localStorage.getItem('cc-theme');
+      var d=s ? s==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(d) document.documentElement.classList.add('dark');
+    }catch(e){}
+  })();
+  window.ccToggleTheme=function(){
+    var el=document.documentElement, dark=el.classList.toggle('dark');
+    try{localStorage.setItem('cc-theme', dark?'dark':'light');}catch(e){}
+    document.querySelectorAll('[data-theme-toggle]').forEach(function(b){
+      b.setAttribute('aria-pressed', dark?'true':'false');
+    });
+  };
+</script>
+<link rel="stylesheet" href="{% static 'css/tailwind.build.css' %}">
+<script defer src="{% static 'vendor/alpine.min.js' %}"></script>
+<script src="{% static 'vendor/htmx.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+<style>
+  *,*::before,*::after{box-sizing:border-box;}
+  html{background:var(--paper);color:var(--ink);
+       transition:background-color .25s ease,color .25s ease;
+       -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  body{font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:16.5px;
+       line-height:1.6;letter-spacing:-0.003em;}
+  .display{font-family:"Bricolage Grotesque","Inter",sans-serif;
+           font-optical-sizing:auto;letter-spacing:-0.02em;line-height:1.05;}
+  .paper-grain{background-image:none;}
+
+  /* Rules / surfaces */
+  .rule{border-color:var(--line);}
+  .surface{background:var(--paper-2);}
+  .hairline{border:1px solid var(--line);}
+
+  /* Eyebrow / label */
+  .label{font-family:"Inter",sans-serif;font-weight:600;font-size:.72rem;
+         color:var(--ink-soft);text-transform:uppercase;letter-spacing:.12em;}
+
+  /* Links */
+  .link{color:var(--accent);text-decoration:underline;
+        text-decoration-thickness:1.5px;text-underline-offset:2.5px;
+        transition:color .15s ease;}
+  .link:hover{color:var(--accent-soft);}
+
+  /* Fields */
+  .field{background:var(--paper);color:var(--ink);border:1px solid var(--line);
+         border-radius:.55rem;padding:.62rem .85rem;width:100%;font:inherit;
+         transition:border-color .15s ease,box-shadow .15s ease;}
+  .field::placeholder{color:var(--ink-faint);}
+  .field:focus{outline:none;border-color:var(--accent);
+               box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent);}
+
+  /* Buttons */
+  .btn{background:var(--accent);color:var(--accent-ink);padding:.62rem 1.25rem;
+       border-radius:.55rem;font-weight:600;letter-spacing:-0.01em;
+       display:inline-flex;align-items:center;gap:.4rem;border:1px solid transparent;
+       transition:filter .15s ease,transform .05s ease;cursor:pointer;}
+  .btn,.btn *{color:var(--accent-ink);}
+  .btn svg{stroke:var(--accent-ink);}
+  .btn:hover{filter:brightness(1.08);}
+  .btn:active{transform:translateY(1px);}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);
+             padding:.58rem 1.15rem;border-radius:.55rem;font-weight:600;
+             display:inline-flex;align-items:center;gap:.4rem;
+             transition:border-color .15s ease,background-color .15s ease;cursor:pointer;}
+  .btn-ghost:hover{border-color:var(--line-strong);background:var(--paper-2);}
+
+  /* Pills / tags */
+  .pill{display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;
+        font-weight:500;padding:.18rem .6rem;border-radius:999px;
+        border:1px solid var(--line);color:var(--ink-soft);}
+
+  /* Prose */
+  .prose-cc{max-width:68ch;}
+  .prose-cc p{margin:1rem 0;}
+  .prose-cc h2,.prose-cc h3{font-family:"Bricolage Grotesque",sans-serif;
+        letter-spacing:-0.02em;margin:1.8rem 0 .6rem;font-weight:600;}
+  .prose-cc a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;}
+  .prose-cc ul,.prose-cc ol{margin:1rem 0;padding-left:1.3rem;}
+  .prose-cc li{margin:.3rem 0;}
+  .prose-cc blockquote{border-left:3px solid var(--accent);padding-left:1rem;
+        color:var(--ink-soft);margin:1.2rem 0;}
+
+  /* Accessibility: visible focus for keyboard users */
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:.2rem;}
+  .skip-link{position:absolute;left:.75rem;top:-3rem;z-index:60;background:var(--accent);
+             color:var(--accent-ink);padding:.55rem 1rem;border-radius:.5rem;font-weight:600;
+             transition:top .15s ease;}
+  .skip-link:focus{top:.75rem;}
+
+  /* Header */
+  .site-head{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 88%,transparent);
+             backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);}
+  .navlink{color:var(--ink-soft);font-weight:500;font-size:.92rem;transition:color .15s ease;}
+  .navlink:hover{color:var(--ink);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms!important;transition-duration:.001ms!important;}
+    html{scroll-behavior:auto;}
+  }
+  [x-cloak]{display:none!important;}
+
+  /* DOCX'ten gelen içerik: tablolar ve görseller (parser çıktısı) */
+  .article-body .cc-table-wrap{overflow-x:auto;margin:1.2rem 0;}
+  .article-body table.cc-table{border-collapse:collapse;width:100%;font-size:.95em;}
+  .article-body table.cc-table th,.article-body table.cc-table td{
+    border:1px solid var(--line,#ddd);padding:.5rem .7rem;text-align:left;vertical-align:top;}
+  .article-body table.cc-table th{background:var(--paper-2,#f4f4f4);font-weight:600;}
+  .article-body table.cc-table tr:nth-child(even) td{background:color-mix(in srgb,var(--paper-2,#f0f0f0) 45%,transparent);}
+  .article-body img,.article-body .cc-figure-img{max-width:100%;height:auto;border-radius:6px;margin:1rem 0;display:block;}
+  .article-body figure{margin:1.2rem 0;}
+  .article-body figcaption{font-size:.85em;color:var(--ink-soft,#666);margin-top:.4rem;text-align:center;}
+</style>
+
+<script>
+/* HTMX boost guard — boost'u yalnız dahili HTML sayfalarına uygula.
+   PDF, XML (OAI/sitemap/feed), galley görüntüleme, dışa aktarma, indirme, yeni
+   sekme ve harici bağlantılar boost DIŞI bırakılır; tarayıcı bunları normal açar.
+   Aksi halde HTMX bu içerikleri <body>'ye gömmeye çalışıp sayfayı bozardı. */
+(function(){
+  var SKIP_RE = /\.(pdf|xml|zip|csv|json|docx?|xlsx?|pptx?|png|jpe?g|gif|svg)(\?|#|$)/i;
+  var SKIP_PATH = /(\/galley\/|\/view\/|\/feed\b|\/oai\b|\/export\b|\/sitemap|robots\.txt|\/media\/|\/static\/)/i;
+
+  function shouldSkip(a){
+    if(!a) return false;
+    if(a.hasAttribute('download')) return true;
+    if(a.getAttribute('target') === '_blank') return true;
+    if(a.getAttribute('hx-boost') === 'false') return true;
+    var href = a.getAttribute('href') || '';
+    if(!href || href.charAt(0) === '#') return false;
+    if(href.indexOf('mailto:')===0 || href.indexOf('tel:')===0) return true;
+    if(SKIP_RE.test(href) || SKIP_PATH.test(href)) return true;
+    try { var u = new URL(a.href, location.href);
+          if(u.host && u.host !== location.host) return true; } catch(e){}
+    return false;
+  }
+
+  /* 1) İşaretle: eşleşen linklere hx-boost="false" koy (sayfa yüklemede + her swap'te). */
+  function markLinks(root){
+    (root||document).querySelectorAll('a[href]:not([data-boost-checked])').forEach(function(a){
+      a.setAttribute('data-boost-checked','1');
+      if(shouldSkip(a)) a.setAttribute('hx-boost','false');
+    });
+  }
+
+  /* 2) Emniyet kemeri: yine de bir boost isteği tetiklenirse ve hedef özel ise iptal et
+        ve tarayıcının normal gezinmesine izin ver. */
+  document.body.addEventListener('htmx:beforeRequest', function(evt){
+    var el = evt.detail && evt.detail.elt;
+    if(el && el.tagName === 'A' && shouldSkip(el)){
+      evt.preventDefault();
+      window.location.href = el.href;
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function(){ markLinks(document); });
+  document.body.addEventListener('htmx:afterSwap', function(e){ markLinks(e.target || document); });
+})();
+</script>
+<script>
+/* HTMX boost: <body> swap sonrası sayfa başına dön. Alpine 3 yeni DOM'u
+   MutationObserver ile kendisi başlatır — elle initTree çağırmak çifte init
+   yapar (her @click iki kez bağlanır, burger menü kilitlenir). */
+document.addEventListener('htmx:afterSwap', function(){
+  window.scrollTo(0, 0);
+});
+</script>

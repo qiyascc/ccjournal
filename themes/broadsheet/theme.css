@@ -1,0 +1,32 @@
+/* Broadsheet — palette only. Base classes/fonts live in the theme's
+   partials/theme.html override. Black & white + single cobalt accent. */
+:root{
+  --paper:#ffffff;
+  --paper-2:#f6f6f5;
+  --paper-3:#efefed;
+  --ink:#0a0a0a;
+  --ink-soft:#5c5c5c;
+  --ink-faint:#8a8a8a;
+  --line:#e6e6e3;
+  --line-strong:#0a0a0a;
+  --accent:#1f3df2;
+  --accent-soft:#4661ff;
+  --accent-ink:#ffffff;
+  --ok:#1a7f48;
+  --warn:#b4530a;
+}
+.dark{
+  --paper:#0b0b0c;
+  --paper-2:#161617;
+  --paper-3:#1f1f21;
+  --ink:#f5f5f4;
+  --ink-soft:#a1a1aa;
+  --ink-faint:#71717a;
+  --line:#262628;
+  --line-strong:#f5f5f4;
+  --accent:#6d83ff;
+  --accent-soft:#8a9bff;
+  --accent-ink:#0b0b0c;
+  --ok:#34d27b;
+  --warn:#f59e42;
+}
