@@ -1,0 +1,12 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Subscription required" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<section class="max-w-2xl mx-auto px-6 py-16 text-center">
+  <h1 class="display text-3xl font-semibold mb-3">{% trans "Subscription required" %}</h1>
+  <p style="color:var(--ink-soft)">{% trans "This article is part of a subscription issue. Please sign in with a subscribing account or contact the journal." %}</p>
+  {% if not user.is_authenticated %}
+  <p class="mt-6"><a class="btn" href="/accounts/login/">{% trans "Sign in" %}</a></p>
+  {% endif %}
+</section>
+{% endblock %}

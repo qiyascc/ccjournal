@@ -1,0 +1,24 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Newsletter" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-md">
+  <div class="label mb-2">{% trans "Stay informed" %}</div>
+  <h1 class="display text-3xl font-semibold mb-3">{% trans "New-issue alerts" %}</h1>
+  {% if unsubscribed %}
+  <p>{% blocktrans %}The address {{ unsubscribed }} has been unsubscribed. Sorry to see you go.{% endblocktrans %}</p>
+  {% elif sent %}
+  <p>{% blocktrans %}Almost done — we sent a confirmation link to {{ sent }}. Click it to activate your subscription.{% endblocktrans %}</p>
+  {% else %}
+  <p class="text-sm mb-6" style="color:var(--ink-soft)">
+    {% trans "No account needed. Leave your email and we'll write only when a new issue is published — one click to unsubscribe, ever." %}
+  </p>
+  {% if messages %}{% for m in messages %}<p class="text-sm mb-3" style="color:var(--accent)">{{ m }}</p>{% endfor %}{% endif %}
+  <form method="post" class="flex gap-2">
+    {% csrf_token %}
+    <input class="field" type="email" name="email" placeholder="you@university.edu" required>
+    <button class="btn shrink-0" type="submit">{% trans "Subscribe" %}</button>
+  </form>
+  {% endif %}
+</div>
+{% endblock %}

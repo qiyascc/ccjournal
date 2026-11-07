@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "My submissions" %} — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+<div class="flex items-baseline justify-between">
+  <h1 class="display text-3xl font-semibold mb-2">{% trans "My submissions" %}</h1>
+  <a href="{% url 'profile' %}" class="text-sm" style="color:var(--accent)">{% trans "My profile" %}</a>
+</div>
+<p class="text-sm mb-8" style="opacity:.7">{{ request.user.full_name }} · {{ request.user.email }}</p>
+
+{% if is_editorial %}
+<div class="mb-8 px-4 py-3 rounded border rule flex items-center gap-4" style="background:var(--paper-2)">
+  <span class="text-sm">{% trans "Editorial tools:" %}</span>
+  <a class="text-sm" style="color:var(--accent)" href="/admin/">{% trans "Admin panel" %}</a>
+  <a class="text-sm" style="color:var(--accent)" href="/manage/board/">{% trans "Editorial board" %}</a>
+</div>
+{% endif %}
+
+<section class="mb-10">
+  {% if items %}
+  <div class="space-y-3">
+    {% for it in items %}
+    <div class="px-4 py-3 rounded border rule flex items-center justify-between gap-4" style="background:var(--paper-2)">
+      <div class="min-w-0">
+        <div class="font-medium truncate">{{ it.title }}</div>
+        <div class="text-xs mt-0.5" style="opacity:.65">#{{ it.sub.pk }} · {{ it.stage }} · {{ it.status }}{% if it.extra %} · <b>{{ it.extra }}</b>{% endif %}</div>
+      </div>
+      <a class="btn shrink-0" href="{{ it.url }}">
+        {% if it.action == "continue" %}{% trans "Continue" %}
+        {% elif it.action == "view" %}{% trans "View article" %}
+        {% else %}{% trans "Open workspace" %}{% endif %}</a>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="opacity:.7">{% trans "You have no submissions yet." %}</p>
+  {% endif %}
+  <p class="mt-4"><a class="btn" href="{{ submit_url }}">{% trans "New submission" %}</a></p>
+</section>
+
+{% if pending_reviews or completed_review_count %}
+<section class="mb-10">
+  <h2 class="label mb-3">{% trans "Review invitations" %}</h2>
+  <div class="space-y-3">
+    {% for a in pending_reviews %}
+    <div class="px-4 py-3 rounded border rule flex items-center justify-between gap-4" style="background:var(--paper-2)">
+      <div>
+        <div class="font-medium">{% trans "Submission" %} #{{ a.review_round.submission_id }}</div>
+        <div class="text-xs mt-0.5" style="opacity:.65">
+          {% if a.date_due %}{% trans "Due" %}: {{ a.date_due }}{% endif %}
+          {% if a.date_confirmed %} · {% trans "accepted" %}{% else %} · {% trans "awaiting response" %}{% endif %}
+        </div>
+      </div>
+      <a class="btn shrink-0" href="/review/{{ a.access_token }}/">{% trans "Open review" %}</a>
+    </div>
+    {% endfor %}
+  </div>
+  {% if completed_review_count %}
+  <p class="text-xs mt-2" style="opacity:.6">{% blocktrans count n=completed_review_count %}{{ n }} completed review{% plural %}{{ n }} completed reviews{% endblocktrans %}
+    {% for a in completed_reviews %} · <a style="color:var(--accent)"
+       href="{% url 'review_public:certificate' a.access_token %}">🎓 #{{ a.review_round.submission_id }}</a>{% endfor %}</p>
+  {% endif %}
+</section>
+{% endif %}
+
+<section>
+  <div class="flex items-baseline justify-between mb-3">
+    <h2 class="label">{% trans "Notifications" %}{% if unread_count %} <span style="color:var(--accent)">({{ unread_count }})</span>{% endif %}</h2>
+    {% if unread_count %}
+    <form method="post">{% csrf_token %}<input type="hidden" name="action" value="mark_read">
+      <button class="text-sm" style="color:var(--accent);background:none;border:0;cursor:pointer" type="submit">{% trans "Mark all read" %}</button></form>
+    {% endif %}
+  </div>
+  {% if notifications %}
+  <ul class="space-y-2">
+    {% for n in notifications %}
+    <li class="text-sm {% if not n.is_read %}font-medium{% endif %}">
+      {% if n.url %}<a href="{{ n.url }}" class="hover:text-[color:var(--accent)]">{{ n.title }}</a>
+      {% else %}{{ n.title }}{% endif %}
+      {% if n.body %}<span style="opacity:.6"> — {{ n.body|truncatechars:80 }}</span>{% endif %}
+      <span class="text-xs" style="opacity:.5"> · {{ n.created_at|date:"j M Y H:i" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="text-sm" style="opacity:.7">{% trans "No notifications." %}</p>
+  {% endif %}
+</section>
+{% endblock %}

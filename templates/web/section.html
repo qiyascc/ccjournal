@@ -1,0 +1,19 @@
+{% extends "web/base.html" %}
+{% load cc %}
+{% block title %}{{ section }} — {% with t=journal|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block content %}
+<div class="label mb-2">Section</div>
+<h2 class="display text-3xl font-semibold mb-8">{{ section }}</h2>
+<ul class="space-y-4">
+  {% for p in pubs %}{% with t=p|tr:cloc %}
+    <li class="border-b rule pb-4">
+      <a class="display text-lg link" href="{% url 'web:article' p.submission_id %}">{{ t.title }}</a>
+      <div class="text-sm mt-1" style="color:var(--ink-soft)">
+        {% for a in p.authors.all %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %} · {{ p.date_published|date:"M Y" }}
+      </div>
+    </li>
+  {% endwith %}{% empty %}
+    <li class="italic" style="color:var(--ink-soft)">No articles yet.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

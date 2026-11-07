@@ -1,0 +1,26 @@
+{% extends "web/base.html" %}
+{% load i18n cc %}
+{% block title %}{{ author|author_name }} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="label mb-2">{% trans "Author" %}</div>
+<h1 class="display text-3xl font-semibold mb-1">{{ author|author_name }}</h1>
+<p class="text-sm mb-8" style="color:var(--ink-soft)">
+  {% if author.affiliation %}{{ author.affiliation }}{% endif %}
+  {% if author.orcid %} · <a class="link" href="https://orcid.org/{{ author.orcid }}"
+     rel="noopener" target="_blank">ORCID {{ author.orcid }}</a>{% endif %}
+</p>
+<ul class="space-y-5">
+  {% for p in pubs %}{% with t=p|tr:cloc %}
+  <li>
+    <a class="display text-lg link" href="{% url 'web:article' p.submission_id %}">{{ t.title }}</a>
+    <div class="text-sm mt-1" style="color:var(--ink-soft)">
+      {% if p.date_published %}{{ p.date_published|date:"Y" }}{% endif %}
+      {% if p.section %} · {{ p.section }}{% endif %}
+      {% if p.cited_by_count %} · {% trans "cited by" %} {{ p.cited_by_count }}{% endif %}
+    </div>
+  </li>
+  {% endwith %}{% empty %}
+  <li class="italic" style="color:var(--ink-soft)">{% trans "No published articles." %}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

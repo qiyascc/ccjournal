@@ -1,0 +1,23 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Announcements" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<section class="max-w-3xl mx-auto px-6 py-12">
+  <h1 class="display text-3xl md:text-4xl font-semibold mb-8">{% trans "Announcements" %}</h1>
+  {% if announcements %}
+  <ul class="space-y-8">
+    {% for a in announcements %}
+    <li class="border-b pb-6" style="border-color:var(--line)">
+      <div class="text-xs mb-1" style="color:var(--ink-soft)">{{ a.date|date:"d M Y" }}</div>
+      <h2 class="text-xl font-semibold mb-1">
+        <a href="{% url 'web:announcement' a.obj.pk %}" class="hover:underline">{{ a.title }}</a>
+      </h2>
+      {% if a.short %}<p style="color:var(--ink-soft)">{{ a.short }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color:var(--ink-soft)">{% trans "No announcements yet." %}</p>
+  {% endif %}
+</section>
+{% endblock %}

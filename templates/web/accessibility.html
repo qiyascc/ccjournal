@@ -1,0 +1,24 @@
+{% extends "web/base.html" %}
+{% load i18n cc %}
+{% block title %}{% trans "Accessibility statement" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-2xl prose-cc">
+  <div class="label mb-2">{% trans "Accessibility" %}</div>
+  <h1 class="display text-3xl font-semibold mb-6">{% trans "Accessibility statement" %}</h1>
+  {% with t=journal|tr:cloc %}
+  <p>{% blocktrans with name=t.title %}{{ name }} is committed to making its website usable by everyone, in line with the European Accessibility Act and WCAG 2.1 AA.{% endblocktrans %}</p>
+  {% endwith %}
+  <h2 class="display text-xl font-semibold mt-6 mb-2">{% trans "What we provide" %}</h2>
+  <ul class="list-disc pl-6 space-y-1 text-sm">
+    <li>{% trans "Keyboard navigation with a “skip to content” link and visible focus states." %}</li>
+    <li>{% trans "Semantic headings, landmarks and labelled forms on every page." %}</li>
+    <li>{% trans "A “listen to this article” option using your browser's built-in speech." %}</li>
+    <li>{% trans "Full dark-mode support and colour choices tested for contrast." %}</li>
+    <li>{% trans "Article metadata in machine-readable formats (JATS, Dublin Core, JSON-LD)." %}</li>
+  </ul>
+  <h2 class="display text-xl font-semibold mt-6 mb-2">{% trans "Known limitations" %}</h2>
+  <p class="text-sm">{% trans "Some older PDF files may not be fully tagged for screen readers. The HTML full text, where available, is the accessible version of record." %}</p>
+  <h2 class="display text-xl font-semibold mt-6 mb-2">{% trans "Feedback" %}</h2>
+  <p class="text-sm">{% blocktrans with email=journal.contact_email %}If you encounter a barrier, email us at {{ email }} — we aim to respond within 5 working days.{% endblocktrans %}</p>
+</div>
+{% endblock %}

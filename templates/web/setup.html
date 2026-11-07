@@ -1,0 +1,27 @@
+{% load i18n %}
+{% load static %}
+<!doctype html><html lang="en" class="h-full"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% trans "Set up your journal" %}</title>{% include "partials/theme.html" %}
+<link rel="stylesheet" href="{% url 'theme_css' %}"></head>
+<body class="min-h-full paper-grain flex items-center justify-center py-12">
+<div class="w-full max-w-xl px-6">
+  <h1 class="display text-3xl font-semibold mb-1">{% trans "Set up your journal" %}</h1>
+  <p class="mb-8" style="color:var(--ink-soft)">Enter the basics — you can change everything later in the admin.</p>
+  <form method="post" enctype="multipart/form-data" class="space-y-5">
+    {% csrf_token %}
+    {% for field in form %}
+      <div>
+        <div class="label mb-1">{{ field.label }}</div>
+        {{ field }}
+        {% if field.help_text %}<p class="text-sm" style="color:var(--ink-soft)">{{ field.help_text }}</p>{% endif %}
+        {% if field.errors %}<p class="text-sm" style="color:var(--accent)">{{ field.errors.0 }}</p>{% endif %}
+      </div>
+    {% endfor %}
+    <button class="btn" type="submit">{% trans "Create journal" %} →</button>
+  </form>
+</div>
+<script>
+  document.querySelectorAll("input[type=text],input[type=email],input[type=file],select").forEach(e=>e.classList.add("field"));
+</script>
+</body></html>

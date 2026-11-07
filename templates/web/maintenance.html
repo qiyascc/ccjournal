@@ -1,0 +1,11 @@
+{% load static i18n %}
+<!doctype html><html lang="en" class="h-full"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% trans "Maintenance" %}</title>{% include "partials/theme.html" %}
+<link rel="stylesheet" href="{% url 'theme_css' %}"></head>
+<body class="min-h-full paper-grain flex items-center justify-center">
+<div class="text-center px-6">
+  <h1 class="display text-3xl font-semibold mb-2">{{ site_title|default:"Journal" }}</h1>
+  <p style="color:var(--ink-soft)">{{ message }}</p>
+</div>
+</body></html>

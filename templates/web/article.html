@@ -1,0 +1,119 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% load cc %}
+{% block title %}{% with t=pub|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block head %}
+{% with t=pub|tr:cloc %}
+{% include "partials/citation_meta.html" %}
+<meta property="og:title" content="{{ t.title }}">
+<meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% url 'web:article_card' submission.pk %}">
+{% for ptr in pub.translations.all %}<link rel="alternate" hreflang="{{ ptr.locale }}" href="{{ request.scheme }}://{{ request.get_host }}{% url 'web:article' submission.pk %}?lang={{ ptr.locale }}">{% endfor %}
+{% endwith %}
+{% endblock %}
+{% block content %}
+{% include "partials/retraction.html" %}
+{% include "partials/listen.html" %}
+{% with t=pub|tr:cloc %}
+<article>
+  {% if pub.section %}<div class="label mb-2"><a class="link" href="{% url 'web:section' pub.section.pk %}">{{ pub.section }}</a></div>{% endif %}
+  <h1 class="display text-3xl md:text-4xl font-semibold leading-tight mb-2">{{ t.title }}</h1>
+  {% if t.subtitle %}<p class="display text-xl mb-4" style="color:var(--ink-soft)">{{ t.subtitle }}</p>{% endif %}
+
+  <div class="mb-6">
+    {% for a in authors %}
+      <span class="inline-block mr-3">
+        <a class="link" href="{% url 'web:author' a.pk %}">{{ a|author_name }}</a>{% if a.orcid %} <a class="link text-sm" href="https://orcid.org/{{ a.orcid }}" title="ORCID">iD</a>{% endif %}
+        {% if a.affiliation %}<span class="text-sm" style="color:var(--ink-soft)"> — {{ a.affiliation }}</span>{% endif %}
+      </span>
+    {% endfor %}
+  </div>
+
+  <div class="flex flex-wrap items-center gap-3 mb-8 text-sm" style="color:var(--ink-soft)">
+    {% if pub.issue %}<a class="link" href="{% url 'web:issue' pub.issue.pk %}">{{ pub.issue }}</a>{% endif %}
+    {% if pub.date_published %}<span>· {{ pub.date_published|date:"j M Y" }}</span>{% endif %}
+    {% if pub.doi_id %}<span>· DOI: <a class="link" href="{{ pub.doi.url }}">{{ pub.doi.doi }}</a></span>{% endif %}
+    {% if versions|length > 1 %}
+      <span>· Version {{ pub.version_label }}</span>
+    {% endif %}
+  </div>
+
+  {% if galleys %}
+  <div class="flex flex-wrap gap-2 mb-3">
+    {% for g in galleys %}
+      <a class="btn" href="{% url 'web:galley' submission.pk g.pk %}">{{ g.label }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if plugin_html %}<div class="mb-8">{{ plugin_html|safe }}</div>{% endif %}
+
+  {% if stats %}
+  <div class="text-xs mb-8" style="color:var(--ink-soft)">
+    {{ stats.abstract_views }} abstract view{{ stats.abstract_views|pluralize }} ·
+    {{ stats.galley_views }} download{{ stats.galley_views|pluralize }}
+  </div>
+  {% endif %}
+
+  {% if t.abstract %}
+  <section class="mb-8">
+    <h2 class="label mb-2">{% trans 'Abstract' %}</h2>
+    <div class="prose-cc">{{ t.abstract|linebreaks }}</div>
+  </section>
+  {% endif %}
+
+  {% if pub.keywords.all %}
+  <section class="mb-8">
+    <h2 class="label mb-2">{% trans 'Keywords' %}</h2>
+    <div class="flex flex-wrap gap-2">
+      {% for k in pub.keywords.all %}
+        {% if k.locale == cloc %}<span class="text-sm px-3 py-1 border rule rounded-full" style="background:var(--paper-2)"><a class="link" href="{% url 'web:keyword' k.term %}">{{ k.term }}</a></span>{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="mb-8 p-5 border rule rounded" style="background:var(--paper-2)">
+    {% include "partials/article_extras.html" %}
+    <h2 class="label mb-2">{% trans 'How to cite' %}</h2>
+    <p class="text-sm">{% cite_apa pub cloc %}</p>
+    <p class="text-xs mt-2"><a style="color:var(--accent)" href="{% url 'web:cite_bibtex' submission.pk %}">BibTeX</a> · <a style="color:var(--accent)" href="{% url 'web:cite_ris' submission.pk %}">RIS (EndNote/Zotero)</a></p>
+    {% if pub.cited_by_count %}<p class="text-xs mt-1" style="opacity:.7">Cited by {{ pub.cited_by_count }} <span style="opacity:.6">(OpenCitations)</span></p>{% endif %}
+    {% include "partials/related.html" %}
+  </section>
+
+  {% if pub.funders.all %}
+  <section class="mb-8">
+    <h2 class="label mb-2">{% trans 'Funding' %}</h2>
+    <ul class="text-sm" style="color:var(--ink-soft)">
+      {% for f in pub.funders.all %}<li>{{ f.funder_name }}{% for aw in f.award_numbers %} · {{ aw }}{% endfor %}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if versions|length > 1 %}
+  <section class="mb-8">
+    <h2 class="label mb-2">{% trans 'Versions' %}</h2>
+    <ul class="text-sm space-y-1">
+      {% for v in versions %}
+        <li><a class="link" href="?version={{ v.pk }}">{{ v.version_label }}</a>{% if v.pk == pub.pk %} · current view{% endif %} <span style="color:var(--ink-soft)">{{ v.date_published|date:"M Y" }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if pub.license_url %}
+  <div class="text-sm" style="color:var(--ink-soft)">
+    License: <a class="link" href="{{ pub.license_url }}">{{ pub.license_url }}</a>
+    {% if pub.copyright_holder %} · © {{ pub.copyright_year }} {{ pub.copyright_holder }}{% endif %}
+  </div>
+  {% endif %}
+
+  <div class="mt-6 text-xs" style="color:var(--ink-soft)">
+    Metadata: <a class="link" href="/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier={{ oai_id|urlencode }}">Dublin Core</a> ·
+    <a class="link" href="/oai?verb=GetRecord&metadataPrefix=datacite&identifier={{ oai_id|urlencode }}">DataCite</a> ·
+    <a class="link" href="{% url 'web:article_jats' submission.pk %}">JATS XML</a> ·
+    <a class="link" href="/oai?verb=GetRecord&metadataPrefix=jats&identifier={{ oai_id|urlencode }}">JATS</a>
+  </div>
+</article>
+{% endwith %}
+{% endblock %}

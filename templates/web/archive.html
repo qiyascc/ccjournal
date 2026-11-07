@@ -1,0 +1,18 @@
+{% extends "web/base.html" %}
+{% load cc %}
+{% load i18n %}
+{% block title %}Archive — {% with t=journal|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block content %}
+<p class="mb-6 text-sm"><a class="link" href="{% url 'web:most_cited' %}">🏆 {% trans "Most cited articles" %}</a></p>
+<h2 class="display text-3xl font-semibold mb-8">Issue archive</h2>
+<ul class="space-y-3">
+  {% for iss in issues %}
+    <li class="flex items-baseline justify-between border-b rule pb-3">
+      <a class="link display text-lg" href="{% url 'web:issue' iss.pk %}">{{ iss }}</a>
+      <span class="text-sm" style="color:var(--ink-soft)">{{ iss.date_published|date:"M Y" }}</span>
+    </li>
+  {% empty %}
+    <li class="italic" style="color:var(--ink-soft)">No published issues.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

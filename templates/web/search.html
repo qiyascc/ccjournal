@@ -1,0 +1,42 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% load cc %}
+{% block title %}Search — {% with t=journal|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block content %}
+<h2 class="display text-3xl font-semibold mb-6">{% trans 'Search' %}</h2>
+<form method="get" class="flex gap-3 mb-8">
+  <input class="field" type="search" name="q" value="{{ q }}" placeholder="Search article titles…" autofocus>
+  <button class="btn" type="submit">{% trans 'Search' %}</button>
+</form>
+{% if results is not None %}
+  {% if facet_years or facet_sections %}
+  <form method="get" class="flex flex-wrap items-center gap-2 mb-4 text-sm">
+    <input type="hidden" name="q" value="{{ q }}">
+    {% if facet_years %}
+    <select class="field" name="year" style="width:auto" onchange="this.form.submit()">
+      <option value="">{% trans "All years" %}</option>
+      {% for y in facet_years %}<option value="{{ y }}" {% if f_year == y|stringformat:"s" %}selected{% endif %}>{{ y }}</option>{% endfor %}
+    </select>
+    {% endif %}
+    {% if facet_sections %}
+    <select class="field" name="section" style="width:auto" onchange="this.form.submit()">
+      <option value="">{% trans "All sections" %}</option>
+      {% for sct in facet_sections %}<option value="{{ sct.id }}" {% if f_section == sct.id|stringformat:"s" %}selected{% endif %}>{{ sct.title }}</option>{% endfor %}
+    </select>
+    {% endif %}
+    {% if f_year or f_section %}<a class="link" href="?q={{ q|urlencode }}">{% trans "Clear filters" %}</a>{% endif %}
+  </form>
+  {% endif %}
+  <p class="text-sm mb-4" style="color:var(--ink-soft)">{{ results|length }} result{{ results|length|pluralize }} for “{{ q }}”.</p>
+  <ul class="space-y-4">
+    {% for p in results %}{% with t=p|tr:cloc %}
+      <li class="border-b rule pb-4">
+        <a class="display text-lg link" href="{% url 'web:article' p.submission_id %}">{{ t.title }}</a>
+        <div class="text-sm mt-1" style="color:var(--ink-soft)">{{ p.date_published|date:"M Y" }}</div>
+      </li>
+    {% endwith %}{% empty %}
+      <li class="italic" style="color:var(--ink-soft)">Nothing found.</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}

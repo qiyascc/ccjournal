@@ -1,0 +1,23 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Calls for papers" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="label mb-2">{% trans "Announcements" %}</div>
+<h1 class="display text-3xl font-semibold mb-8">{% trans "Calls for papers" %}</h1>
+<div class="space-y-8 max-w-2xl">
+  {% for c in calls %}
+  <article class="border rule rounded-xl p-5" style="background:var(--paper-2)">
+    <h2 class="display text-xl font-semibold">{{ c.title }}</h2>
+    {% if c.deadline %}<p class="text-sm mt-1" style="color:var(--accent)">
+      ⏳ {% trans "Deadline" %}: {{ c.deadline|date:"j F Y" }}</p>{% endif %}
+    {% if c.body %}<div class="prose-cc mt-3 text-sm">{{ c.body|linebreaks }}</div>{% endif %}
+    <p class="mt-4 flex gap-3">
+      <a class="btn" href="{{ submit_url|default:'/submit/' }}">{% trans "Submit to this call" %}</a>
+      {% if c.url %}<a class="btn-ghost" href="{{ c.url }}">{% trans "Details" %}</a>{% endif %}
+    </p>
+  </article>
+  {% empty %}
+  <p class="italic" style="color:var(--ink-soft)">{% trans "No open calls right now." %}</p>
+  {% endfor %}
+</div>
+{% endblock %}

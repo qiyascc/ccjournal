@@ -1,0 +1,25 @@
+{% extends "web/base.html" %}
+{% load i18n cc %}
+{% block title %}{{ ctitle }} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="label mb-2">{% trans "Category" %}</div>
+<h2 class="display text-3xl font-semibold mb-3">{{ ctitle }}</h2>
+{% if cdesc %}<div class="prose-cc mb-6">{{ cdesc|safe }}</div>{% endif %}
+{% if subcats %}
+<div class="mb-8 text-sm flex flex-wrap gap-x-4 gap-y-1">
+  {% for k in subcats %}<a class="link" href="{% url 'web:category' k.obj.slug %}">{{ k.t.title|default:k.obj.slug }}</a>{% endfor %}
+</div>
+{% endif %}
+<ul class="space-y-4">
+  {% for p in pubs %}{% with t=p|tr:cloc %}
+    <li class="border-b rule pb-4">
+      <a class="display text-lg link" href="{% url 'web:article' p.submission_id %}">{{ t.title }}</a>
+      <div class="text-sm mt-1" style="color:var(--ink-soft)">
+        {% for a in p.authors.all %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %} · {{ p.date_published|date:"M Y" }}
+      </div>
+    </li>
+  {% endwith %}{% empty %}
+    <li class="italic" style="color:var(--ink-soft)">{% trans "No articles in this category yet." %}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

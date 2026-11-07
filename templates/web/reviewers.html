@@ -1,0 +1,26 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Our reviewers" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-2xl">
+  <div class="label mb-3">{% trans "Peer review" %}</div>
+  <h1 class="display font-extrabold text-3xl mb-3">{% trans "Our reviewers" %}</h1>
+  <p class="text-sm mb-8" style="color:var(--ink-soft)">
+    {% trans "Peer review is voluntary, expert work. We publicly thank the reviewers who agreed to be named; many more contribute anonymously." %}
+  </p>
+  {% if reviewers %}
+  <ul class="space-y-3">
+    {% for r in reviewers %}
+    <li class="flex items-baseline justify-between gap-4 border-b rule pb-3">
+      <span><b>{{ r.name }}</b>{% if r.affiliation %}
+        <span class="text-sm" style="color:var(--ink-soft)"> · {{ r.affiliation }}</span>{% endif %}</span>
+      <span class="text-sm shrink-0" style="color:var(--ink-soft)">
+        {% blocktrans count n=r.completed %}{{ n }} review{% plural %}{{ n }} reviews{% endblocktrans %}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="italic" style="color:var(--ink-soft)">{% trans "Reviewer acknowledgements will appear here." %}</p>
+  {% endif %}
+</div>
+{% endblock %}

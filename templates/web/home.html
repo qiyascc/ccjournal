@@ -1,0 +1,44 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% load cc %}
+{% block content %}
+{% include "partials/highlights.html" %}
+{% include "partials/calls_banner.html" %}
+{% if current_issue %}
+  {% with it=current_issue|tr:cloc %}
+  <section class="mb-12">
+    <div class="label mb-2">{% trans 'Current issue' %}</div>
+    <h2 class="display text-2xl font-semibold mb-1">
+      <a class="link" href="{% url 'web:issue' current_issue.pk %}">{{ current_issue }}</a>
+    </h2>
+    {% if it.title %}<p class="mb-6" style="color:var(--ink-soft)">{{ it.title }}</p>{% endif %}
+    <ul class="space-y-4">
+      {% for p in current_pubs %}{% with t=p|tr:cloc %}
+        <li class="border-b rule pb-4">
+          <a class="display text-lg link" href="{% url 'web:article' p.submission_id %}">{{ t.title }}</a>
+          <div class="text-sm mt-1" style="color:var(--ink-soft)">
+            {% for a in p.authors.all %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+          </div>
+        </li>
+      {% endwith %}{% endfor %}
+    </ul>
+  </section>
+  {% endwith %}
+{% else %}
+  <p class="italic" style="color:var(--ink-soft)">No issue has been published yet.</p>
+{% endif %}
+
+{% if recent %}
+<section>
+  <div class="label mb-3">{% trans 'Recent articles' %}</div>
+  <ul class="grid sm:grid-cols-2 gap-4">
+    {% for p in recent %}{% with t=p|tr:cloc %}
+      <li class="p-4 border rule rounded" style="background:#fffdf8">
+        <a class="link display" href="{% url 'web:article' p.submission_id %}">{{ t.title }}</a>
+        <div class="text-xs mt-1" style="color:var(--ink-soft)">{{ p.date_published|date:"M Y" }}</div>
+      </li>
+    {% endwith %}{% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}

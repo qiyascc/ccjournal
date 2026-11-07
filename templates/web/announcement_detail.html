@@ -1,0 +1,12 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{{ atitle }} — {{ site_title }}{% endblock %}
+{% block content %}
+<article class="max-w-3xl mx-auto px-6 py-12">
+  <div class="text-xs mb-2" style="color:var(--ink-soft)">{{ ann.date_posted|date:"d M Y" }}</div>
+  <h1 class="display text-3xl md:text-4xl font-semibold mb-6">{{ atitle }}</h1>
+  {% if ashort %}<p class="text-lg mb-6" style="color:var(--ink-soft)">{{ ashort }}</p>{% endif %}
+  <div class="prose-cc">{{ abody|safe }}</div>
+  <p class="mt-10"><a href="{% url 'web:announcements' %}" class="text-sm hover:underline">← {% trans "All announcements" %}</a></p>
+</article>
+{% endblock %}

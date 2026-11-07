@@ -1,0 +1,21 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Categories" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<h2 class="display text-3xl font-semibold mb-8">{% trans "Categories" %}</h2>
+<ul class="space-y-5">
+  {% for c in categories %}
+    <li class="border-b rule pb-4">
+      <a class="display text-lg link" href="{% url 'web:category' c.obj.slug %}">{{ c.t.title|default:c.obj.slug }}</a>
+      {% if c.t.description %}<p class="text-sm mt-1" style="color:var(--ink-soft)">{{ c.t.description }}</p>{% endif %}
+      {% if c.children %}
+      <div class="mt-2 text-sm flex flex-wrap gap-x-4 gap-y-1">
+        {% for k in c.children %}<a class="link" href="{% url 'web:category' k.obj.slug %}">{{ k.t.title|default:k.obj.slug }}</a>{% endfor %}
+      </div>
+      {% endif %}
+    </li>
+  {% empty %}
+    <li class="italic" style="color:var(--ink-soft)">{% trans "No categories." %}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

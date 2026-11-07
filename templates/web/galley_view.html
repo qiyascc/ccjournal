@@ -1,0 +1,17 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{{ gtitle }} — {{ site_title }}{% endblock %}
+{% block main %}
+<div class="max-w-6xl mx-auto px-5 py-6">
+  <div class="flex items-center justify-between gap-4 mb-4">
+    <div class="min-w-0">
+      <div class="label mb-1"><a class="navlink" href="{% url 'web:article' submission.pk %}">← {% trans "Back to article" %}</a></div>
+      <h1 class="display font-bold text-xl truncate">{{ gtitle }} <span class="pill ml-2">{{ g.label }}</span></h1>
+    </div>
+    <a class="btn shrink-0" href="{% url 'web:galley' submission.pk g.pk %}">{% trans "Download" %}</a>
+  </div>
+  <iframe src="{{ src }}" title="{{ gtitle }}" sandbox="allow-same-origin allow-popups"
+          class="w-full rounded-xl hairline" style="height:calc(100vh - 180px);background:#fff"></iframe>
+</div>
+{% endblock %}
+{% block content %}{% endblock %}

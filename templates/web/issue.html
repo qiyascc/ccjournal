@@ -1,0 +1,33 @@
+{% extends "web/base.html" %}
+{% load cc %}
+{% block title %}{{ issue }} — {% with t=journal|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block content %}
+{% with it=issue|tr:cloc %}
+<div class="label mb-2">Issue</div>
+<h2 class="display text-3xl font-semibold mb-1">{{ issue }}</h2>
+{% if it.title %}<p class="mb-2" style="color:var(--ink-soft)">{{ it.title }}</p>{% endif %}
+{% if it.description %}<p class="prose-cc mb-8">{{ it.description }}</p>{% endif %}
+{% endwith %}
+{% if issue.galley_file %}
+<p class="mb-8"><a class="btn" href="{% url 'web:issue_galley' issue.pk %}">⬇ Full issue (PDF)</a></p>
+{% endif %}
+
+{% for group in toc %}
+  <section class="mb-8">
+    <h3 class="label border-b rule pb-2 mb-4">{{ group.section }}</h3>
+    <ul class="space-y-4">
+      {% for p in group.items %}{% with t=p|tr:cloc %}
+        <li>
+          <a class="display text-lg link" href="{% url 'web:article' p.submission_id %}">{{ t.title }}{% if t.subtitle %}: {{ t.subtitle }}{% endif %}</a>
+          <div class="text-sm mt-1 flex justify-between" style="color:var(--ink-soft)">
+            <span>{% for a in p.authors.all %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</span>
+            {% if p.pages %}<span>{{ p.pages }}</span>{% endif %}
+          </div>
+        </li>
+      {% endwith %}{% endfor %}
+    </ul>
+  </section>
+{% empty %}
+  <p class="italic" style="color:var(--ink-soft)">No articles in this issue.</p>
+{% endfor %}
+{% endblock %}

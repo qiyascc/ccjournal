@@ -1,0 +1,17 @@
+{% extends "web/base.html" %}
+{% block title %}{{ meta_title|default:ptitle }} — {{ site_title }}{% endblock %}
+{% block head %}
+{% if meta_description %}<meta name="description" content="{{ meta_description }}">{% endif %}
+{% if robots_noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+{% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ meta_title|default:ptitle }}">
+{% if meta_description %}<meta property="og:description" content="{{ meta_description }}">{% endif %}
+{% if og_image %}<meta property="og:image" content="{{ og_image }}">{% endif %}
+{% endblock %}
+{% block content %}
+<article class="max-w-3xl mx-auto px-6 py-12">
+  <h1 class="display text-3xl md:text-4xl font-semibold mb-6">{{ ptitle }}</h1>
+  <div class="prose-cc">{{ pcontent|safe }}</div>
+</article>
+{% endblock %}
