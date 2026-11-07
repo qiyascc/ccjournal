@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Authors — {{ site_title|default:"Journal" }}<script src="{% static 'js/metadata_autocomplete.js' %}"></script>
+{% endblock %}
+{% block content %}
+{% include "wizard/_steps.html" %}
+<h1 class="display text-3xl font-semibold mb-2">Authors</h1>
+<p style="color:var(--ink-soft)" class="mb-8">List all contributors. The first author is the corresponding contact.</p>
+
+<form method="post" x-data='{"rows": {{ authors_json|safe }} }'>
+  {% csrf_token %}
+  <template x-for="(row, i) in rows" :key="i">
+    <div class="mb-5 p-4 border rule rounded" style="background:var(--paper-2)">
+      <div class="flex items-center justify-between mb-3">
+        <span class="label" x-text="i === 0 ? 'Author '+(i+1)+' · corresponding' : 'Author '+(i+1)"></span>
+        <button type="button" class="text-sm" style="color:var(--accent)"
+                x-show="rows.length > 1" @click="rows.splice(i,1)">Remove</button>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <input class="field" name="given_name" placeholder="Given name" x-model="row.given_name" required>
+        <input class="field" name="family_name" placeholder="Family name" x-model="row.family_name">
+        <input class="field" name="email" placeholder="Email" x-model="row.email">
+        <input class="field" name="orcid" placeholder="ORCID (0000-0000-0000-0000)" x-model="row.orcid">
+        <input class="field col-span-2" name="affiliation" placeholder="Affiliation (start typing for ROR suggestions)" x-model="row.affiliation">
+        <input type="hidden" name="affiliation_ror" x-model="row.affiliation_ror">
+      </div>
+    </div>
+  </template>
+  <button type="button" class="btn-ghost mb-8"
+          @click="rows.push({given_name:'',family_name:'',email:'',orcid:'',affiliation:'',affiliation_ror:''})">
+    + Add author
+  </button>
+  <div><button class="btn" type="submit">Continue →</button></div>
+</form>
+<script src="{% static 'js/metadata_autocomplete.js' %}"></script>
+{% endblock %}

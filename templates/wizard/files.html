@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Upload files — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+{% include "wizard/_steps.html" %}
+<h1 class="display text-3xl font-semibold mb-2">Upload files</h1>
+<p style="color:var(--ink-soft)" class="mb-8">Add your manuscript and any supplementary files.</p>
+
+{% if files %}
+<ul class="mb-6 divide-y rule border rounded overflow-hidden">
+  {% for f in files %}
+  <li class="flex items-center justify-between px-4 py-3" style="background:var(--paper-2)">
+    <span>{{ f.original_filename }}</span>
+    <span class="text-sm" style="color:var(--ink-soft)">{{ f.file_size|filesizeformat }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="mb-6 italic" style="color:var(--ink-soft)">No files uploaded yet.</p>
+{% endif %}
+
+<form method="post" enctype="multipart/form-data" class="flex items-center gap-3 mb-8">
+  {% csrf_token %}
+  <input class="field" type="file" name="file" required>
+  <button class="btn-ghost" type="submit">Upload</button>
+</form>
+
+<form method="post">
+  {% csrf_token %}
+  <button class="btn" type="submit" {% if not files %}disabled style="opacity:.5"{% endif %}>Continue →</button>
+</form>
+{% endblock %}

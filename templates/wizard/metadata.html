@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Metadata — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+{% include "wizard/_steps.html" %}
+<h1 class="display text-3xl font-semibold mb-2">Article metadata</h1>
+<p style="color:var(--ink-soft)" class="mb-8">Enter the title, abstract and keywords in the submission language.</p>
+<form method="post" class="space-y-6">
+  {% csrf_token %}
+  <div><div class="label mb-1">Title</div>{{ form.title }}
+    {% if form.title.errors %}<p class="text-sm" style="color:var(--accent)">{{ form.title.errors.0 }}</p>{% endif %}</div>
+  <div><div class="label mb-1">Subtitle</div>{{ form.subtitle }}</div>
+  <div><div class="label mb-1">Abstract</div>{{ form.abstract }}</div>
+  <div><div class="label mb-1">Keywords</div>{{ form.keywords }}
+    <p class="text-sm mt-1" style="color:var(--ink-soft)">Comma-separated.</p></div>
+  <div class="pt-2"><button class="btn" type="submit">Continue →</button></div>
+</form>
+<script>
+  document.querySelectorAll("input[type=text],textarea").forEach(e=>e.classList.add("field"));
+  document.querySelectorAll("textarea").forEach(e=>e.rows=6);
+</script>
+{% endblock %}

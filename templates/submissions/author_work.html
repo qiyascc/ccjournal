@@ -1,0 +1,74 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{{ wtitle }} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-2xl">
+  <div class="label mb-3">{% trans "Submission workspace" %}</div>
+  <h1 class="display font-extrabold text-2xl md:text-3xl mb-2">{{ wtitle }}</h1>
+  <p class="text-sm mb-8" style="color:var(--ink-soft)">
+    {% trans "Stage" %}: <b>{{ stage_label }}</b> · {% trans "Status" %}: <b>{{ status_label }}</b>
+  </p>
+  {% include "partials/progress.html" %}
+  {% if submission.status == 4 %}
+  <section class="surface hairline rounded-xl p-5 mb-8">
+    <h2 class="label mb-2">{% trans "Next steps after the decision" %}</h2>
+    <p class="text-sm mb-4" style="color:var(--ink-soft)">
+      {% trans "Take your work elsewhere without retyping anything, or file a formal appeal if you believe the decision overlooked something important." %}
+    </p>
+    <p class="mb-4">
+      <a class="btn" href="{% url 'author_work:package' submission.author_token %}">
+        📦 {% trans "Download submission package (zip)" %}</a>
+    </p>
+    {% if submission.appeal %}
+    <p class="text-sm"><b>{% trans "Appeal status" %}:</b> {{ submission.appeal.get_status_display }}
+      {% if submission.appeal.decision_note %}<br><span style="color:var(--ink-soft)">{{ submission.appeal.decision_note }}</span>{% endif %}</p>
+    {% else %}
+    <form method="post" action="{% url 'author_work:appeal' submission.author_token %}" class="space-y-2">
+      {% csrf_token %}
+      <textarea class="field w-full" name="reason" rows="3" minlength="30"
+        placeholder="{% trans 'Grounds for appeal (be specific; at least a few sentences)…' %}"></textarea>
+      <button class="btn-ghost" type="submit">{% trans "File a formal appeal" %}</button>
+    </form>
+    {% endif %}
+  </section>
+  {% endif %}
+  {% if messages %}{% for m in messages %}
+    <div class="surface hairline rounded-lg px-4 py-3 mb-4 text-sm">{{ m }}</div>
+  {% endfor %}{% endif %}
+  {% if can_upload %}
+  <section class="surface hairline rounded-xl p-5 mb-8">
+    <h2 class="label mb-2">
+      {% if expected_kind == "revision" %}{% trans "Upload your revised manuscript" %}
+      {% elif expected_kind == "copyedit" %}{% trans "Return the copyedited file" %}
+      {% else %}{% trans "Upload the corrected proof" %}{% endif %}
+    </h2>
+    <p class="text-sm mb-4" style="color:var(--ink-soft)">
+      {% trans "The editorial team is waiting for your file. After uploading, they will be notified automatically." %}
+    </p>
+    <form method="post" action="{% url 'author_work:upload' submission.author_token %}" enctype="multipart/form-data" class="flex flex-wrap items-center gap-3">
+      {% csrf_token %}
+      <input type="file" name="file" required class="text-sm">
+      <button class="btn" type="submit">{% trans "Upload" %}</button>
+    </form>
+  </section>
+  {% else %}
+  <section class="surface hairline rounded-xl p-5 mb-8 text-sm" style="color:var(--ink-soft)">
+    {% trans "No action is required from you at this moment. You'll receive an email if the editors need anything." %}
+  </section>
+  {% endif %}
+  <section>
+    <h2 class="label mb-3">{% trans "File history" %}</h2>
+    {% if files %}
+    <ul class="text-sm divide-y" style="border-color:var(--rule)">
+      {% for f in files %}
+      <li class="py-2.5 flex items-center justify-between gap-4">
+        <span class="min-w-0"><span class="truncate">{{ f.original_filename }}</span>
+          <span class="pill ml-2">{{ f.get_file_stage_display }}</span></span>
+        <span class="shrink-0" style="color:var(--ink-faint)">{{ f.created_at|date:"j M Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="text-sm" style="color:var(--ink-faint)">{% trans "No files yet." %}</p>{% endif %}
+  </section>
+</div>
+{% endblock %}

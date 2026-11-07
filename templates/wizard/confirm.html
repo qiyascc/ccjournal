@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Confirm — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+{% include "wizard/_steps.html" %}
+<h1 class="display text-3xl font-semibold mb-2">Review &amp; submit</h1>
+<p style="color:var(--ink-soft)" class="mb-8">Check the details below, then finalize your submission.</p>
+
+<dl class="space-y-4 mb-8 border rule rounded p-5" style="background:var(--paper-2)">
+  <div><dt class="label">Title</dt><dd class="text-xl display">{{ tr.title|default:"—" }}{% if tr.subtitle %}: {{ tr.subtitle }}{% endif %}</dd></div>
+  <div><dt class="label">Section</dt><dd>{{ pub.section }}</dd></div>
+  <div><dt class="label">Authors</dt><dd>{% for a in authors %}{{ a.given_name }} {{ a.family_name }}{% if a.orcid %} ({{ a.orcid }}){% endif %}{% if not forloop.last %}; {% endif %}{% empty %}—{% endfor %}</dd></div>
+  <div><dt class="label">Abstract</dt><dd class="whitespace-pre-line">{{ tr.abstract|default:"—" }}</dd></div>
+  <div><dt class="label">Files</dt><dd>{% for f in files %}{{ f.original_filename }}{% if not forloop.last %}, {% endif %}{% empty %}—{% endfor %}</dd></div>
+</dl>
+
+<form method="post">
+  {% csrf_token %}
+  <div class="mb-8 space-y-5">
+    <div>
+      <h2 class="label mb-1">Data & code availability <span style="opacity:.55">(recommended)</span></h2>
+      <textarea class="field" name="data_availability" rows="2"
+        placeholder="e.g. Data are openly available at https://doi.org/10.5281/zenodo…"></textarea>
+    </div>
+    <div>
+      <h2 class="label mb-1">AI use declaration <span style="opacity:.55">(if any)</span></h2>
+      <textarea class="field" name="ai_statement" rows="2"
+        placeholder="e.g. ChatGPT was used to improve the language of the abstract."></textarea>
+    </div>
+    <div>
+      <h2 class="label mb-1">License</h2>
+      <select class="field" name="license">
+        <option value="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 — attribution (recommended)</option>
+        <option value="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</option>
+        <option value="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</option>
+        <option value="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</option>
+        <option value="https://creativecommons.org/publicdomain/zero/1.0/">CC0 — public domain</option>
+        <option value="none">All rights reserved</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="mb-8">
+    <h2 class="label mb-1">Suggested reviewers <span style="opacity:.55">(optional)</span></h2>
+    <p class="text-sm mb-3" style="color:var(--ink-soft)">You may suggest up to three qualified reviewers
+      without a conflict of interest. The editors decide whether to use them.</p>
+    <div class="space-y-2">
+      {% for i in "123" %}
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <input class="field" name="sr_name" placeholder="Name">
+        <input class="field" type="email" name="sr_email" placeholder="Email">
+        <input class="field" name="sr_reason" placeholder="Why suitable / affiliation">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="flex items-center gap-3">
+    <a href="{% url 'submit:authors' submission.pk %}" class="btn-ghost">← Back</a>
+    <button class="btn" type="submit">Submit for review ✓</button>
+  </div>
+</form>
+{% endblock %}

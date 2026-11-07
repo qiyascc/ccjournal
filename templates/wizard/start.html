@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Start a submission — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+{% include "wizard/_steps.html" %}
+<h1 class="display text-3xl font-semibold mb-2">Start a submission</h1>
+<p style="color:var(--ink-soft)" class="mb-8">Choose the section and language, then confirm the requirements.</p>
+
+<div class="mb-8 p-4 rounded-lg border rule flex items-center justify-between gap-4" style="background:var(--paper-2,#f6f3ec)">
+  <div>
+    <div class="font-semibold">⚡ In a hurry? Try Quick submit</div>
+    <div class="text-sm" style="color:var(--ink-soft)">Just upload your manuscript — no forms, no reformatting. We extract the details.</div>
+  </div>
+  <a class="btn shrink-0" href="{% url 'submit:quick' %}">Quick submit</a>
+</div>
+
+{% if guidelines %}
+<div class="prose-cc mb-8 p-4 rounded-lg" style="background:var(--paper-2,#f6f3ec)">
+  <div class="label mb-2">Author guidelines</div>
+  {{ guidelines|safe }}
+</div>
+{% endif %}
+
+<form method="post" class="space-y-6">
+  {% csrf_token %}
+  <div>
+    <div class="label mb-1">Section</div>
+    {{ form.section }}
+    {% if form.section.errors %}<p class="text-sm" style="color:var(--accent)">{{ form.section.errors.0 }}</p>{% endif %}
+  </div>
+  <div>
+    <div class="label mb-1">Submission language</div>
+    {{ form.locale }}
+  </div>
+  <div class="space-y-3">
+    <div class="label">Submission preparation checklist</div>
+    {% for f in form.checklist_fields %}
+    <label class="flex items-start gap-3">
+      {{ f }}
+      <span>{{ f.label }}{% if f.field.required %} <span style="color:var(--accent)">*</span>{% endif %}</span>
+    </label>
+    {% if f.errors %}<p class="text-sm" style="color:var(--accent)">{{ f.errors.0 }}</p>{% endif %}
+    {% endfor %}
+  </div>
+  <div class="pt-2"><button class="btn" type="submit">Continue →</button></div>
+</form>
+<script>
+  document.querySelectorAll("select,input[type=text]").forEach(e=>e.classList.add("field"));
+</script>
+{% endblock %}

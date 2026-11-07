@@ -1,0 +1,32 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Confirm your contribution" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-xl">
+  <div class="label mb-3">{% trans "Co-author confirmation" %}</div>
+  <h1 class="display font-extrabold text-2xl mb-2">{{ wtitle }}</h1>
+  {% if messages %}{% for m in messages %}
+    <div class="surface hairline rounded-lg px-4 py-3 my-4 text-sm">{{ m }}</div>
+  {% endfor %}{% endif %}
+  <p class="text-sm mb-6" style="color:var(--ink-soft)">
+    {% blocktrans with name=author.given_name %}Hello {{ name }} — you are listed as a co-author of this submission. Please confirm your contribution so the record is accurate (CRediT taxonomy).{% endblocktrans %}
+  </p>
+  <section class="surface hairline rounded-xl p-5 mb-6">
+    <h2 class="label mb-2">{% trans "Your declared contributions" %}</h2>
+    {% if roles %}
+    <ul class="list-disc pl-5 text-sm space-y-1">{% for r in roles %}<li>{{ r }}</li>{% endfor %}</ul>
+    {% else %}
+    <p class="text-sm italic" style="color:var(--ink-soft)">{% trans "No specific roles recorded — confirming acknowledges authorship." %}</p>
+    {% endif %}
+  </section>
+  {% if author.credit_approved_at %}
+  <p style="color:var(--accent);font-weight:600">✓ {% trans "Confirmed on" %} {{ author.credit_approved_at|date:"j F Y" }}. {% trans "Thank you!" %}</p>
+  {% else %}
+  <form method="post">{% csrf_token %}
+    <button class="btn" type="submit">{% trans "Yes, I confirm my contribution" %}</button>
+  </form>
+  <p class="text-xs mt-3" style="color:var(--ink-soft)">
+    {% trans "Not your work, or roles look wrong? Email the editorial office — do not confirm." %}</p>
+  {% endif %}
+</div>
+{% endblock %}

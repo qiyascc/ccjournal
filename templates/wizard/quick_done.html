@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Submitted" %} — {{ site_title|default:"Journal" }}{% endblock %}
+{% block content %}
+<h1 class="display text-3xl font-semibold mb-4">🎉 {% trans "Submitted!" %}</h1>
+<p class="max-w-lg mb-2">{% blocktrans %}Your manuscript “{{ title }}” has reached the editors. That took a lot less than 14 hours, didn't it?{% endblocktrans %}</p>
+<p class="max-w-lg text-sm mb-8" style="color:var(--ink-soft)">
+  {% trans "We extracted what we could automatically. You can review the details, add co-authors and follow every step from your workspace — no account juggling needed." %}
+</p>
+<p class="flex gap-3">
+  <a class="btn" href="/work/{{ submission.author_token }}/">{% trans "Open my workspace" %}</a>
+  <a class="btn-ghost" href="{% url 'dashboard' %}">{% trans "My submissions" %}</a>
+</p>
+{% endblock %}
