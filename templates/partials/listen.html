@@ -1,0 +1,24 @@
+{% load i18n cc %}
+{% with lt=pub|tr:cloc %}{% if lt %}
+<div class="mb-6">
+  <button type="button" id="cc-listen" class="btn-ghost" style="font-size:.85rem"
+          data-lang="{{ cloc }}">🔊 <span>{% trans "Listen to this article" %}</span></button>
+  <div id="cc-listen-src" hidden>{{ lt.title }}. {{ lt.abstract|striptags }} {{ lt.body|striptags|truncatewords:3000 }}</div>
+</div>
+<script>
+(function(){
+  var btn=document.getElementById('cc-listen'); if(!btn||!('speechSynthesis'in window)){if(btn)btn.hidden=true;return;}
+  var label=btn.querySelector('span'), src=document.getElementById('cc-listen-src');
+  var speaking=false, u=null;
+  btn.addEventListener('click',function(){
+    if(speaking){speechSynthesis.cancel();return;}
+    u=new SpeechSynthesisUtterance(src.textContent.trim());
+    u.lang=btn.dataset.lang||'en'; u.rate=1.0;
+    u.onstart=function(){speaking=true;label.textContent='{% trans "Stop listening" %}';};
+    u.onend=u.onerror=function(){speaking=false;label.textContent='{% trans "Listen to this article" %}';};
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  });
+  window.addEventListener('beforeunload',function(){speechSynthesis.cancel();});
+})();
+</script>
+{% endif %}{% endwith %}

@@ -1,0 +1,50 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_title|default:"Journal" }}{% endblock %}</title>
+  {% include "partials/theme.html" %}
+<link rel="stylesheet" href="{% url 'theme_css' %}">
+  {% block head %}{% endblock %}
+</head>
+<body class="min-h-full paper-grain flex flex-col">
+  <header class="border-b rule">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        {% if site_logo %}<img src="{{ site_logo }}" alt="{{ site_title }}" class="h-8 w-auto">
+        {% else %}<span class="display text-2xl font-semibold tracking-tight">{{ site_title|default:"Journal" }}</span>{% endif %}
+      </a>
+      <nav class="flex items-center gap-5 text-[.95rem]">
+        {% if request.user.is_authenticated %}
+          <a href="/dashboard/" class="hover:text-[color:var(--accent)]">My submissions</a>
+          <a href="/submit/" class="hover:text-[color:var(--accent)]">New submission</a>
+          {% if request.user.is_staff %}<a href="/admin/" class="hover:text-[color:var(--accent)]">Panel</a>{% endif %}
+          <a href="/accounts/logout/" class="btn-ghost">Sign out</a>
+        {% else %}
+          <a href="/accounts/login/" class="hover:text-[color:var(--accent)]">Sign in</a>
+          <a href="/accounts/register/" class="btn">Register</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+  <main class="flex-1 w-full">
+    <div class="max-w-3xl mx-auto px-6 py-10">
+      {% if messages %}{% for m in messages %}
+        <div class="mb-4 px-4 py-3 rounded border rule" style="background:var(--paper-2)">{{ m }}</div>
+      {% endfor %}{% endif %}
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+  <footer class="border-t rule">
+    <div class="max-w-5xl mx-auto px-6 py-6 text-sm" style="color:var(--ink-soft)">{{ site_title|default:"" }}</div>
+    <div class="max-w-5xl mx-auto px-6 pb-6 text-xs flex gap-4" style="color:var(--ink-soft)">
+      <a href="/newsletter/" class="hover:text-[color:var(--accent)]">Newsletter</a>
+      <a href="/accessibility/" class="hover:text-[color:var(--accent)]">Accessibility</a>
+      <a href="/most-cited/" class="hover:text-[color:var(--accent)]">Most cited</a>
+      <a href="/reviewers/" class="hover:text-[color:var(--accent)]">Our reviewers</a>
+    </div>
+  </footer>
+</body>
+</html>

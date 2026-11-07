@@ -1,0 +1,13 @@
+{% load i18n %}
+{% if active_calls %}
+<div class="mb-8 px-4 py-3 rounded-xl border rule flex items-center justify-between gap-4"
+     style="background:var(--paper-2,#faf9f6)">
+  <div class="text-sm">
+    📣 <b>{{ active_calls.0.title }}</b>
+    {% if active_calls.0.deadline %}<span style="color:var(--accent)"> · {% trans "deadline" %}
+      {{ active_calls.0.deadline|date:"j M Y" }}</span>{% endif %}
+    {% if active_calls|length > 1 %}<span style="opacity:.6"> (+{{ active_calls|length|add:"-1" }})</span>{% endif %}
+  </div>
+  <a class="btn shrink-0" href="{% url 'web:calls' %}">{% trans "View calls" %}</a>
+</div>
+{% endif %}

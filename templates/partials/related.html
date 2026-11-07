@@ -1,0 +1,15 @@
+{% load i18n cc %}
+{% if related %}
+<section class="mt-10 pt-6 border-t rule" aria-label="{% trans 'Related articles' %}">
+  <h2 class="label mb-3">{% trans "You may also like" %}</h2>
+  <ul class="space-y-3">
+    {% for p in related %}{% with rt=p|tr:cloc %}
+    <li>
+      <a class="link" href="{% url 'web:article' p.submission_id %}">{{ rt.title }}</a>
+      <span class="text-xs" style="color:var(--ink-soft)">
+        {% if p.date_published %} · {{ p.date_published|date:"Y" }}{% endif %}</span>
+    </li>
+    {% endwith %}{% endfor %}
+  </ul>
+</section>
+{% endif %}

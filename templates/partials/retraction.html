@@ -1,0 +1,13 @@
+{% load i18n %}
+{% if pub.retracted_at %}
+<div role="alert" style="border:2px solid #b3261e;background:rgba(179,38,30,.07);
+     border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.75rem">
+  <p style="font-weight:700;color:#b3261e;margin:0 0 .35rem;letter-spacing:.02em">
+    ⚠ {% trans "RETRACTED" %} — {{ pub.retracted_at|date:"j F Y" }}</p>
+  {% if pub.retraction_note %}
+  <p style="margin:0;font-size:.95rem">{{ pub.retraction_note }}</p>
+  {% else %}
+  <p style="margin:0;font-size:.95rem">{% trans "This article has been retracted by the editors. The full text remains available for the scholarly record." %}</p>
+  {% endif %}
+</div>
+{% endif %}

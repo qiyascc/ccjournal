@@ -1,0 +1,15 @@
+{% load cc %}
+<meta name="citation_title" content="{{ t.title }}">
+{% for a in authors %}<meta name="citation_author" content="{{ a|author_name }}">
+{% endfor %}{% if scholar.journal_title %}<meta name="citation_journal_title" content="{{ scholar.journal_title }}">
+{% endif %}{% if scholar.issn %}<meta name="citation_issn" content="{{ scholar.issn }}">
+{% endif %}{% if pub.date_published %}<meta name="citation_publication_date" content="{{ pub.date_published|date:'Y/m/d' }}">
+{% endif %}{% if scholar.volume %}<meta name="citation_volume" content="{{ scholar.volume }}">
+{% endif %}{% if scholar.issue %}<meta name="citation_issue" content="{{ scholar.issue }}">
+{% endif %}{% if scholar.firstpage %}<meta name="citation_firstpage" content="{{ scholar.firstpage }}">
+{% endif %}{% if scholar.lastpage %}<meta name="citation_lastpage" content="{{ scholar.lastpage }}">
+{% endif %}{% if pub.doi_id %}<meta name="citation_doi" content="{{ pub.doi.doi }}">
+{% endif %}{% if scholar.language %}<meta name="citation_language" content="{{ scholar.language }}">
+{% endif %}{% if scholar.abstract %}<meta name="citation_abstract" content="{{ scholar.abstract|striptags|truncatewords:120 }}">
+{% endif %}{% if scholar.pdf_url %}<meta name="citation_pdf_url" content="{{ scholar.pdf_url }}">
+{% endif %}

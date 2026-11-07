@@ -1,0 +1,41 @@
+{% load i18n %}
+{% if pub.data_availability or pub.ai_statement or pub.license_url %}
+<section class="mb-6 text-sm space-y-3">
+  {% if pub.data_availability %}
+  <div><span class="label">{% trans "Data availability" %}</span>
+    <p class="mt-1">{{ pub.data_availability }}</p></div>
+  {% endif %}
+  {% if pub.ai_statement %}
+  <div><span class="label">{% trans "AI use declaration" %}</span>
+    <p class="mt-1">{{ pub.ai_statement }}</p></div>
+  {% endif %}
+  {% if pub.license_url %}
+  <div><span class="label">{% trans "License" %}</span>
+    <p class="mt-1">
+      <a class="link" rel="license" href="{{ pub.license_url }}">
+        {% if "creativecommons" in pub.license_url %}
+          {% if "by-nc-nd" in pub.license_url %}CC BY-NC-ND
+          {% elif "by-nc-sa" in pub.license_url %}CC BY-NC-SA
+          {% elif "by-nc" in pub.license_url %}CC BY-NC
+          {% elif "by-nd" in pub.license_url %}CC BY-ND
+          {% elif "by-sa" in pub.license_url %}CC BY-SA
+          {% elif "zero" in pub.license_url or "publicdomain" in pub.license_url %}CC0
+          {% else %}CC BY{% endif %} 4.0
+        {% else %}{{ pub.license_url }}{% endif %}</a>
+      {% if pub.copyright_holder %} · © {{ pub.copyright_year|default:"" }} {{ pub.copyright_holder }}{% endif %}
+    </p></div>
+  {% endif %}
+</section>
+{% endif %}
+{% if spark_points %}
+<div class="mb-6">
+  <span class="label">{% trans "Readership, last 12 months" %}</span>
+  <div style="display:flex;align-items:center;gap:.6rem;margin-top:4px">
+    <svg width="220" height="36" viewBox="0 0 220 36" aria-hidden="true">
+      <polyline fill="none" stroke="var(--accent,#b3542e)" stroke-width="2"
+                points="{{ spark_points }}"/>
+    </svg>
+    <span class="text-xs" style="color:var(--ink-soft,#888)">{{ spark_total }} {% trans "views" %}</span>
+  </div>
+</div>
+{% endif %}

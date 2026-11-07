@@ -1,0 +1,25 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/tailwind.build.css' %}">
+<script defer src="{% static 'vendor/alpine.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+<style>
+  :root{
+    --paper:#f6f1e7; --paper-2:#efe7d6; --ink:#211d18; --ink-soft:#5b5347;
+    --line:#d8cdb8; --accent:#9a4f2c; --accent-soft:#c97b4a; --ok:#3f6f4d;
+  }
+  html{background:var(--paper); color:var(--ink);}
+  body{font-family:"Newsreader",Georgia,serif; font-size:17px; line-height:1.65;}
+  .display{font-family:"Fraunces",Georgia,serif; font-optical-sizing:auto;}
+  .paper-grain{background-image:radial-gradient(rgba(120,90,40,.05) 1px,transparent 1px);background-size:4px 4px;}
+  .rule{border-color:var(--line);}
+  .field{background:#fffdf8;border:1px solid var(--line);border-radius:.4rem;padding:.6rem .8rem;width:100%;}
+  .field:focus{outline:none;border-color:var(--accent-soft);box-shadow:0 0 0 3px rgba(201,123,74,.18);}
+  .btn{background:var(--accent);color:#fff;padding:.6rem 1.3rem;border-radius:.45rem;font-weight:500;letter-spacing:.01em;transition:.15s;display:inline-block;}
+  .btn:hover{background:#823f22;}
+  .btn-ghost{background:transparent;color:var(--accent);border:1px solid var(--line);padding:.55rem 1.2rem;border-radius:.45rem;display:inline-block;}
+  .btn-ghost:hover{background:var(--paper-2);}
+  .label{font-family:"Fraunces",serif;font-weight:500;font-size:.9rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.08em;}
+  .link{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;}
+  .link:hover{color:#823f22;}
+  .prose-cc p{margin:.9rem 0;}
+</style>
