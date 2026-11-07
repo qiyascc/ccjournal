@@ -1,0 +1,15 @@
+{
+  "name": "ccjournal-whatsapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CC Journal WhatsApp sidecar (Baileys). Developed by Qiyas CC.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "express": "^4.21.2",
+    "qrcode": "^1.5.4",
+    "pino": "^9.5.0"
+  }
+}

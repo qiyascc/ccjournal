@@ -1,0 +1,57 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:560px">
+  <h1>{% trans "WhatsApp notifications" %}</h1>
+
+  {% if not enabled %}
+  <div style="background:#fff8e6;border:1px solid #f0d894;border-radius:9px;padding:14px;color:#7a5b00">
+    {% trans "The WhatsApp plugin is disabled. Enable it in the Plugins list, then return here to scan the QR code." %}
+  </div>
+  {% else %}
+  <p style="color:var(--body-quiet-color)">
+    {% trans "Scan this QR code with WhatsApp on your phone (Linked devices → Link a device). Once connected, notifications are delivered automatically — no server restart needed." %}
+  </p>
+
+  <div id="wa-box" style="border:1px solid var(--border-color,#e0e0e0);border-radius:12px;padding:22px;text-align:center;margin:16px 0">
+    <div id="wa-state" style="font-weight:600;margin-bottom:14px">{% trans "Checking…" %}</div>
+    <img id="wa-qr" alt="QR" style="display:none;width:260px;height:260px;border-radius:8px">
+    <div id="wa-connected" style="display:none">
+      <div style="font-size:42px">✅</div>
+      <div id="wa-me" style="margin-top:8px;font-family:monospace"></div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px">
+    <button type="button" class="button" onclick="waAction('restart')">{% trans "Restart" %}</button>
+    <button type="button" class="button" onclick="waAction('logout')" style="background:#b03030">{% trans "Log out / new QR" %}</button>
+  </div>
+
+  <script>
+  (function(){
+    var stateEl=document.getElementById('wa-state'), qr=document.getElementById('wa-qr'),
+        conn=document.getElementById('wa-connected'), me=document.getElementById('wa-me');
+    var LBL={starting:"{% trans 'Starting…' %}",qr:"{% trans 'Scan to connect' %}",
+             connected:"{% trans 'Connected' %}",disconnected:"{% trans 'Disconnected — retrying…' %}",
+             stopped:"{% trans 'Stopped' %}",unreachable:"{% trans 'Service unreachable' %}"};
+    function poll(){
+      fetch('status/').then(function(r){return r.json();}).then(function(d){
+        stateEl.textContent=LBL[d.status]||d.status;
+        if(d.qr){ qr.src=d.qr; qr.style.display='inline-block'; conn.style.display='none'; }
+        else { qr.style.display='none'; }
+        if(d.status==='connected'){ conn.style.display='block'; me.textContent=d.me?('+'+d.me):''; qr.style.display='none'; }
+        else { conn.style.display='none'; }
+      }).catch(function(){ stateEl.textContent=LBL.unreachable; });
+    }
+    window.waAction=function(op){
+      fetch(op+'/',{method:'POST',headers:{'X-CSRFToken':document.querySelector('[name=csrfmiddlewaretoken]')?document.querySelector('[name=csrfmiddlewaretoken]').value:''}}).then(poll);
+    };
+    poll(); setInterval(poll, 2500);
+  })();
+  </script>
+  {% csrf_token %}
+  {% endif %}
+
+  <p style="margin-top:18px"><a href="{% url 'admin:plugins_pluginstate_changelist' %}">← {% trans 'Back to plugins' %}</a></p>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+  "key": "whatsapp",
+  "name": "WhatsApp notifications",
+  "version": "1.0.0",
+  "author": "Qiyas CC",
+  "description": "Deliver notifications over WhatsApp via a Node.js + Baileys sidecar.",
+  "requires": {
+    "node": ">=18"
+  },
+  "install": {
+    "npm": [
+      { "dir": "sidecar" }
+    ]
+  }
+}
