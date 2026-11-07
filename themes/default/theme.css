@@ -1,0 +1,5 @@
+/* Default theme — baseline palette is provided by the base stylesheet. */
+:root{
+  --paper:#f6f1e7; --paper-2:#efe7d6; --ink:#211d18; --ink-soft:#5b5347;
+  --line:#d8cdb8; --accent:#9a4f2c; --accent-soft:#c97b4a; --ok:#3f6f4d;
+}
