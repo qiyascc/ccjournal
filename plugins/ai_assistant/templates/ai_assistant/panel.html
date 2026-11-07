@@ -1,0 +1,51 @@
+{% load i18n %}
+<div style="border:1px solid var(--hairline-color,#ddd);border-radius:10px;padding:1rem;margin-top:1.25rem">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem">
+    <b>🤖 {{ label }}</b>
+    <span style="font-size:.75rem;opacity:.6">
+      {% trans "AI suggestion — a human decides" %}
+      {% if report.model %} · {{ report.model }}{% endif %}
+      {% if report.at %} · {{ report.at|slice:":16" }}{% endif %}
+    </span>
+  </div>
+
+  {% if report.status == "pending" %}
+  <p style="margin:.6rem 0;font-style:italic;opacity:.7">
+    {% trans "Queued… refresh this page in a moment." %}</p>
+  {% elif report.status == "error" %}
+  <p style="margin:.6rem 0;color:#b3542e">⚠ {{ report.error }}</p>
+  {% elif report.status == "ok" %}
+    {% if kind == "metadata" %}
+    <form method="post" action="/manage/ai/apply-metadata/{{ sub.pk }}/"
+          style="margin:.6rem 0;font-size:.9rem">
+      {% csrf_token %}
+      <label style="display:block;margin:.35rem 0">
+        <input type="checkbox" name="title" checked>
+        <b>{% trans "Title" %}:</b> {{ report.data.title }}</label>
+      <label style="display:block;margin:.35rem 0">
+        <input type="checkbox" name="abstract" checked>
+        <b>{% trans "Abstract" %}:</b>
+        <span style="opacity:.85">{{ report.data.abstract|truncatechars:400 }}</span></label>
+      <label style="display:block;margin:.35rem 0">
+        <input type="checkbox" name="keywords" checked>
+        <b>{% trans "Keywords" %}:</b> {{ report.data.keywords|join:", " }}</label>
+      <button type="submit" class="default"
+              style="margin-top:.4rem;padding:.35rem .9rem;cursor:pointer">
+        {% trans "Apply selected" %}</button>
+    </form>
+    {% else %}
+    <p style="margin:.6rem 0;font-size:.9rem;white-space:pre-wrap">{{ report.text }}</p>
+    {% endif %}
+  {% else %}
+  <p style="margin:.6rem 0;font-style:italic;opacity:.6">
+    {% trans "Not run yet for this submission." %}</p>
+  {% endif %}
+
+  <form method="post" action="/manage/ai/run/{{ kind }}/{{ sub.pk }}/" style="margin:0">
+    {% csrf_token %}
+    <button type="submit"
+            style="padding:.3rem .8rem;cursor:pointer;font-size:.85rem">
+      {% if report %}{% trans "Run again" %}{% else %}{% trans "Run" %}{% endif %}
+    </button>
+  </form>
+</div>
