@@ -1,0 +1,9 @@
+/* Slate — dark theme: redefines palette + grain. */
+:root{
+  --paper:#0f1620; --paper-2:#16202c; --ink:#e6edf3; --ink-soft:#9fb0bf;
+  --line:#2b3947; --accent:#6ea8fe; --accent-soft:#8fbcff; --ok:#5fce8e;
+}
+.paper-grain{background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);}
+.field{background:#0c1219;color:var(--ink);}
+.btn:hover{background:#5790e0;}
+.link:hover,.btn-ghost:hover{color:#8fbcff;background:transparent;}
