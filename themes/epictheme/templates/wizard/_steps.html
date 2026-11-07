@@ -1,0 +1,14 @@
+{% load static %}
+<ol class="flex items-center gap-2 mb-10 text-sm not-prose">
+  {% for s in steps %}
+    <li class="flex items-center gap-2">
+      <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-semibold"
+        style="{% if forloop.counter0 < step_index %}background:var(--ok);color:#fff{% elif forloop.counter0 == step_index %}background:var(--accent);color:var(--accent-ink){% else %}border:1px solid var(--line);color:var(--ink-faint){% endif %}">
+        {% if forloop.counter0 < step_index %}✓{% else %}{{ forloop.counter }}{% endif %}
+      </span>
+      <span class="capitalize hidden sm:inline {% if forloop.counter0 == step_index %}font-semibold{% endif %}"
+            style="{% if forloop.counter0 != step_index %}color:var(--ink-faint){% endif %}">{{ s }}</span>
+    </li>
+    {% if not forloop.last %}<li class="flex-1 h-px rule border-t mx-1"></li>{% endif %}
+  {% endfor %}
+</ol>

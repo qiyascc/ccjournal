@@ -1,0 +1,98 @@
+{% extends "web/base.html" %}
+{% load i18n cc %}
+
+{% block main %}
+{% with t=journal|tr:cloc %}
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="ep-blob b1" style="width:46vw;height:46vw;left:-10vw;top:-12vw;background:var(--accent)"></div>
+  <div class="ep-blob b2" style="width:38vw;height:38vw;right:-8vw;top:4vw;background:var(--accent-2)"></div>
+
+  <div class="relative max-w-6xl mx-auto px-5 lg:pl-12 pt-20 pb-16 md:pt-28 md:pb-24">
+    <div class="label mb-6 flex items-center gap-3">
+      <span class="inline-block w-8 h-px" style="background:linear-gradient(90deg,var(--accent),var(--accent-2))"></span>
+      {% trans "Peer-reviewed journal" %}{% if journal.issn_online %} · ISSN {{ journal.issn_online }}{% endif %}
+    </div>
+
+    <h1 class="display font-bold text-[clamp(2.6rem,8vw,6.5rem)] max-w-5xl">
+      <span class="hero-line"><span>{{ t.title|default:site_title }}</span></span>
+    </h1>
+    {% if t.description %}
+    <p class="hero-line mt-7 max-w-2xl text-lg md:text-xl" style="color:var(--ink-soft)"><span>{{ t.description }}</span></p>
+    {% endif %}
+
+    <div class="hero-line mt-9"><span class="flex flex-wrap items-center gap-3">
+              <a href="{{ submit_url|default:'/submit/' }}" class="btn">{% trans "Submit a manuscript" %}
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="{% url 'web:archive' %}" class="btn-ghost">{% trans "Browse archive" %}</a>
+    </span></div>
+  </div>
+</section>
+
+<!-- MARQUEE: section names / identity -->
+<div class="ep-marquee mono text-sm" style="color:var(--ink-soft)" aria-hidden="true">
+  <div class="track">
+    {% for i in "123" %}
+      <span style="color:var(--accent-2)">{% trans "Open access" %}</span><span>✦</span>
+      <span>{% trans "Peer-reviewed" %}</span><span>✦</span>
+      <span style="color:var(--accent-soft)">{% trans "Indexed & archived" %}</span><span>✦</span>
+      <span>DOI · OAI-PMH</span><span>✦</span>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- SIGNATURE: current issue as a scroll-drawn timeline -->
+{% if current_pubs %}
+<section class="max-w-5xl mx-auto px-5 lg:pl-12 py-20 md:py-28">
+  <div class="flex items-baseline justify-between mb-12 rv">
+    <h2 class="display font-bold text-3xl md:text-4xl">{% trans "In this issue" %}</h2>
+    {% if current_issue %}<a href="{% url 'web:issue' current_issue.pk %}" class="link text-sm mono">{% trans "Full issue" %} →</a>{% endif %}
+  </div>
+
+  <div class="ep-tl" data-timeline>
+    <div class="ep-tl-line" aria-hidden="true"><i></i></div>
+    {% for p in current_pubs %}{% with pt=p|tr:cloc %}
+    <div class="ep-row pb-12">
+      <span class="node" aria-hidden="true"></span>
+      <div class="ep-card p-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="mono text-xs" style="color:var(--accent-2)">{{ forloop.counter|stringformat:"02d" }}</span>
+          {% if p.section_id %}<span class="pill">{{ p.section }}</span>{% endif %}
+        </div>
+        <a href="{% url 'web:article' p.submission_id %}" class="display font-semibold text-xl leading-snug hover:text-[color:var(--accent-soft)]">{{ pt.title }}</a>
+        <div class="text-sm mt-2" style="color:var(--ink-soft)">
+          {% for a in p.authors.all %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endwith %}{% endfor %}
+  </div>
+</section>
+{% elif not current_issue %}
+<section class="max-w-5xl mx-auto px-5 lg:pl-12 py-20">
+  <p class="text-lg" style="color:var(--ink-soft)">{% trans "No issue has been published yet." %}</p>
+</section>
+{% endif %}
+
+<!-- RECENT — magnetic glow cards -->
+{% if recent %}
+<section class="border-t rule">
+  <div class="max-w-6xl mx-auto px-5 lg:pl-12 py-20">
+    <h2 class="display font-bold text-3xl md:text-4xl mb-12 rv">{% trans "Latest articles" %}</h2>
+    <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {% for p in recent %}{% with pt=p|tr:cloc %}
+      <li class="ep-card p-6 flex flex-col rv {% cycle '' 'rv-d1' 'rv-d2' %}">
+        {% if p.section_id %}<span class="pill self-start mb-4">{{ p.section }}</span>{% endif %}
+        <a href="{% url 'web:article' p.submission_id %}" class="display font-semibold text-lg leading-snug hover:text-[color:var(--accent-soft)]">{{ pt.title }}</a>
+        <div class="text-xs mt-auto pt-4 mono" style="color:var(--ink-faint)">
+          {% for a in p.authors.all|slice:":3" %}{{ a|author_name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+          · {{ p.date_published|date:"M Y" }}
+        </div>
+      </li>
+      {% endwith %}{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+{% endwith %}
+{% endblock %}

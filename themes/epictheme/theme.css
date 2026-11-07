@@ -1,0 +1,31 @@
+/* Epic — palette only. Engine lives in the theme's partials/theme.html. */
+:root{
+  --paper:#07070D;
+  --paper-2:#0D0D17;
+  --paper-3:#13131F;
+  --ink:#EFEDFB;
+  --ink-soft:#9B97BC;
+  --ink-faint:#615E7E;
+  --line:rgba(180,176,220,.14);
+  --line-strong:rgba(239,237,251,.55);
+  --accent:#7C5CFF;
+  --accent-soft:#9B82FF;
+  --accent-2:#3DE8C0;
+  --accent-ink:#0A0716;
+  --ok:#3DE8C0;
+  --warn:#FFB453;
+}
+.dark{ /* Epic is dark-first; toggle flips to a pale variant */
+  --paper:#F2F1FA;
+  --paper-2:#FFFFFF;
+  --paper-3:#E9E7F6;
+  --ink:#13101F;
+  --ink-soft:#5A5575;
+  --ink-faint:#8D88A8;
+  --line:rgba(19,16,31,.14);
+  --line-strong:rgba(19,16,31,.6);
+  --accent:#6A48FF;
+  --accent-soft:#8266FF;
+  --accent-2:#0FBF99;
+  --accent-ink:#FFFFFF;
+}

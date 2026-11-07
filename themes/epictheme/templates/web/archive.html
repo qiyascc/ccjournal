@@ -1,0 +1,16 @@
+{% extends "web/base.html" %}
+{% load i18n cc %}
+{% block title %}{% trans "Archive" %} — {% with t=journal|tr:cloc %}{{ t.title }}{% endwith %}{% endblock %}
+{% block content %}
+<h1 class="display font-bold text-[clamp(2rem,5vw,3.4rem)] mb-12 rv">{% trans "Issue archive" %}</h1>
+<ul class="space-y-3">
+  {% for iss in issues %}
+    <li class="ep-card p-5 flex items-baseline justify-between gap-4 rv {% cycle '' 'rv-d1' 'rv-d2' %}">
+      <a class="display font-semibold text-lg hover:text-[color:var(--accent-soft)]" href="{% url 'web:issue' iss.pk %}">{{ iss }}{% with t=iss|tr:cloc %}{% if t.title %} — <span class="font-normal" style="color:var(--ink-soft)">{{ t.title }}</span>{% endif %}{% endwith %}</a>
+      <span class="text-sm shrink-0 mono" style="color:var(--ink-faint)">{{ iss.date_published|date:"M Y" }}</span>
+    </li>
+  {% empty %}
+    <li class="py-4" style="color:var(--ink-soft)">{% trans "No published issues." %}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
