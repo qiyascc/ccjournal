@@ -1,0 +1,6 @@
+/* Sage — calm green light theme. */
+:root{
+  --paper:#f3f6f1; --paper-2:#e7efe4; --ink:#1d241c; --ink-soft:#4f5a4a;
+  --line:#cdd9c6; --accent:#3f6f4d; --accent-soft:#5c8a68; --ok:#3f6f4d;
+}
+.btn:hover{background:#2f5a3c;}
