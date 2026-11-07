@@ -1,0 +1,42 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block content %}
+<div style="max-width:560px">
+  <h1>{% trans "Telegram notifications" %}</h1>
+  {% if not enabled %}
+  <div style="background:#fff8e6;border:1px solid #f0d894;border-radius:9px;padding:14px;color:#7a5b00">
+    {% trans "The Telegram plugin is disabled. Enable it in the Plugins list, then set the bot token here." %}
+  </div>
+  {% else %}
+  <p style="color:var(--body-quiet-color)">
+    {% trans "Create a bot with @BotFather on Telegram, copy its token, and paste it below. The bot starts automatically once a token is saved." %}
+  </p>
+  <form method="post" style="margin:16px 0">
+    {% csrf_token %}
+    <label style="display:block;font-weight:600;margin-bottom:6px">{% trans "Bot token" %}</label>
+    <input type="text" name="token" value="{{ token }}" placeholder="123456:ABC-DEF…"
+           style="width:100%;padding:9px;border:1px solid var(--border-color,#ccc);border-radius:8px;font-family:monospace">
+    <button type="submit" class="button" style="margin-top:10px">{% trans "Save token & (re)start bot" %}</button>
+  </form>
+
+  <div style="border:1px solid var(--border-color,#e0e0e0);border-radius:12px;padding:18px;margin-top:8px">
+    <div><b>{% trans "Bot status" %}:</b>
+      {% if running %}<span style="color:#2a9d4a">● {% trans "running" %}</span>
+      {% else %}<span style="color:#b03030">● {% trans "stopped" %}</span>{% endif %}
+    </div>
+    {% if bot_username %}<div style="margin-top:6px">@{{ bot_username }}
+      &nbsp;·&nbsp; <a href="https://t.me/{{ bot_username }}" target="_blank">{% trans "open bot" %}</a></div>{% endif %}
+    {% if not token %}<div style="margin-top:6px;color:#b03030">{% trans "No token set yet." %}</div>{% endif %}
+  </div>
+
+  <div style="display:flex;gap:10px;margin-top:14px">
+    <a class="button" href="restart/">{% trans "Restart bot" %}</a>
+  </div>
+
+  <p style="margin-top:18px;font-size:13px;color:var(--body-quiet-color)">
+    {% trans "Commands: /start, /help, /status <id>, /logout — available in English, Turkish, Russian, Chinese. The bot only responds to connected accounts." %}
+  </p>
+  {% endif %}
+  <p style="margin-top:18px"><a href="{% url 'admin:plugins_pluginstate_changelist' %}">← {% trans 'Back to plugins' %}</a></p>
+</div>
+{% endblock %}

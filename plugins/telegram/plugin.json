@@ -1,0 +1,13 @@
+{
+  "key": "telegram",
+  "name": "Telegram notifications",
+  "version": "1.0.0",
+  "author": "Qiyas CC",
+  "description": "Telegram bot notifications + author self-service (python-telegram-bot).",
+  "requires": { "python": ">=3.12" },
+  "install": {
+    "pip": [
+      { "requirements": "sidecar/requirements.txt" }
+    ]
+  }
+}
