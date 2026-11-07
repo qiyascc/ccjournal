@@ -1,0 +1,13 @@
+{
+  "name": "ccjournal-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-hosted CSS build (Tailwind) for CC Journal — replaces the CDN.",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i input.css -o ../static/css/tailwind.build.css --minify",
+    "watch": "tailwindcss -c tailwind.config.js -i input.css -o ../static/css/tailwind.build.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

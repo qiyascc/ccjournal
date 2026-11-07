@@ -1,0 +1,6 @@
+/* CC Journal — Tailwind giriş dosyası (self-host derleme kaynağı).
+   Tema-özel bileşen sınıfları (.btn, .field, .label …) ve renk değişkenleri
+   her temanın partials/theme.html <style> bloğunda kalır; burada yalnız Tailwind. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
