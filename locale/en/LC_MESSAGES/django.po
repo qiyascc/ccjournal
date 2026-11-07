@@ -1,0 +1,1113 @@
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-12 10:59+0400\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Editorial"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Submissions"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Publications"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Issues"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Genres (file types)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Peer review"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Review rounds"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Review assignments"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Editorial decisions"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Stage assignments"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Discussions"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Reviewer pool"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Review interests"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Content & site"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Journal"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Sections"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Categories"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Checklist items"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Static pages"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Announcements"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Forms"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Form submissions"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navigation (menus & footer)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Themes"
+
+#: apps/core/sidebar.py:77
+#, fuzzy
+#| msgid "Email templates"
+msgid "PDF templates"
+msgstr "Email templates"
+
+#: apps/core/sidebar.py:79
+msgid "DOIs (Crossref)"
+msgstr ""
+
+#: apps/core/sidebar.py:81
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstones (OAI deleted)"
+
+#: apps/core/sidebar.py:86
+msgid "Communication"
+msgstr "Communication"
+
+#: apps/core/sidebar.py:89
+msgid "Email templates"
+msgstr "Email templates"
+
+#: apps/core/sidebar.py:91
+msgid "Email log"
+msgstr "Email log"
+
+#: apps/core/sidebar.py:93
+msgid "Notifications"
+msgstr "Notifications"
+
+#: apps/core/sidebar.py:95
+msgid "Web push devices"
+msgstr "Web push devices"
+
+#: apps/core/sidebar.py:97
+msgid "APNS devices"
+msgstr "APNS devices"
+
+#: apps/core/sidebar.py:99
+msgid "FCM devices"
+msgstr "FCM devices"
+
+#: apps/core/sidebar.py:101
+msgid "WNS devices"
+msgstr "WNS devices"
+
+#: apps/core/sidebar.py:106
+msgid "People & access"
+msgstr "People & access"
+
+#: apps/core/sidebar.py:109
+msgid "Users"
+msgstr "Users"
+
+#: apps/core/sidebar.py:111
+msgid "Roles (groups)"
+msgstr "Roles (groups)"
+
+#: apps/core/sidebar.py:113
+msgid "Role matrix"
+msgstr "Role matrix"
+
+#: apps/core/sidebar.py:115
+msgid "Journal memberships"
+msgstr "Journal memberships"
+
+#: apps/core/sidebar.py:117
+msgid "API keys"
+msgstr "API keys"
+
+#: apps/core/sidebar.py:122 apps/core/sidebar.py:127
+msgid "Subscriptions"
+msgstr "Subscriptions"
+
+#: apps/core/sidebar.py:125
+msgid "Subscription types"
+msgstr "Subscription types"
+
+#: apps/core/sidebar.py:129
+msgid "Payments"
+msgstr "Payments"
+
+#: apps/core/sidebar.py:134
+msgid "System"
+msgstr "System"
+
+#: apps/core/sidebar.py:137
+msgid "Configuration (config.ini)"
+msgstr "Configuration (config.ini)"
+
+#: apps/core/sidebar.py:139
+msgid "Runtime settings"
+msgstr "Runtime settings"
+
+#: apps/core/sidebar.py:141
+msgid "Plugins"
+msgstr "Plugins"
+
+#: apps/core/sidebar.py:143
+msgid "Plugin settings"
+msgstr "Plugin settings"
+
+#: apps/core/sidebar.py:145
+msgid "Feature flags"
+msgstr "Feature flags"
+
+#: apps/core/sidebar.py:147
+msgid "Switches"
+msgstr "Switches"
+
+#: apps/core/sidebar.py:149
+msgid "Samples"
+msgstr "Samples"
+
+#: apps/core/sidebar.py:151
+msgid "Audit log"
+msgstr "Audit log"
+
+#: apps/core/sidebar.py:153
+msgid "Metrics (daily)"
+msgstr "Metrics (daily)"
+
+#: apps/core/sidebar.py:155
+msgid "Reports (CSV)"
+msgstr "Reports (CSV)"
+
+#: apps/core/sidebar.py:160
+msgid "Tools"
+msgstr "Tools"
+
+#: apps/core/sidebar.py:164
+msgid "Translations (Rosetta)"
+msgstr "Translations (Rosetta)"
+
+#: apps/core/sidebar.py:166
+msgid "Install theme (.zip)"
+msgstr "Install theme (.zip)"
+
+#: apps/core/sidebar.py:168
+msgid "API docs (Swagger)"
+msgstr "API docs (Swagger)"
+
+#: apps/core/sidebar.py:170
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH endpoint"
+
+#: apps/core/sidebar.py:172
+msgid "Sitemap"
+msgstr "Sitemap"
+
+#: apps/core/sidebar.py:173
+msgid "RSS feed"
+msgstr "RSS feed"
+
+#: apps/core/sidebar.py:174
+msgid "Health check"
+msgstr "Health check"
+
+#: apps/core/sidebar.py:176
+msgid "View site"
+msgstr "View site"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Home"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Archives"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+#: themes/epictheme/templates/web/base.html:54
+#: themes/epictheme/templates/web/base.html:124
+#: themes/epictheme/templates/web/search.html:3
+#: themes/epictheme/templates/web/search.html:5
+#: themes/epictheme/templates/web/search.html:7
+#: themes/epictheme/templates/web/search.html:8
+msgid "Search"
+msgstr "Search"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Submit"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+#: themes/epictheme/templates/base.html:35
+#: themes/epictheme/templates/registration/login.html:3
+#: themes/epictheme/templates/registration/login.html:6
+#: themes/epictheme/templates/registration/login.html:16
+#: themes/epictheme/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Sign in"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+#: themes/epictheme/templates/base.html:36
+#: themes/epictheme/templates/registration/register.html:3
+#: themes/epictheme/templates/registration/register.html:18
+msgid "Register"
+msgstr "Register"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+#: themes/epictheme/templates/base.html:29
+msgid "Sign out"
+msgstr "Sign out"
+
+#: templates/admin/accounts/apikey/change_list.html:6
+#: templates/admin/apikey_generate.html:5
+msgid "Generate API key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:9
+msgid "Your new API key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:9
+msgid "copy it now, it won't be shown again:"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:11
+msgid "Copied ✓"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:11
+msgid "Copy key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:12
+#, fuzzy
+#| msgid "API keys"
+msgid "Back to API keys"
+msgstr "API keys"
+
+#: templates/admin/apikey_generate.html:16
+msgid "Create an API key for a user. Use it with the header"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:17
+msgid "The raw key is shown only once."
+msgstr ""
+
+#: templates/admin/apikey_generate.html:23
+msgid "Generate key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:24 templates/admin/assign_issue.html:29
+msgid "Cancel"
+msgstr ""
+
+#: templates/admin/assign_issue.html:5
+#, fuzzy
+#| msgid "No articles in this issue."
+msgid "Assign articles to an issue"
+msgstr "No articles in this issue."
+
+#: templates/admin/assign_issue.html:7
+msgid ""
+"OJS-style flow: articles are published as part of an issue. Assign these "
+"articles to an issue; if the issue is already published they go live "
+"immediately, otherwise they become SCHEDULED and are released when you "
+"publish the issue."
+msgstr ""
+
+#: templates/admin/assign_issue.html:16
+#, fuzzy
+#| msgid "current"
+msgid "currently"
+msgstr "current"
+
+#: templates/admin/assign_issue.html:19
+#: themes/broadsheet/templates/web/issue.html:7
+#: themes/epictheme/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Issue"
+
+#: templates/admin/assign_issue.html:21
+msgid "Select an issue"
+msgstr ""
+
+#: templates/admin/assign_issue.html:23
+#, fuzzy
+#| msgid "No published issues."
+msgid "published"
+msgstr "No published issues."
+
+#: templates/admin/assign_issue.html:23
+msgid "unpublished"
+msgstr ""
+
+#: templates/admin/assign_issue.html:28
+#, fuzzy
+#| msgid "In this issue"
+msgid "Assign to issue"
+msgstr "In this issue"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django site admin"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Editorial pipeline"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Empty"
+
+#: templates/admin/publications/pdftemplate/change_form.html:42
+msgid ""
+"This template is in Custom HTML/CSS mode — the visual designer is disabled. "
+"Switch Mode to “Visual designer” to use the controls."
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:46
+#, fuzzy
+#| msgid "Peer review"
+msgid "Preview PDF"
+msgstr "Peer review"
+
+#: templates/admin/publications/pdftemplate/change_form.html:47
+msgid "Reset to default"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:48
+msgid "Changes apply to the preview instantly; click Save to keep them."
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:53
+msgid "Colors"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:54
+msgid "Accent (titles, links, rule)"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:55
+msgid "Secondary accent"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:56
+msgid "Body text"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:57
+msgid "Muted text"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:58
+msgid "Meta panel background"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:61
+msgid "Typography & logo"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:62
+msgid "Heading font"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:63
+msgid "Body font"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Logo position"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Left"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Center"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Right"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Hidden"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:65
+msgid "Logo height (px)"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:68
+msgid "Badge & rule"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:69
+msgid "Show badge (e.g. RESEARCH ARTICLE)"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:70
+msgid "Badge text"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:71
+msgid "Badge color"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:72
+#, fuzzy
+#| msgid "Read online"
+msgid "Header underline"
+msgstr "Read online"
+
+#: templates/admin/publications/pdftemplate/change_form.html:75
+msgid "Page"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:76
+msgid "Size"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:77
+msgid "Top / bottom margin (cm)"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:78
+msgid "Side margin (cm)"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:79
+msgid "Footer text"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:80
+msgid "Show page numbers"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:85
+msgid "Sections — drag to reorder, toggle to show/hide"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:86
+msgid "The order here is the order on the page."
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:91
+#, fuzzy
+#| msgid "Peer review"
+msgid "Live preview"
+msgstr "Peer review"
+
+#: templates/admin/publications/pdftemplate/change_form.html:92
+#, fuzzy
+#| msgid "Peer review"
+msgid "Refresh preview"
+msgstr "Peer review"
+
+#: templates/admin/publications/pdftemplate/change_form.html:104
+msgid "Journal name + logo"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:104
+msgid "Badge"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:105
+msgid "Title"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:105
+msgid "Subtitle"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:106
+msgid "Authors"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:106
+#, fuzzy
+#| msgid "Publications"
+msgid "Affiliations"
+msgstr "Publications"
+
+#: templates/admin/publications/pdftemplate/change_form.html:107
+msgid "Meta (DOI, date, license)"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:107
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+#: themes/epictheme/templates/web/article.html:63
+msgid "Abstract"
+msgstr "Abstract"
+
+#: templates/admin/publications/pdftemplate/change_form.html:108
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+#: themes/epictheme/templates/web/article.html:70
+msgid "Keywords"
+msgstr "Keywords"
+
+#: templates/admin/publications/pdftemplate/change_form.html:108
+msgid "Full text body"
+msgstr ""
+
+#: templates/admin/publications/pdftemplate/change_form.html:177
+msgid "Reset all visual settings to the default design?"
+msgstr ""
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Received"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Submission received"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Back to forms"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Submit manuscripts and other requests through the forms below."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Form"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Open form"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "No forms are available right now."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Thank you"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Your response has been recorded. We appreciate you letting us know."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Review"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Submit review"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Review invitation"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Peer review invitation"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "You have been invited to review this manuscript."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Due"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Files"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Accept review"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Decline"
+
+#: templates/submissions/author_work.html:6
+msgid "Submission workspace"
+msgstr "Submission workspace"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Stage"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Status"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Upload your revised manuscript"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Return the copyedited file"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Upload the corrected proof"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Upload"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "File history"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "No files yet."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "All announcements"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "No announcements yet."
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:89
+#: themes/epictheme/templates/web/article.html:85
+msgid "How to cite"
+msgstr "How to cite"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:95
+#: themes/epictheme/templates/web/article.html:91
+msgid "Funding"
+msgstr "Funding"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:104
+#: themes/epictheme/templates/web/article.html:100
+msgid "Versions"
+msgstr "Versions"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+#: themes/epictheme/templates/web/archive.html:3
+#: themes/epictheme/templates/web/base.html:123
+msgid "Archive"
+msgstr "Archive"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "No categories."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Category"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "No articles in this category yet."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Back to article"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Download"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Current issue"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Recent articles"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "This journal is being set up"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Please check back soon."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Set up your journal"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Create journal"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Subscription required"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+#: themes/epictheme/templates/base.html:13
+#: themes/epictheme/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Skip to content"
+
+#: themes/broadsheet/templates/base.html:20
+#: themes/epictheme/templates/base.html:21
+msgid "User"
+msgstr "User"
+
+#: themes/broadsheet/templates/base.html:22
+#: themes/epictheme/templates/base.html:23
+msgid "New submission"
+msgstr "New submission"
+
+#: themes/broadsheet/templates/base.html:23
+#: themes/epictheme/templates/base.html:24
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+#: themes/epictheme/templates/base.html:25
+#: themes/epictheme/templates/base.html:31
+#: themes/epictheme/templates/web/base.html:68
+msgid "Toggle dark mode"
+msgstr "Toggle dark mode"
+
+#: themes/broadsheet/templates/registration/login.html:7
+#: themes/epictheme/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Access your editorial dashboard and submissions."
+
+#: themes/broadsheet/templates/registration/login.html:10
+#: themes/epictheme/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Invalid email or password."
+
+#: themes/broadsheet/templates/registration/login.html:11
+#: themes/epictheme/templates/registration/login.html:11
+msgid "Email"
+msgstr "Email"
+
+#: themes/broadsheet/templates/registration/login.html:13
+#: themes/epictheme/templates/registration/login.html:13
+msgid "Password"
+msgstr "Password"
+
+#: themes/broadsheet/templates/registration/login.html:18
+#: themes/epictheme/templates/registration/login.html:18
+msgid "No account?"
+msgstr "No account?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+#: themes/epictheme/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Create one"
+
+#: themes/broadsheet/templates/registration/register.html:6
+#: themes/epictheme/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Create an account"
+
+#: themes/broadsheet/templates/registration/register.html:7
+#: themes/epictheme/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Register to submit manuscripts and track their progress."
+
+#: themes/broadsheet/templates/registration/register.html:20
+#: themes/epictheme/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Already have an account?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+#: themes/epictheme/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Issue archive"
+
+#: themes/broadsheet/templates/web/archive.html:13
+#: themes/epictheme/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "No published issues."
+
+#: themes/broadsheet/templates/web/article.html:44
+#: themes/epictheme/templates/web/article.html:42
+msgid "Version"
+msgstr "Version"
+
+#: themes/broadsheet/templates/web/article.html:45
+#: themes/epictheme/templates/web/article.html:43
+msgid "views"
+msgstr "views"
+
+#: themes/broadsheet/templates/web/article.html:45
+#: themes/epictheme/templates/web/article.html:43
+msgid "downloads"
+msgstr "downloads"
+
+#: themes/broadsheet/templates/web/article.html:52
+#: themes/epictheme/templates/web/article.html:49
+msgid "Read online"
+msgstr "Read online"
+
+#: themes/broadsheet/templates/web/article.html:83
+#: themes/epictheme/templates/web/article.html:79
+#, fuzzy
+#| msgid "Full issue"
+msgid "Full text"
+msgstr "Full issue"
+
+#: themes/broadsheet/templates/web/article.html:107
+#: themes/epictheme/templates/web/article.html:102
+msgid "current"
+msgstr "current"
+
+#: themes/broadsheet/templates/web/article.html:115
+#: themes/epictheme/templates/web/article.html:109
+msgid "License"
+msgstr "License"
+
+#: themes/broadsheet/templates/web/article.html:121
+#: themes/epictheme/templates/web/article.html:115
+msgid "Metadata"
+msgstr "Metadata"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+#: themes/epictheme/templates/web/base.html:31
+#: themes/epictheme/templates/web/base.html:81
+msgid "Primary"
+msgstr "Primary"
+
+#: themes/broadsheet/templates/web/base.html:56
+#: themes/epictheme/templates/web/base.html:52
+msgid "Search…"
+msgstr "Search…"
+
+#: themes/broadsheet/templates/web/base.html:57
+#: themes/epictheme/templates/web/base.html:52
+msgid "Search articles"
+msgstr "Search articles"
+
+#: themes/broadsheet/templates/web/base.html:67
+#: themes/epictheme/templates/web/base.html:59
+msgid "Language"
+msgstr "Language"
+
+#: themes/broadsheet/templates/web/base.html:95
+#: themes/epictheme/templates/web/base.html:75
+msgid "Menu"
+msgstr "Menu"
+
+#: themes/broadsheet/templates/web/base.html:141
+#: themes/epictheme/templates/web/base.html:119
+msgid "Browse"
+msgstr "Browse"
+
+#: themes/broadsheet/templates/web/base.html:152
+#: themes/epictheme/templates/web/base.html:129
+msgid "Open"
+msgstr "Open"
+
+#: themes/broadsheet/templates/web/home.html:12
+#: themes/epictheme/templates/web/home.html:14
+msgid "Peer-reviewed journal"
+msgstr "Peer-reviewed journal"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+#: themes/epictheme/templates/web/home.html:26
+#: themes/epictheme/templates/web/home.html:29
+#: themes/epictheme/templates/web/home.html:32
+msgid "Submit a manuscript"
+msgstr "Submit a manuscript"
+
+#: themes/broadsheet/templates/web/home.html:27
+#: themes/epictheme/templates/web/home.html:35
+msgid "Browse archive"
+msgstr "Browse archive"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Search articles, authors, keywords…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "articles"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "View table of contents"
+
+#: themes/broadsheet/templates/web/home.html:64
+#: themes/epictheme/templates/web/home.html:56
+msgid "In this issue"
+msgstr "In this issue"
+
+#: themes/broadsheet/templates/web/home.html:65
+#: themes/epictheme/templates/web/home.html:57
+msgid "Full issue"
+msgstr "Full issue"
+
+#: themes/broadsheet/templates/web/home.html:83
+#: themes/epictheme/templates/web/home.html:81
+msgid "No issue has been published yet."
+msgstr "No issue has been published yet."
+
+#: themes/broadsheet/templates/web/home.html:91
+#: themes/epictheme/templates/web/home.html:89
+msgid "Latest articles"
+msgstr "Latest articles"
+
+#: themes/broadsheet/templates/web/issue.html:29
+#: themes/epictheme/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "No articles in this issue."
+
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/epictheme/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Search titles, authors, keywords…"
+
+#: themes/broadsheet/templates/web/search.html:11
+#: themes/epictheme/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "result"
+msgstr[1] "results"
+
+#: themes/broadsheet/templates/web/search.html:22
+#: themes/epictheme/templates/web/search.html:21
+msgid "Nothing found."
+msgstr "Nothing found."
+
+#: themes/epictheme/templates/web/home.html:44
+#, fuzzy
+#| msgid "People & access"
+msgid "Open access"
+msgstr "People & access"
+
+#: themes/epictheme/templates/web/home.html:45
+#, fuzzy
+#| msgid "Peer review"
+msgid "Peer-reviewed"
+msgstr "Peer review"
+
+#: themes/epictheme/templates/web/home.html:46
+#, fuzzy
+#| msgid "Issue archive"
+msgid "Indexed & archived"
+msgstr "Issue archive"

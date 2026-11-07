@@ -1,0 +1,749 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "هيئة التحرير"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "المساهمات المقدّمة"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "المنشورات"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "الأعداد"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "الأنواع (أنواع الملفات)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "مراجعة الأقران"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "جولات المراجعة"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "تكليفات المراجعة"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "القرارات التحريرية"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "تكليفات المراحل"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "المناقشات"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "قائمة المحكّمين"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "اهتمامات المحكّمين"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "المحتوى والموقع"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "المجلة"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "الأقسام"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "التصنيفات"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "عناصر قائمة التحقق"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "الصفحات الثابتة"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "الإعلانات"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "النماذج"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "طلبات النماذج"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "التنقل (القوائم والتذييل)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "السمات"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "سجلات Tombstone ‏(OAI المحذوفة)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "التواصل"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "قوالب البريد الإلكتروني"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "سجل البريد الإلكتروني"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "الإشعارات"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "أجهزة Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "أجهزة APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "أجهزة FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "أجهزة WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "الأشخاص والوصول"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "المستخدمون"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "الأدوار (المجموعات)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "مصفوفة الأدوار"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "عضويات المجلة"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "مفاتيح API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "الاشتراكات"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "أنواع الاشتراكات"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "المدفوعات"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "النظام"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "الإعدادات (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "إعدادات وقت التشغيل"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "الإضافات"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "إعدادات الإضافات"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "أعلام الميزات"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "المفاتيح"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "العيّنات"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "سجل التدقيق"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "المقاييس (يومية)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "التقارير (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "الأدوات"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "الترجمات (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "تثبيت سمة (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "وثائق API ‏(Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "نقطة نهاية OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "خريطة الموقع"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "تغذية RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "فحص الحالة"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "عرض الموقع"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "الرئيسية"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "الأرشيف"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "بحث"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "إرسال"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "تسجيل الدخول"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "تسجيل"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "تسجيل الخروج"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "إدارة موقع Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "سير العمل التحريري"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "فارغ"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "تم الاستلام"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "تم استلام المساهمة"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "العودة إلى النماذج"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "أرسل المخطوطات والطلبات الأخرى عبر النماذج أدناه."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "نموذج"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "فتح النموذج"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "لا توجد نماذج متاحة حاليًا."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "شكرًا لك"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "تم تسجيل ردّك. نشكرك على إبلاغنا."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "تم إرسال مراجعتك إلى فريق التحرير. نشكرك على مساهمتك."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "المراجعة"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "إرسال المراجعة"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "دعوة للمراجعة"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "دعوة لمراجعة الأقران"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "تمت دعوتك لمراجعة هذه المخطوطة."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "الموعد النهائي"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "الملخص"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "الملفات"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "قبول المراجعة"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "اعتذار"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "مساحة عمل المساهمة"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "المرحلة"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "الحالة"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "ارفع مخطوطتك المنقّحة"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "أعد الملف بعد التحرير"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "ارفع التجربة الطباعية المصحّحة"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr "فريق التحرير في انتظار ملفك. بعد الرفع، سيُخطَر تلقائيًا."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "رفع"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"لا يلزم منك أي إجراء في الوقت الحالي. ستتلقى رسالة بريد إلكتروني إذا احتاج "
+"المحررون أي شيء."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "سجل الملفات"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "لا توجد ملفات بعد."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "جميع الإعلانات"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "لا توجد إعلانات بعد."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "الكلمات المفتاحية"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "كيفية الاستشهاد"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "التمويل"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "الإصدارات"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "الأرشيف"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "لا توجد تصنيفات."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "تصنيف"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "لا توجد مقالات في هذا التصنيف بعد."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "العودة إلى المقالة"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "تنزيل"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "العدد الحالي"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "مقالات حديثة"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "صيانة"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "يجري إعداد هذه المجلة"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "يرجى المحاولة مرة أخرى قريبًا."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "قم بإعداد مجلتك"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "إنشاء مجلة"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "الاشتراك مطلوب"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"هذه المقالة جزء من عدد بالاشتراك. يرجى تسجيل الدخول بحساب مشترك أو التواصل "
+"مع المجلة."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "الانتقال إلى المحتوى"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "المستخدم"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "مساهمة جديدة"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "المسؤول"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "تبديل الوضع الداكن"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "الوصول إلى لوحة التحرير ومساهماتك."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "البريد الإلكتروني أو كلمة المرور غير صحيحة."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "ليس لديك حساب؟"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "أنشئ واحدًا"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "إنشاء حساب"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "سجّل لإرسال المخطوطات ومتابعة تقدمها."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "لديك حساب بالفعل؟"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "أرشيف الأعداد"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "لا توجد أعداد منشورة."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "الإصدار"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "مشاهدة"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "تنزيل"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "القراءة عبر الإنترنت"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "الحالي"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "الترخيص"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "البيانات الوصفية"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "أساسي"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "بحث…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "بحث في المقالات"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "اللغة"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "القائمة"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "تصفّح"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "مفتوح"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "مجلة محكّمة"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "إرسال مخطوطة"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "تصفّح الأرشيف"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "ابحث عن مقالات ومؤلفين وكلمات مفتاحية…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "مقالات"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "عرض جدول المحتويات"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "في هذا العدد"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "العدد كاملًا"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "لم يُنشر أي عدد بعد."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "أحدث المقالات"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "العدد"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "لا توجد مقالات في هذا العدد."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "ابحث بالعنوان أو المؤلف أو الكلمة المفتاحية…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "نتائج"
+msgstr[1] "نتيجة"
+msgstr[2] "نتيجتان"
+msgstr[3] "نتائج"
+msgstr[4] "نتيجة"
+msgstr[5] "نتائج"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "لم يتم العثور على شيء."

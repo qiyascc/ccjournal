@@ -1,0 +1,740 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "編輯部"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "儀表板"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "投稿"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "出版品"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "期次"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "體裁（檔案類型）"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "同行評審"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "評審輪次"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "評審分派"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "編輯決定"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "階段分派"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "討論"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "審稿人庫"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "審稿人興趣"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "內容與網站"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "期刊"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "欄目"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "分類"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "檢查清單項目"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "靜態頁面"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "公告"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "表單"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "表單提交"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "導覽（選單與頁尾）"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "主題"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone 記錄（OAI 已刪除）"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "通訊"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "郵件範本"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "郵件日誌"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "通知"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Web 推播裝置"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS 裝置"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM 裝置"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS 裝置"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "人員與權限"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "使用者"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "角色（群組）"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "角色矩陣"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "期刊會員資格"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API 金鑰"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "訂閱"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "訂閱類型"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "付款"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "系統"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "設定（config.ini）"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "執行階段設定"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "外掛"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "外掛設定"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "功能旗標"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "開關"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "抽樣"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "稽核日誌"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "指標（每日）"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "報告（CSV）"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "工具"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "翻譯（Rosetta）"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "安裝主題（.zip）"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API 文件（Swagger）"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH 端點"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "網站地圖"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS 訂閱"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "健康檢查"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "檢視網站"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "首頁"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "典藏"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "搜尋"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "投稿"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "登入"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "註冊"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "登出"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django 網站管理"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "編輯流程"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "空"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "已收到"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "已收到您的投稿"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "返回表單"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "請透過以下表單提交稿件及其他申請。"
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "表單"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "開啟表單"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "目前沒有可用的表單。"
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "謝謝"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "您的回覆已記錄。感謝您的告知。"
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "您的評審意見已提交給編輯團隊。感謝您的貢獻。"
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "評審"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "提交評審"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "評審邀請"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "同行評審邀請"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "您受邀評審這篇稿件。"
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "截止日期"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "摘要"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "檔案"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "接受評審"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "婉拒"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "投稿工作區"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "階段"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "狀態"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "上傳您修改後的稿件"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "返回已校訂的檔案"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "上傳已校正的校樣"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr "編輯團隊正在等待您的檔案。上傳後將自動通知他們。"
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "上傳"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr "目前無需您採取任何操作。如果編輯需要任何內容，您將收到電子郵件。"
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "檔案歷史"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "尚無檔案。"
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "全部公告"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "尚無公告。"
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "關鍵詞"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "如何引用"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "資助"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "版本"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "典藏"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "尚無分類。"
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "分類"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "此分類下尚無文章。"
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "返回文章"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "下載"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "當期"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "近期文章"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "維護中"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "此期刊正在設定中"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "請稍後再來。"
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "設定您的期刊"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "建立期刊"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "需要訂閱"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr "本文屬於訂閱期次。請使用訂閱帳戶登入或聯絡期刊。"
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "跳至內容"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "使用者"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "新投稿"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "管理"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "切換深色模式"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "存取您的編輯儀表板和投稿。"
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "電子郵件或密碼無效。"
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "電子郵件"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "密碼"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "沒有帳戶？"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "建立一個"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "建立帳戶"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "註冊以提交稿件並追蹤進度。"
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "已有帳戶？"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "期次典藏"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "尚無已出版期次。"
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "版本"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "瀏覽"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "下載"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "線上閱讀"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "目前"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "授權條款"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "詮釋資料"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "主要"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "搜尋…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "搜尋文章"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "語言"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "選單"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "瀏覽"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "開放"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "同行評審期刊"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "提交稿件"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "瀏覽典藏"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "搜尋文章、作者、關鍵詞…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "篇文章"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "檢視目錄"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "本期內容"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "整期"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "尚未出版任何期次。"
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "最新文章"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "期次"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "本期沒有文章。"
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "依標題、作者、關鍵詞搜尋…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "筆結果"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "找不到任何內容。"

@@ -1,0 +1,1117 @@
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-12 10:59+0400\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Editörlük"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Kontrol paneli"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Gönderiler"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Yayınlar"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Sayılar"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Türler (dosya tipleri)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Hakem değerlendirmesi"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Değerlendirme turları"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Değerlendirme atamaları"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Editöryal kararlar"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Aşama atamaları"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Tartışmalar"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Hakem havuzu"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Hakem ilgi alanları"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "İçerik ve site"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Dergi"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Bölümler"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Kontrol listesi maddeleri"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Statik sayfalar"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Duyurular"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Formlar"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Form başvuruları"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navigasyon (menüler ve alt bilgi)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Temalar"
+
+#: apps/core/sidebar.py:77
+#, fuzzy
+#| msgid "Email templates"
+msgid "PDF templates"
+msgstr "E-posta şablonları"
+
+#: apps/core/sidebar.py:79
+msgid "DOIs (Crossref)"
+msgstr ""
+
+#: apps/core/sidebar.py:81
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone kayıtları (OAI silinen)"
+
+#: apps/core/sidebar.py:86
+msgid "Communication"
+msgstr "İletişim"
+
+#: apps/core/sidebar.py:89
+msgid "Email templates"
+msgstr "E-posta şablonları"
+
+#: apps/core/sidebar.py:91
+msgid "Email log"
+msgstr "E-posta günlüğü"
+
+#: apps/core/sidebar.py:93
+msgid "Notifications"
+msgstr "Bildirimler"
+
+#: apps/core/sidebar.py:95
+msgid "Web push devices"
+msgstr "Web push cihazları"
+
+#: apps/core/sidebar.py:97
+msgid "APNS devices"
+msgstr "APNS cihazları"
+
+#: apps/core/sidebar.py:99
+msgid "FCM devices"
+msgstr "FCM cihazları"
+
+#: apps/core/sidebar.py:101
+msgid "WNS devices"
+msgstr "WNS cihazları"
+
+#: apps/core/sidebar.py:106
+msgid "People & access"
+msgstr "Kişiler ve erişim"
+
+#: apps/core/sidebar.py:109
+msgid "Users"
+msgstr "Kullanıcılar"
+
+#: apps/core/sidebar.py:111
+msgid "Roles (groups)"
+msgstr "Roller (gruplar)"
+
+#: apps/core/sidebar.py:113
+msgid "Role matrix"
+msgstr "Rol matrisi"
+
+#: apps/core/sidebar.py:115
+msgid "Journal memberships"
+msgstr "Dergi üyelikleri"
+
+#: apps/core/sidebar.py:117
+msgid "API keys"
+msgstr "API anahtarları"
+
+#: apps/core/sidebar.py:122 apps/core/sidebar.py:127
+msgid "Subscriptions"
+msgstr "Abonelikler"
+
+#: apps/core/sidebar.py:125
+msgid "Subscription types"
+msgstr "Abonelik türleri"
+
+#: apps/core/sidebar.py:129
+msgid "Payments"
+msgstr "Ödemeler"
+
+#: apps/core/sidebar.py:134
+msgid "System"
+msgstr "Sistem"
+
+#: apps/core/sidebar.py:137
+msgid "Configuration (config.ini)"
+msgstr "Yapılandırma (config.ini)"
+
+#: apps/core/sidebar.py:139
+msgid "Runtime settings"
+msgstr "Çalışma zamanı ayarları"
+
+#: apps/core/sidebar.py:141
+msgid "Plugins"
+msgstr "Eklentiler"
+
+#: apps/core/sidebar.py:143
+msgid "Plugin settings"
+msgstr "Eklenti ayarları"
+
+#: apps/core/sidebar.py:145
+msgid "Feature flags"
+msgstr "Özellik bayrakları"
+
+#: apps/core/sidebar.py:147
+msgid "Switches"
+msgstr "Anahtarlar (switch)"
+
+#: apps/core/sidebar.py:149
+msgid "Samples"
+msgstr "Örneklemler"
+
+#: apps/core/sidebar.py:151
+msgid "Audit log"
+msgstr "Denetim günlüğü"
+
+#: apps/core/sidebar.py:153
+msgid "Metrics (daily)"
+msgstr "Metrikler (günlük)"
+
+#: apps/core/sidebar.py:155
+msgid "Reports (CSV)"
+msgstr "Raporlar (CSV)"
+
+#: apps/core/sidebar.py:160
+msgid "Tools"
+msgstr "Araçlar"
+
+#: apps/core/sidebar.py:164
+msgid "Translations (Rosetta)"
+msgstr "Çeviriler (Rosetta)"
+
+#: apps/core/sidebar.py:166
+msgid "Install theme (.zip)"
+msgstr "Tema yükle (.zip)"
+
+#: apps/core/sidebar.py:168
+msgid "API docs (Swagger)"
+msgstr "API belgeleri (Swagger)"
+
+#: apps/core/sidebar.py:170
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH adresi"
+
+#: apps/core/sidebar.py:172
+msgid "Sitemap"
+msgstr "Site haritası"
+
+#: apps/core/sidebar.py:173
+msgid "RSS feed"
+msgstr "RSS akışı"
+
+#: apps/core/sidebar.py:174
+msgid "Health check"
+msgstr "Sağlık kontrolü"
+
+#: apps/core/sidebar.py:176
+msgid "View site"
+msgstr "Siteyi görüntüle"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Ana sayfa"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Arşiv"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+#: themes/epictheme/templates/web/base.html:54
+#: themes/epictheme/templates/web/base.html:124
+#: themes/epictheme/templates/web/search.html:3
+#: themes/epictheme/templates/web/search.html:5
+#: themes/epictheme/templates/web/search.html:7
+#: themes/epictheme/templates/web/search.html:8
+msgid "Search"
+msgstr "Arama"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Gönder"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+#: themes/epictheme/templates/base.html:35
+#: themes/epictheme/templates/registration/login.html:3
+#: themes/epictheme/templates/registration/login.html:6
+#: themes/epictheme/templates/registration/login.html:16
+#: themes/epictheme/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Giriş yap"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+#: themes/epictheme/templates/base.html:36
+#: themes/epictheme/templates/registration/register.html:3
+#: themes/epictheme/templates/registration/register.html:18
+msgid "Register"
+msgstr "Kayıt ol"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+#: themes/epictheme/templates/base.html:29
+msgid "Sign out"
+msgstr "Çıkış yap"
+
+#: templates/admin/accounts/apikey/change_list.html:6
+#: templates/admin/apikey_generate.html:5
+msgid "Generate API key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:9
+msgid "Your new API key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:9
+msgid "copy it now, it won't be shown again:"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:11
+msgid "Copied ✓"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:11
+msgid "Copy key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:12
+#, fuzzy
+#| msgid "API keys"
+msgid "Back to API keys"
+msgstr "API anahtarları"
+
+#: templates/admin/apikey_generate.html:16
+msgid "Create an API key for a user. Use it with the header"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:17
+msgid "The raw key is shown only once."
+msgstr ""
+
+#: templates/admin/apikey_generate.html:23
+msgid "Generate key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:24
+#: templates/admin/assign_issue.html:29
+msgid "Cancel"
+msgstr ""
+
+#: templates/admin/assign_issue.html:5
+#, fuzzy
+#| msgid "No articles in this issue."
+msgid "Assign articles to an issue"
+msgstr "Bu sayıda makale yok."
+
+#: templates/admin/assign_issue.html:7
+msgid ""
+"OJS-style flow: articles are published as part of an issue. Assign these "
+"articles to an issue; if the issue is already published they go live "
+"immediately, otherwise they become SCHEDULED and are released when you "
+"publish the issue."
+msgstr ""
+
+#: templates/admin/assign_issue.html:16
+#, fuzzy
+#| msgid "current"
+msgid "currently"
+msgstr "güncel"
+
+#: templates/admin/assign_issue.html:19
+#: themes/broadsheet/templates/web/issue.html:7
+#: themes/epictheme/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Sayı"
+
+#: templates/admin/assign_issue.html:21
+msgid "Select an issue"
+msgstr ""
+
+#: templates/admin/assign_issue.html:23
+#, fuzzy
+#| msgid "No published issues."
+msgid "published"
+msgstr "Yayımlanmış sayı yok."
+
+#: templates/admin/assign_issue.html:23
+msgid "unpublished"
+msgstr ""
+
+#: templates/admin/assign_issue.html:28
+#, fuzzy
+#| msgid "In this issue"
+msgid "Assign to issue"
+msgstr "Bu sayıda"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django site yönetimi"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Editöryal süreç"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Boş"
+
+#: templates/admin/publications/pdftemplate/change_form.html:42
+msgid ""
+"This template is in Custom HTML/CSS mode — the visual designer is disabled. "
+"Switch Mode to “Visual designer” to use the controls."
+msgstr ""
+"Bu şablon Custom HTML/CSS modunda — görsel tasarımcı devre dışı. Kontroller "
+"için Modu “Visual designer”a geçirin."
+
+#: templates/admin/publications/pdftemplate/change_form.html:46
+msgid "Preview PDF"
+msgstr "PDF önizleme"
+
+#: templates/admin/publications/pdftemplate/change_form.html:47
+msgid "Reset to default"
+msgstr "Varsayılana sıfırla"
+
+#: templates/admin/publications/pdftemplate/change_form.html:48
+msgid "Changes apply to the preview instantly; click Save to keep them."
+msgstr "Değişiklikler önizlemeye anında uygulanır; saklamak için Kaydet."
+
+#: templates/admin/publications/pdftemplate/change_form.html:53
+msgid "Colors"
+msgstr "Renkler"
+
+#: templates/admin/publications/pdftemplate/change_form.html:54
+msgid "Accent (titles, links, rule)"
+msgstr "Vurgu (başlıklar, bağlantılar, çizgi)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:55
+msgid "Secondary accent"
+msgstr "İkincil vurgu"
+
+#: templates/admin/publications/pdftemplate/change_form.html:56
+msgid "Body text"
+msgstr "Gövde metni"
+
+#: templates/admin/publications/pdftemplate/change_form.html:57
+msgid "Muted text"
+msgstr "Soluk metin"
+
+#: templates/admin/publications/pdftemplate/change_form.html:58
+msgid "Meta panel background"
+msgstr "Meta panel arka planı"
+
+#: templates/admin/publications/pdftemplate/change_form.html:61
+msgid "Typography & logo"
+msgstr "Tipografi ve logo"
+
+#: templates/admin/publications/pdftemplate/change_form.html:62
+msgid "Heading font"
+msgstr "Başlık fontu"
+
+#: templates/admin/publications/pdftemplate/change_form.html:63
+msgid "Body font"
+msgstr "Gövde fontu"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Logo position"
+msgstr "Logo konumu"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Left"
+msgstr "Sol"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Center"
+msgstr "Orta"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Right"
+msgstr "Sağ"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Hidden"
+msgstr "Gizli"
+
+#: templates/admin/publications/pdftemplate/change_form.html:65
+msgid "Logo height (px)"
+msgstr "Logo yüksekliği (px)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:68
+msgid "Badge & rule"
+msgstr "Rozet ve çizgi"
+
+#: templates/admin/publications/pdftemplate/change_form.html:69
+msgid "Show badge (e.g. RESEARCH ARTICLE)"
+msgstr "Rozet göster (ör. RESEARCH ARTICLE)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:70
+msgid "Badge text"
+msgstr "Rozet metni"
+
+#: templates/admin/publications/pdftemplate/change_form.html:71
+msgid "Badge color"
+msgstr "Rozet rengi"
+
+#: templates/admin/publications/pdftemplate/change_form.html:72
+#| msgid "Read online"
+msgid "Header underline"
+msgstr "Başlık alt çizgisi"
+
+#: templates/admin/publications/pdftemplate/change_form.html:75
+msgid "Page"
+msgstr "Sayfa"
+
+#: templates/admin/publications/pdftemplate/change_form.html:76
+msgid "Size"
+msgstr "Boyut"
+
+#: templates/admin/publications/pdftemplate/change_form.html:77
+msgid "Top / bottom margin (cm)"
+msgstr "Üst / alt kenar (cm)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:78
+msgid "Side margin (cm)"
+msgstr "Yan kenar (cm)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:79
+msgid "Footer text"
+msgstr "Alt bilgi metni"
+
+#: templates/admin/publications/pdftemplate/change_form.html:80
+msgid "Show page numbers"
+msgstr "Sayfa numaralarını göster"
+
+#: templates/admin/publications/pdftemplate/change_form.html:85
+msgid "Sections — drag to reorder, toggle to show/hide"
+msgstr "Bölümler — sıralamak için sürükle, göster/gizle için anahtar"
+
+#: templates/admin/publications/pdftemplate/change_form.html:86
+msgid "The order here is the order on the page."
+msgstr "Buradaki sıra sayfadaki sıradır."
+
+#: templates/admin/publications/pdftemplate/change_form.html:91
+#| msgid "Peer review"
+msgid "Live preview"
+msgstr "Canlı önizleme"
+
+#: templates/admin/publications/pdftemplate/change_form.html:92
+#| msgid "Peer review"
+msgid "Refresh preview"
+msgstr "Önizlemeyi yenile"
+
+#: templates/admin/publications/pdftemplate/change_form.html:104
+msgid "Journal name + logo"
+msgstr "Dergi adı + logo"
+
+#: templates/admin/publications/pdftemplate/change_form.html:104
+msgid "Badge"
+msgstr "Rozet"
+
+#: templates/admin/publications/pdftemplate/change_form.html:105
+msgid "Title"
+msgstr "Başlık"
+
+#: templates/admin/publications/pdftemplate/change_form.html:105
+msgid "Subtitle"
+msgstr "Alt başlık"
+
+#: templates/admin/publications/pdftemplate/change_form.html:106
+msgid "Authors"
+msgstr "Yazarlar"
+
+#: templates/admin/publications/pdftemplate/change_form.html:106
+#| msgid "Publications"
+msgid "Affiliations"
+msgstr "Kurumlar"
+
+#: templates/admin/publications/pdftemplate/change_form.html:107
+msgid "Meta (DOI, date, license)"
+msgstr "Meta (DOI, tarih, lisans)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:107
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+#: themes/epictheme/templates/web/article.html:63
+msgid "Abstract"
+msgstr "Özet"
+
+#: templates/admin/publications/pdftemplate/change_form.html:108
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+#: themes/epictheme/templates/web/article.html:70
+msgid "Keywords"
+msgstr "Anahtar kelimeler"
+
+#: templates/admin/publications/pdftemplate/change_form.html:108
+msgid "Full text body"
+msgstr "Tam metin"
+
+#: templates/admin/publications/pdftemplate/change_form.html:177
+msgid "Reset all visual settings to the default design?"
+msgstr "Tüm görsel ayarlar varsayılan tasarıma sıfırlansın mı?"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Alındı"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Başvurunuz alındı"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Formlara dön"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr ""
+"Makalelerinizi ve diğer başvurularınızı aşağıdaki formlar aracılığıyla "
+"gönderin."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Form"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Formu aç"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Şu anda kullanılabilir form yok."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Teşekkürler"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Yanıtınız kaydedildi. Bize bildirdiğiniz için teşekkür ederiz."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "Değerlendirmeniz editör ekibine iletildi. Katkınız için minnettarız."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Değerlendirme"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Değerlendirmeyi gönder"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Değerlendirme daveti"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Hakem değerlendirme daveti"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Bu makaleyi değerlendirmek üzere davet edildiniz."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Son tarih"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Dosyalar"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Değerlendirmeyi kabul et"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Reddet"
+
+#: templates/submissions/author_work.html:6
+msgid "Submission workspace"
+msgstr "Gönderi çalışma alanı"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Aşama"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Durum"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Düzeltilmiş makalenizi yükleyin"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Kopya düzenlenmiş dosyayı geri gönderin"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Düzeltilmiş prova nüshasını yükleyin"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Editör ekibi dosyanızı bekliyor. Yükledikten sonra otomatik olarak "
+"bilgilendirilecekler."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Yükle"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Şu anda sizden herhangi bir işlem beklenmiyor. Editörlerin bir şeye ihtiyacı"
+" olursa e-posta alacaksınız."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Dosya geçmişi"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Henüz dosya yok."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Tüm duyurular"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Henüz duyuru yok."
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:89
+#: themes/epictheme/templates/web/article.html:85
+msgid "How to cite"
+msgstr "Nasıl atıf yapılır"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:95
+#: themes/epictheme/templates/web/article.html:91
+msgid "Funding"
+msgstr "Finansman"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:104
+#: themes/epictheme/templates/web/article.html:100
+msgid "Versions"
+msgstr "Sürümler"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+#: themes/epictheme/templates/web/archive.html:3
+#: themes/epictheme/templates/web/base.html:123
+msgid "Archive"
+msgstr "Arşiv"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Kategori yok."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategori"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Bu kategoride henüz makale yok."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Makaleye dön"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "İndir"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Güncel sayı"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Son makaleler"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Bakım"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Bu dergi hazırlanıyor"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Lütfen kısa süre sonra tekrar deneyin."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Derginizi kurun"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Dergi oluştur"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Abonelik gerekli"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Bu makale abonelik gerektiren bir sayının parçasıdır. Lütfen abone bir "
+"hesapla giriş yapın veya dergiyle iletişime geçin."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+#: themes/epictheme/templates/base.html:13
+#: themes/epictheme/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "İçeriğe atla"
+
+#: themes/broadsheet/templates/base.html:20
+#: themes/epictheme/templates/base.html:21
+msgid "User"
+msgstr "Kullanıcı"
+
+#: themes/broadsheet/templates/base.html:22
+#: themes/epictheme/templates/base.html:23
+msgid "New submission"
+msgstr "Yeni gönderi"
+
+#: themes/broadsheet/templates/base.html:23
+#: themes/epictheme/templates/base.html:24
+msgid "Admin"
+msgstr "Yönetici"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+#: themes/epictheme/templates/base.html:25
+#: themes/epictheme/templates/base.html:31
+#: themes/epictheme/templates/web/base.html:68
+msgid "Toggle dark mode"
+msgstr "Karanlık modu değiştir"
+
+#: themes/broadsheet/templates/registration/login.html:7
+#: themes/epictheme/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Editör panelinize ve gönderilerinize erişin."
+
+#: themes/broadsheet/templates/registration/login.html:10
+#: themes/epictheme/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "E-posta veya şifre hatalı."
+
+#: themes/broadsheet/templates/registration/login.html:11
+#: themes/epictheme/templates/registration/login.html:11
+msgid "Email"
+msgstr "E-posta"
+
+#: themes/broadsheet/templates/registration/login.html:13
+#: themes/epictheme/templates/registration/login.html:13
+msgid "Password"
+msgstr "Şifre"
+
+#: themes/broadsheet/templates/registration/login.html:18
+#: themes/epictheme/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Hesabınız yok mu?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+#: themes/epictheme/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Hesap oluşturun"
+
+#: themes/broadsheet/templates/registration/register.html:6
+#: themes/epictheme/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Hesap oluştur"
+
+#: themes/broadsheet/templates/registration/register.html:7
+#: themes/epictheme/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Makale göndermek ve sürecini takip etmek için kayıt olun."
+
+#: themes/broadsheet/templates/registration/register.html:20
+#: themes/epictheme/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Zaten hesabınız var mı?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+#: themes/epictheme/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Sayı arşivi"
+
+#: themes/broadsheet/templates/web/archive.html:13
+#: themes/epictheme/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Yayımlanmış sayı yok."
+
+#: themes/broadsheet/templates/web/article.html:44
+#: themes/epictheme/templates/web/article.html:42
+msgid "Version"
+msgstr "Sürüm"
+
+#: themes/broadsheet/templates/web/article.html:45
+#: themes/epictheme/templates/web/article.html:43
+msgid "views"
+msgstr "görüntülenme"
+
+#: themes/broadsheet/templates/web/article.html:45
+#: themes/epictheme/templates/web/article.html:43
+msgid "downloads"
+msgstr "indirme"
+
+#: themes/broadsheet/templates/web/article.html:52
+#: themes/epictheme/templates/web/article.html:49
+msgid "Read online"
+msgstr "Çevrimiçi oku"
+
+#: themes/broadsheet/templates/web/article.html:83
+#: themes/epictheme/templates/web/article.html:79
+#, fuzzy
+#| msgid "Full issue"
+msgid "Full text"
+msgstr "Tam sayı"
+
+#: themes/broadsheet/templates/web/article.html:107
+#: themes/epictheme/templates/web/article.html:102
+msgid "current"
+msgstr "güncel"
+
+#: themes/broadsheet/templates/web/article.html:115
+#: themes/epictheme/templates/web/article.html:109
+msgid "License"
+msgstr "Lisans"
+
+#: themes/broadsheet/templates/web/article.html:121
+#: themes/epictheme/templates/web/article.html:115
+msgid "Metadata"
+msgstr "Üstveri"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+#: themes/epictheme/templates/web/base.html:31
+#: themes/epictheme/templates/web/base.html:81
+msgid "Primary"
+msgstr "Birincil"
+
+#: themes/broadsheet/templates/web/base.html:56
+#: themes/epictheme/templates/web/base.html:52
+msgid "Search…"
+msgstr "Ara…"
+
+#: themes/broadsheet/templates/web/base.html:57
+#: themes/epictheme/templates/web/base.html:52
+msgid "Search articles"
+msgstr "Makale ara"
+
+#: themes/broadsheet/templates/web/base.html:67
+#: themes/epictheme/templates/web/base.html:59
+msgid "Language"
+msgstr "Dil"
+
+#: themes/broadsheet/templates/web/base.html:95
+#: themes/epictheme/templates/web/base.html:75
+msgid "Menu"
+msgstr "Menü"
+
+#: themes/broadsheet/templates/web/base.html:141
+#: themes/epictheme/templates/web/base.html:119
+msgid "Browse"
+msgstr "Göz at"
+
+#: themes/broadsheet/templates/web/base.html:152
+#: themes/epictheme/templates/web/base.html:129
+msgid "Open"
+msgstr "Açık"
+
+#: themes/broadsheet/templates/web/home.html:12
+#: themes/epictheme/templates/web/home.html:14
+msgid "Peer-reviewed journal"
+msgstr "Hakemli dergi"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+#: themes/epictheme/templates/web/home.html:26
+#: themes/epictheme/templates/web/home.html:29
+#: themes/epictheme/templates/web/home.html:32
+msgid "Submit a manuscript"
+msgstr "Makale gönder"
+
+#: themes/broadsheet/templates/web/home.html:27
+#: themes/epictheme/templates/web/home.html:35
+msgid "Browse archive"
+msgstr "Arşive göz at"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Makale, yazar, anahtar kelime ara…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "makale"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "İçindekileri görüntüle"
+
+#: themes/broadsheet/templates/web/home.html:64
+#: themes/epictheme/templates/web/home.html:56
+msgid "In this issue"
+msgstr "Bu sayıda"
+
+#: themes/broadsheet/templates/web/home.html:65
+#: themes/epictheme/templates/web/home.html:57
+msgid "Full issue"
+msgstr "Tam sayı"
+
+#: themes/broadsheet/templates/web/home.html:83
+#: themes/epictheme/templates/web/home.html:81
+msgid "No issue has been published yet."
+msgstr "Henüz hiçbir sayı yayımlanmadı."
+
+#: themes/broadsheet/templates/web/home.html:91
+#: themes/epictheme/templates/web/home.html:89
+msgid "Latest articles"
+msgstr "Son makaleler"
+
+#: themes/broadsheet/templates/web/issue.html:29
+#: themes/epictheme/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Bu sayıda makale yok."
+
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/epictheme/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Başlık, yazar, anahtar kelime ara…"
+
+#: themes/broadsheet/templates/web/search.html:11
+#: themes/epictheme/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "sonuç"
+msgstr[1] "sonuç"
+
+#: themes/broadsheet/templates/web/search.html:22
+#: themes/epictheme/templates/web/search.html:21
+msgid "Nothing found."
+msgstr "Hiçbir şey bulunamadı."
+
+#: themes/epictheme/templates/web/home.html:44
+#, fuzzy
+#| msgid "People & access"
+msgid "Open access"
+msgstr "Kişiler ve erişim"
+
+#: themes/epictheme/templates/web/home.html:45
+#, fuzzy
+#| msgid "Peer review"
+msgid "Peer-reviewed"
+msgstr "Hakem değerlendirmesi"
+
+#: themes/epictheme/templates/web/home.html:46
+#, fuzzy
+#| msgid "Issue archive"
+msgid "Indexed & archived"
+msgstr "Sayı arşivi"
+
+#~ msgid "Preview your unsaved edits with a real article from this journal:"
+#~ msgstr ""
+#~ "Kaydedilmemiş değişikliklerinizi bu dergiden gerçek bir makaleyle önizleyin:"
+
+#~ msgid "Preview unsaved changes"
+#~ msgstr "Kaydedilmemişi önizle"

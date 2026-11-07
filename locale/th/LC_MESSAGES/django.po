@@ -1,0 +1,747 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "กองบรรณาธิการ"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "แดชบอร์ด"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "บทความที่ส่ง"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "สิ่งพิมพ์"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "ฉบับ"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "ประเภท (ชนิดไฟล์)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "การประเมินโดยผู้ทรงคุณวุฒิ"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "รอบการประเมิน"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "การมอบหมายการประเมิน"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "การตัดสินใจของกองบรรณาธิการ"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "การมอบหมายขั้นตอน"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "การอภิปราย"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "กลุ่มผู้ประเมิน"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "ความสนใจของผู้ประเมิน"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "เนื้อหาและเว็บไซต์"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "วารสาร"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "หมวด"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "หมวดหมู่"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "รายการตรวจสอบ"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "หน้าคงที่"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "ประกาศ"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "แบบฟอร์ม"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "การส่งแบบฟอร์ม"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "การนำทาง (เมนูและส่วนท้าย)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "ธีม"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "บันทึก Tombstone (OAI ที่ถูกลบ)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "การสื่อสาร"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "เทมเพลตอีเมล"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "บันทึกอีเมล"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "การแจ้งเตือน"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "อุปกรณ์ Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "อุปกรณ์ APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "อุปกรณ์ FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "อุปกรณ์ WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "บุคคลและการเข้าถึง"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "ผู้ใช้"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "บทบาท (กลุ่ม)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "เมทริกซ์บทบาท"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "สมาชิกภาพวารสาร"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "คีย์ API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "การสมัครสมาชิก"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "ประเภทการสมัครสมาชิก"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "การชำระเงิน"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "ระบบ"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "การตั้งค่า (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "การตั้งค่ารันไทม์"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "ปลั๊กอิน"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "การตั้งค่าปลั๊กอิน"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "แฟล็กฟีเจอร์"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "สวิตช์"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "ตัวอย่าง"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "บันทึกการตรวจสอบ"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "ตัวชี้วัด (รายวัน)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "รายงาน (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "เครื่องมือ"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "การแปล (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "ติดตั้งธีม (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "เอกสาร API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "ปลายทาง OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "แผนผังเว็บไซต์"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "ฟีด RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "ตรวจสอบสถานะ"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "ดูเว็บไซต์"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "หน้าแรก"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "คลังเก็บ"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "ค้นหา"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "ส่งบทความ"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "เข้าสู่ระบบ"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "ลงทะเบียน"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "ออกจากระบบ"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "การจัดการเว็บไซต์ Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "กระบวนการบรรณาธิการ"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "ว่าง"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "ได้รับแล้ว"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "ได้รับบทความแล้ว"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "กลับไปยังแบบฟอร์ม"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "ส่งต้นฉบับและคำขออื่น ๆ ผ่านแบบฟอร์มด้านล่าง"
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "แบบฟอร์ม"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "เปิดแบบฟอร์ม"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "ขณะนี้ไม่มีแบบฟอร์มให้ใช้งาน"
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "ขอบคุณ"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "บันทึกคำตอบของคุณแล้ว ขอบคุณที่แจ้งให้เราทราบ"
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"การประเมินของคุณถูกส่งไปยังกองบรรณาธิการแล้ว ขอบคุณสำหรับการมีส่วนร่วม"
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "การประเมิน"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "ส่งการประเมิน"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "คำเชิญประเมิน"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "คำเชิญประเมินโดยผู้ทรงคุณวุฒิ"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "คุณได้รับเชิญให้ประเมินต้นฉบับนี้"
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "กำหนดส่ง"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "บทคัดย่อ"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "ไฟล์"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "ตอบรับการประเมิน"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "ปฏิเสธ"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "พื้นที่ทำงานบทความ"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "ขั้นตอน"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "สถานะ"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "อัปโหลดต้นฉบับที่แก้ไขแล้วของคุณ"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "ส่งคืนไฟล์ที่ตรวจแก้แล้ว"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "อัปโหลดปรู๊ฟที่แก้ไขแล้ว"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"กองบรรณาธิการกำลังรอไฟล์ของคุณ "
+"หลังอัปโหลดแล้วระบบจะแจ้งให้พวกเขาทราบโดยอัตโนมัติ"
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "อัปโหลด"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"ขณะนี้ไม่ต้องดำเนินการใด ๆ จากคุณ "
+"คุณจะได้รับอีเมลหากกองบรรณาธิการต้องการสิ่งใด"
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "ประวัติไฟล์"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "ยังไม่มีไฟล์"
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "ประกาศทั้งหมด"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "ยังไม่มีประกาศ"
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "คำสำคัญ"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "วิธีอ้างอิง"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "ทุนสนับสนุน"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "เวอร์ชัน"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "คลังเก็บ"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "ไม่มีหมวดหมู่"
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "หมวดหมู่"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "ยังไม่มีบทความในหมวดหมู่นี้"
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "กลับไปยังบทความ"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "ดาวน์โหลด"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "ฉบับปัจจุบัน"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "บทความล่าสุด"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "ปิดปรับปรุง"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "วารสารนี้กำลังอยู่ระหว่างการตั้งค่า"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "โปรดกลับมาอีกครั้งเร็ว ๆ นี้"
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "ตั้งค่าวารสารของคุณ"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "สร้างวารสาร"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "ต้องสมัครสมาชิก"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"บทความนี้เป็นส่วนหนึ่งของฉบับที่ต้องสมัครสมาชิก "
+"โปรดเข้าสู่ระบบด้วยบัญชีสมาชิกหรือติดต่อวารสาร"
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "ข้ามไปยังเนื้อหา"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "ผู้ใช้"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "ส่งบทความใหม่"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "ผู้ดูแล"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "สลับโหมดมืด"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "เข้าถึงแดชบอร์ดบรรณาธิการและบทความของคุณ"
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "อีเมลหรือรหัสผ่านไม่ถูกต้อง"
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "อีเมล"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "รหัสผ่าน"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "ยังไม่มีบัญชี?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "สร้างบัญชี"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "สร้างบัญชี"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "ลงทะเบียนเพื่อส่งต้นฉบับและติดตามความคืบหน้า"
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "มีบัญชีอยู่แล้ว?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "คลังเก็บฉบับ"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "ยังไม่มีฉบับที่เผยแพร่"
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "เวอร์ชัน"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "การดู"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "การดาวน์โหลด"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "อ่านออนไลน์"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "ปัจจุบัน"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "สัญญาอนุญาต"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "เมตาดาตา"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "หลัก"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "ค้นหา…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "ค้นหาบทความ"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "ภาษา"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "เมนู"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "เรียกดู"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "เปิด"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "วารสารที่ผ่านการประเมินโดยผู้ทรงคุณวุฒิ"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "ส่งต้นฉบับ"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "เรียกดูคลังเก็บ"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "ค้นหาบทความ ผู้แต่ง คำสำคัญ…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "บทความ"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "ดูสารบัญ"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "ในฉบับนี้"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "ฉบับเต็ม"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "ยังไม่มีฉบับที่เผยแพร่"
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "บทความล่าสุด"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "ฉบับ"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "ไม่มีบทความในฉบับนี้"
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "ค้นหาตามชื่อเรื่อง ผู้แต่ง คำสำคัญ…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "ผลลัพธ์"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "ไม่พบสิ่งใด"

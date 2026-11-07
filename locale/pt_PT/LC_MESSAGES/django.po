@@ -1,0 +1,748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Editorial"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Painel"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Submissões"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Publicações"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Números"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Géneros (tipos de ficheiro)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Revisão por pares"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Rondas de revisão"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Atribuições de revisão"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Decisões editoriais"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Atribuições por etapa"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Discussões"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Bolsa de revisores"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Interesses dos revisores"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Conteúdo e site"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Revista"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Secções"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Categorias"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Itens da lista de verificação"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Páginas estáticas"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Anúncios"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Formulários"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Envios de formulários"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navegação (menus e rodapé)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Temas"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstones (OAI eliminados)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Comunicação"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Modelos de e-mail"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Registo de e-mails"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Notificações"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Dispositivos Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "Dispositivos APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "Dispositivos FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "Dispositivos WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Pessoas e acesso"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Utilizadores"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Papéis (grupos)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Matriz de papéis"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Vínculos com a revista"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "Chaves de API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Assinaturas"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Tipos de assinatura"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Pagamentos"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Sistema"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Configuração (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Definições de execução"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Plugins"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Definições de plugins"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Sinalizadores de funcionalidades"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Interruptores"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Amostras"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Registo de auditoria"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Métricas (diárias)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Relatórios (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Ferramentas"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Traduções (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Instalar tema (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "Documentação da API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "Endpoint OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Mapa do site"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "Feed RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Verificação de estado"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Ver site"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Início"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Arquivos"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Pesquisar"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Submeter"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Iniciar sessão"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Registar"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Terminar sessão"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Administração do site Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Fluxo editorial"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Vazio"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Recebido"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Submissão recebida"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Voltar aos formulários"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Submeta manuscritos e outros pedidos através dos formulários abaixo."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Formulário"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Abrir formulário"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "De momento não há formulários disponíveis."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Obrigado"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "A sua resposta foi registada. Agradecemos a informação."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"A sua revisão foi enviada à equipa editorial. Agradecemos o seu contributo."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Revisão"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Submeter revisão"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Convite para revisão"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Convite para revisão por pares"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Foi convidado a rever este manuscrito."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Prazo"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Resumo"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Ficheiros"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Aceitar revisão"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Recusar"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Espaço de trabalho da submissão"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Etapa"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Estado"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Envie o seu manuscrito revisto"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Devolva o ficheiro copidescado"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Envie a prova corrigida"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"A equipa editorial aguarda o seu ficheiro. Após o envio, será notificada "
+"automaticamente."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Enviar"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"De momento, não é necessária nenhuma ação da sua parte. Receberá um e-mail "
+"se os editores precisarem de algo."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Histórico de ficheiros"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Ainda não há ficheiros."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Todos os anúncios"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Ainda não há anúncios."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Palavras-chave"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Como citar"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Financiamento"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Versões"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Arquivo"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Sem categorias."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Categoria"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Ainda não há artigos nesta categoria."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Voltar ao artigo"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Transferir"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Número atual"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Artigos recentes"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Manutenção"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Esta revista está a ser configurada"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Volte em breve, por favor."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Configure a sua revista"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Criar revista"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Assinatura necessária"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Este artigo faz parte de um número por assinatura. Inicie sessão com uma "
+"conta assinante ou contacte a revista."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Saltar para o conteúdo"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Utilizador"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Nova submissão"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Alternar modo escuro"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Aceda ao seu painel editorial e às suas submissões."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "E-mail ou palavra-passe inválidos."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "E-mail"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Palavra-passe"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Não tem conta?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Crie uma"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Criar uma conta"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Registe-se para submeter manuscritos e acompanhar o seu progresso."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Já tem conta?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Arquivo de números"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Nenhum número publicado."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Versão"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "visualizações"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "transferências"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Ler online"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "atual"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Licença"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metadados"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Principal"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Pesquisar…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Pesquisar artigos"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Idioma"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menu"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Explorar"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Aberto"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Revista com revisão por pares"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Submeter um manuscrito"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Explorar o arquivo"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Pesquisar artigos, autores, palavras-chave…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "artigos"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Ver índice"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Neste número"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Número completo"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Ainda não foi publicado nenhum número."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Artigos mais recentes"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Número"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Sem artigos neste número."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Pesquisar por título, autor, palavra-chave…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "resultado"
+msgstr[1] "resultados"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Nada encontrado."

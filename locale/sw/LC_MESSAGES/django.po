@@ -1,0 +1,749 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Uhariri"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Dashibodi"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Mawasilisho"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Machapisho"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Matoleo"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Aina (aina za faili)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Mapitio ya rika"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Raundi za mapitio"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Mgawanyo wa mapitio"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Maamuzi ya uhariri"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Mgawanyo wa hatua"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Majadiliano"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Kundi la wakaguzi"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Maslahi ya wakaguzi"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Maudhui na tovuti"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Jarida"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Sehemu"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategoria"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Vipengele vya orodha ya ukaguzi"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Kurasa tuli"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Matangazo"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Fomu"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Mawasilisho ya fomu"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Urambazaji (menyu na kijachini)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Mandhari"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Rekodi za Tombstone (OAI zilizofutwa)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Mawasiliano"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Violezo vya barua pepe"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Kumbukumbu za barua pepe"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Arifa"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Vifaa vya Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "Vifaa vya APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "Vifaa vya FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "Vifaa vya WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Watu na ufikiaji"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Watumiaji"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Majukumu (vikundi)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Matriki ya majukumu"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Uanachama wa jarida"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "Funguo za API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Usajili"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Aina za usajili"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Malipo"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Mfumo"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Usanidi (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Mipangilio ya wakati wa utekelezaji"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Programu-jalizi"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Mipangilio ya programu-jalizi"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Bendera za vipengele"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Swichi"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Sampuli"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Kumbukumbu za ukaguzi"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Vipimo (kila siku)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Ripoti (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Zana"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Tafsiri (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Sakinisha mandhari (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "Nyaraka za API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "Kituo cha OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Ramani ya tovuti"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "Mlisho wa RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Ukaguzi wa afya"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Tazama tovuti"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Mwanzo"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Hifadhi"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Tafuta"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Wasilisha"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Ingia"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Jisajili"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Toka"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Usimamizi wa tovuti ya Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Mtiririko wa uhariri"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Tupu"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Imepokelewa"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Wasilisho limepokelewa"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Rudi kwenye fomu"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Wasilisha miswada na maombi mengine kupitia fomu zilizo hapa chini."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Fomu"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Fungua fomu"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Hakuna fomu zinazopatikana kwa sasa."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Asante"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Jibu lako limerekodiwa. Asante kwa kutufahamisha."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Mapitio yako yamewasilishwa kwa timu ya uhariri. Tunashukuru kwa mchango "
+"wako."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Mapitio"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Wasilisha mapitio"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Mwaliko wa mapitio"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Mwaliko wa mapitio ya rika"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Umealikwa kupitia mswada huu."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Tarehe ya mwisho"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Ikisiri"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Faili"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Kubali mapitio"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Kataa"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Eneo la kazi la wasilisho"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Hatua"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Hali"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Pakia mswada wako uliorekebishwa"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Rudisha faili iliyohaririwa"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Pakia kisahihisho kilichorekebishwa"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Timu ya uhariri inasubiri faili lako. Baada ya kupakia, watajulishwa "
+"kiotomatiki."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Pakia"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Kwa sasa hakuna hatua inayohitajika kutoka kwako. Utapokea barua pepe ikiwa "
+"wahariri watahitaji chochote."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Historia ya faili"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Bado hakuna faili."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Matangazo yote"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Hakuna matangazo bado."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Maneno muhimu"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Jinsi ya kunukuu"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Ufadhili"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Matoleo"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Hifadhi"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Hakuna kategoria."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategoria"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Hakuna makala katika kategoria hii bado."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Rudi kwenye makala"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Pakua"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Toleo la sasa"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Makala za hivi karibuni"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Matengenezo"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Jarida hili linaandaliwa"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Tafadhali rudi hivi karibuni."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Sanidi jarida lako"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Unda jarida"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Usajili unahitajika"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Makala hii ni sehemu ya toleo la usajili. Tafadhali ingia kwa akaunti ya "
+"usajili au wasiliana na jarida."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Ruka hadi maudhui"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Mtumiaji"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Wasilisho jipya"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Msimamizi"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Badilisha hali ya giza"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Fikia dashibodi yako ya uhariri na mawasilisho yako."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Barua pepe au nenosiri si sahihi."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Barua pepe"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Nenosiri"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Huna akaunti?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Unda moja"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Unda akaunti"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Jisajili ili kuwasilisha miswada na kufuatilia maendeleo yake."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Tayari una akaunti?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Hifadhi ya matoleo"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Hakuna matoleo yaliyochapishwa."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Toleo"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "mionekano"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "upakuaji"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Soma mtandaoni"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "la sasa"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Leseni"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metadata"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Msingi"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Tafuta…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Tafuta makala"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Lugha"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menyu"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Vinjari"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Wazi"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Jarida lenye mapitio ya rika"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Wasilisha mswada"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Vinjari hifadhi"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Tafuta makala, waandishi, maneno muhimu…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "makala"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Tazama yaliyomo"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Katika toleo hili"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Toleo kamili"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Hakuna toleo lililochapishwa bado."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Makala mpya zaidi"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Toleo"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Hakuna makala katika toleo hili."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Tafuta kwa kichwa, mwandishi, neno muhimu…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "matokeo"
+msgstr[1] "matokeo"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Hakuna kilichopatikana."

@@ -1,0 +1,747 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "संपादकीय"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "डैशबोर्ड"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "प्रस्तुतियाँ"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "प्रकाशन"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "अंक"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "शैलियाँ (फ़ाइल प्रकार)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "सहकर्मी समीक्षा"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "समीक्षा चरण"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "समीक्षा नियुक्तियाँ"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "संपादकीय निर्णय"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "चरण नियुक्तियाँ"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "चर्चाएँ"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "समीक्षक पूल"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "समीक्षक रुचियाँ"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "सामग्री और साइट"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "पत्रिका"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "अनुभाग"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "श्रेणियाँ"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "जाँच-सूची आइटम"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "स्थैतिक पृष्ठ"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "घोषणाएँ"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "फ़ॉर्म"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "फ़ॉर्म प्रस्तुतियाँ"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "नेविगेशन (मेनू और फुटर)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "थीम"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone रिकॉर्ड (OAI हटाए गए)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "संचार"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "ईमेल टेम्पलेट"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "ईमेल लॉग"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "सूचनाएँ"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "वेब पुश डिवाइस"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS डिवाइस"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM डिवाइस"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS डिवाइस"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "लोग और पहुँच"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "उपयोगकर्ता"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "भूमिकाएँ (समूह)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "भूमिका मैट्रिक्स"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "पत्रिका सदस्यताएँ"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API कुंजियाँ"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "सदस्यताएँ"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "सदस्यता प्रकार"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "भुगतान"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "सिस्टम"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "कॉन्फ़िगरेशन (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "रनटाइम सेटिंग्स"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "प्लगइन्स"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "प्लगइन सेटिंग्स"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "फ़ीचर फ़्लैग"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "स्विच"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "नमूने"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "ऑडिट लॉग"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "मेट्रिक्स (दैनिक)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "रिपोर्टें (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "उपकरण"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "अनुवाद (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "थीम इंस्टॉल करें (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API दस्तावेज़ (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH एंडपॉइंट"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "साइटमैप"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS फ़ीड"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "स्वास्थ्य जाँच"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "साइट देखें"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "मुखपृष्ठ"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "अभिलेखागार"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "खोज"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "प्रस्तुत करें"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "साइन इन"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "पंजीकरण"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "साइन आउट"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django साइट प्रशासन"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "संपादकीय प्रवाह"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "खाली"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "प्राप्त"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "प्रस्तुति प्राप्त हुई"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "फ़ॉर्म पर वापस जाएँ"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "नीचे दिए फ़ॉर्म के माध्यम से पांडुलिपियाँ और अन्य अनुरोध भेजें।"
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "फ़ॉर्म"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "फ़ॉर्म खोलें"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "फ़िलहाल कोई फ़ॉर्म उपलब्ध नहीं है।"
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "धन्यवाद"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "आपकी प्रतिक्रिया दर्ज हो गई है। हमें बताने के लिए धन्यवाद।"
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "आपकी समीक्षा संपादकीय टीम को भेज दी गई है। आपके योगदान के लिए आभार।"
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "समीक्षा"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "समीक्षा भेजें"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "समीक्षा आमंत्रण"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "सहकर्मी समीक्षा आमंत्रण"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "आपको इस पांडुलिपि की समीक्षा के लिए आमंत्रित किया गया है।"
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "नियत तिथि"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "सार"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "फ़ाइलें"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "समीक्षा स्वीकारें"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "अस्वीकार करें"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "प्रस्तुति कार्यक्षेत्र"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "चरण"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "स्थिति"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "अपनी संशोधित पांडुलिपि अपलोड करें"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "संपादित फ़ाइल लौटाएँ"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "सुधारी गई प्रूफ़ अपलोड करें"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"संपादकीय टीम आपकी फ़ाइल का इंतज़ार कर रही है। अपलोड के बाद उन्हें स्वतः "
+"सूचित कर दिया जाएगा।"
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "अपलोड"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"इस समय आपसे किसी कार्रवाई की आवश्यकता नहीं है। यदि संपादकों को कुछ चाहिए तो "
+"आपको ईमेल मिलेगा।"
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "फ़ाइल इतिहास"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "अभी कोई फ़ाइल नहीं।"
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "सभी घोषणाएँ"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "अभी कोई घोषणा नहीं।"
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "कीवर्ड"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "उद्धरण कैसे दें"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "वित्तपोषण"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "संस्करण"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "अभिलेखागार"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "कोई श्रेणी नहीं।"
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "श्रेणी"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "इस श्रेणी में अभी कोई लेख नहीं है।"
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "लेख पर वापस जाएँ"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "डाउनलोड"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "वर्तमान अंक"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "हाल के लेख"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "रखरखाव"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "यह पत्रिका तैयार की जा रही है"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "कृपया शीघ्र पुनः देखें।"
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "अपनी पत्रिका सेट करें"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "पत्रिका बनाएँ"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "सदस्यता आवश्यक"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"यह लेख सदस्यता अंक का हिस्सा है। कृपया सदस्यता खाते से साइन इन करें या "
+"पत्रिका से संपर्क करें।"
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "सामग्री पर जाएँ"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "उपयोगकर्ता"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "नई प्रस्तुति"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "व्यवस्थापक"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "डार्क मोड बदलें"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "अपने संपादकीय डैशबोर्ड और प्रस्तुतियों तक पहुँचें।"
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "अमान्य ईमेल या पासवर्ड।"
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "ईमेल"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "पासवर्ड"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "खाता नहीं है?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "एक बनाएँ"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "खाता बनाएँ"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "पांडुलिपियाँ भेजने और उनकी प्रगति देखने के लिए पंजीकरण करें।"
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "पहले से खाता है?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "अंक अभिलेखागार"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "कोई प्रकाशित अंक नहीं।"
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "संस्करण"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "दृश्य"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "डाउनलोड"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "ऑनलाइन पढ़ें"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "वर्तमान"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "लाइसेंस"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "मेटाडेटा"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "प्राथमिक"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "खोजें…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "लेख खोजें"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "भाषा"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "मेनू"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "ब्राउज़ करें"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "खुला"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "सहकर्मी-समीक्षित पत्रिका"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "पांडुलिपि भेजें"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "अभिलेखागार ब्राउज़ करें"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "लेख, लेखक, कीवर्ड खोजें…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "लेख"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "विषय-सूची देखें"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "इस अंक में"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "पूर्ण अंक"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "अभी तक कोई अंक प्रकाशित नहीं हुआ है।"
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "नवीनतम लेख"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "अंक"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "इस अंक में कोई लेख नहीं।"
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "शीर्षक, लेखक, कीवर्ड से खोजें…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "परिणाम"
+msgstr[1] "परिणाम"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "कुछ नहीं मिला।"

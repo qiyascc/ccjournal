@@ -1,0 +1,747 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Redaksiýa"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Dolandyryş paneli"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Iberilen işler"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Neşirler"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Sanlar"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Žanrlar (faýl görnüşleri)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Syn bermek"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Syn tapgyrlary"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Syn tabşyryklary"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Redaksion kararlar"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Tapgyr tabşyryklary"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Çekişmeler"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Synçylar gory"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Synçylaryň gyzyklanmalary"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Mazmun we sahypa"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Žurnal"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Bölümler"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategoriýalar"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Barlag sanawynyň bentleri"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Statik sahypalar"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Bildirişler"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Formalar"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Forma iberişleri"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Nawigasiýa (menýular we aşaky bölek)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Temalar"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone ýazgylary (OAI pozulan)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Aragatnaşyk"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "E-poçta şablonlary"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "E-poçta žurnaly"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Habarnamalar"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Web push enjamlary"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS enjamlary"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM enjamlary"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS enjamlary"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Adamlar we elýeterlilik"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Ulanyjylar"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Rollar (toparlar)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Rollar matrisasy"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Žurnal agzalyklary"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API açarlary"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Abunalyklar"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Abunalyk görnüşleri"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Tölegler"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Ulgam"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Konfigurasiýa (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Işleýiş sazlamalary"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Plaginler"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Plagin sazlamalary"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Funksiýa baýdaklary"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Wyklýuçateller"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Nusgalar"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Audit žurnaly"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Ölçegler (gündelik)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Hasabatlar (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Gurallar"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Terjimeler (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Tema gurnamak (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API resminamalary (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH nokady"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Sahypa kartasy"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS akymy"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Ýagdaý barlagy"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Sahypany görmek"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Baş sahypa"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Arhiwler"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Gözleg"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Ibermek"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Girmek"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Hasaba alynmak"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Çykmak"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django sahypa dolandyryşy"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Redaksion akym"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Boş"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Kabul edildi"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Iberilen iş kabul edildi"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Formalara dolanmak"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Golýazmalary we beýleki haýyşlary aşakdaky formalar arkaly iberiň."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Forma"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Formany açmak"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Häzir elýeterli forma ýok."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Sag boluň"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Jogabyňyz bellige alyndy. Bize habar bereniňiz üçin sag boluň."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "Synyňyz redaksiýa toparyna iberildi. Goşandyňyz üçin sag boluň."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Syn"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Syny ibermek"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Syn çakylygy"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Syn bermek çakylygy"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Siz bu golýazma syn bermäge çagyryldyňyz."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Möhlet"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Gysgaça mazmun"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Faýllar"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Syny kabul etmek"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Ret etmek"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Iberiş iş meýdany"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Tapgyr"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Ýagdaý"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Düzedilen golýazmaňyzy ýükläň"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Redaktirlenen faýly yzyna iberiň"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Düzedilen korrekturany ýükläň"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Redaksiýa topary faýlyňyza garaşýar. Ýükläniňizden soň olara awtomatik habar"
+" berler."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Ýükle"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Häzirlikçe sizden hiç bir hereket talap edilmeýär. Redaktorlara bir zat "
+"gerek bolsa, e-poçta alarsyňyz."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Faýl taryhy"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Entek faýl ýok."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Ähli bildirişler"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Häzirlikçe bildiriş ýok."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Açar sözler"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Nähili salgylanmaly"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Maliýeleşdirme"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Wersiýalar"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Arhiw"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Kategoriýa ýok."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategoriýa"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Bu kategoriýada entek makala ýok."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Makala dolanmak"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Ýüklemek"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Häzirki san"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Soňky makalalar"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Tehniki işler"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Bu žurnal sazlanýar"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Tiz wagtdan ýene geliň."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Žurnalyňyzy sazlaň"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Žurnal döretmek"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Abunalyk gerek"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Bu makala abunalyk sanynyň bölegidir. Abunaçy hasaby bilen giriň ýa-da "
+"žurnal bilen habarlaşyň."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Mazmuna geçmek"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Ulanyjy"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Täze iberiş"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Garaňky tertibi çalyşmak"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Redaksion paneliňize we iberen işleriňize giriň."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "E-poçta ýa-da parol nädogry."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "E-poçta"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Parol"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Hasabyňyz ýokmy?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Birini dörediň"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Hasap döretmek"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Golýazma ibermek we ýagdaýyny yzarlamak üçin hasaba alnyň."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Hasabyňyz barmy?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Sanlaryň arhiwi"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Neşir edilen san ýok."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Wersiýa"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "görülme"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "ýükleme"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Onlaýn okamak"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "häzirki"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Ygtyýarnama"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metamaglumatlar"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Esasy"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Gözlemek…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Makalalary gözlemek"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Dil"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menýu"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Görmek"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Açyk"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Syn berilýän žurnal"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Golýazma ibermek"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Arhiwi görmek"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Makalalary, awtorlary, açar sözleri gözläň…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "makala"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Mazmunyny görmek"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Bu sanda"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Doly san"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Entek hiç bir san neşir edilmedi."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Iň täze makalalar"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "San"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Bu sanda makala ýok."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Ady, awtory, açar sözi boýunça gözlemek…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "netije"
+msgstr[1] "netije"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Hiç zat tapylmady."

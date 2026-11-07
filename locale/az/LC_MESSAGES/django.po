@@ -1,0 +1,1119 @@
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-12 10:59+0400\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Redaksiya"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "İdarə paneli"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Göndərişlər"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Nəşrlər"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Saylar"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Janrlar (fayl tipləri)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Ekspert rəyi"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Rəy turları"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Rəy təyinatları"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Redaksiya qərarları"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Mərhələ təyinatları"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Müzakirələr"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Rəyçi hovuzu"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Rəyçi maraqları"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Məzmun və sayt"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Jurnal"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Bölmələr"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kateqoriyalar"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Yoxlama siyahısı bəndləri"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Statik səhifələr"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Elanlar"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Formalar"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Forma müraciətləri"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Naviqasiya (menyular və alt hissə)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Mövzular (temalar)"
+
+#: apps/core/sidebar.py:77
+#, fuzzy
+#| msgid "Email templates"
+msgid "PDF templates"
+msgstr "E-poçt şablonları"
+
+#: apps/core/sidebar.py:79
+msgid "DOIs (Crossref)"
+msgstr ""
+
+#: apps/core/sidebar.py:81
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone qeydləri (OAI silinmiş)"
+
+#: apps/core/sidebar.py:86
+msgid "Communication"
+msgstr "Kommunikasiya"
+
+#: apps/core/sidebar.py:89
+msgid "Email templates"
+msgstr "E-poçt şablonları"
+
+#: apps/core/sidebar.py:91
+msgid "Email log"
+msgstr "E-poçt jurnalı"
+
+#: apps/core/sidebar.py:93
+msgid "Notifications"
+msgstr "Bildirişlər"
+
+#: apps/core/sidebar.py:95
+msgid "Web push devices"
+msgstr "Veb push cihazları"
+
+#: apps/core/sidebar.py:97
+msgid "APNS devices"
+msgstr "APNS cihazları"
+
+#: apps/core/sidebar.py:99
+msgid "FCM devices"
+msgstr "FCM cihazları"
+
+#: apps/core/sidebar.py:101
+msgid "WNS devices"
+msgstr "WNS cihazları"
+
+#: apps/core/sidebar.py:106
+msgid "People & access"
+msgstr "İnsanlar və giriş"
+
+#: apps/core/sidebar.py:109
+msgid "Users"
+msgstr "İstifadəçilər"
+
+#: apps/core/sidebar.py:111
+msgid "Roles (groups)"
+msgstr "Rollar (qruplar)"
+
+#: apps/core/sidebar.py:113
+msgid "Role matrix"
+msgstr "Rol matrisi"
+
+#: apps/core/sidebar.py:115
+msgid "Journal memberships"
+msgstr "Jurnal üzvlükləri"
+
+#: apps/core/sidebar.py:117
+msgid "API keys"
+msgstr "API açarları"
+
+#: apps/core/sidebar.py:122 apps/core/sidebar.py:127
+msgid "Subscriptions"
+msgstr "Abunəliklər"
+
+#: apps/core/sidebar.py:125
+msgid "Subscription types"
+msgstr "Abunəlik tipləri"
+
+#: apps/core/sidebar.py:129
+msgid "Payments"
+msgstr "Ödənişlər"
+
+#: apps/core/sidebar.py:134
+msgid "System"
+msgstr "Sistem"
+
+#: apps/core/sidebar.py:137
+msgid "Configuration (config.ini)"
+msgstr "Konfiqurasiya (config.ini)"
+
+#: apps/core/sidebar.py:139
+msgid "Runtime settings"
+msgstr "İş vaxtı parametrləri"
+
+#: apps/core/sidebar.py:141
+msgid "Plugins"
+msgstr "Plaginlər"
+
+#: apps/core/sidebar.py:143
+msgid "Plugin settings"
+msgstr "Plagin parametrləri"
+
+#: apps/core/sidebar.py:145
+msgid "Feature flags"
+msgstr "Funksiya bayraqları"
+
+#: apps/core/sidebar.py:147
+msgid "Switches"
+msgstr "Açarlar (switch)"
+
+#: apps/core/sidebar.py:149
+msgid "Samples"
+msgstr "Nümunələr"
+
+#: apps/core/sidebar.py:151
+msgid "Audit log"
+msgstr "Audit jurnalı"
+
+#: apps/core/sidebar.py:153
+msgid "Metrics (daily)"
+msgstr "Metrikalar (günlük)"
+
+#: apps/core/sidebar.py:155
+msgid "Reports (CSV)"
+msgstr "Hesabatlar (CSV)"
+
+#: apps/core/sidebar.py:160
+msgid "Tools"
+msgstr "Alətlər"
+
+#: apps/core/sidebar.py:164
+msgid "Translations (Rosetta)"
+msgstr "Tərcümələr (Rosetta)"
+
+#: apps/core/sidebar.py:166
+msgid "Install theme (.zip)"
+msgstr "Tema yüklə (.zip)"
+
+#: apps/core/sidebar.py:168
+msgid "API docs (Swagger)"
+msgstr "API sənədləri (Swagger)"
+
+#: apps/core/sidebar.py:170
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH ünvanı"
+
+#: apps/core/sidebar.py:172
+msgid "Sitemap"
+msgstr "Sayt xəritəsi"
+
+#: apps/core/sidebar.py:173
+msgid "RSS feed"
+msgstr "RSS lenti"
+
+#: apps/core/sidebar.py:174
+msgid "Health check"
+msgstr "Sağlamlıq yoxlaması"
+
+#: apps/core/sidebar.py:176
+msgid "View site"
+msgstr "Sayta bax"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Ana səhifə"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Arxiv"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+#: themes/epictheme/templates/web/base.html:54
+#: themes/epictheme/templates/web/base.html:124
+#: themes/epictheme/templates/web/search.html:3
+#: themes/epictheme/templates/web/search.html:5
+#: themes/epictheme/templates/web/search.html:7
+#: themes/epictheme/templates/web/search.html:8
+msgid "Search"
+msgstr "Axtarış"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Göndər"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+#: themes/epictheme/templates/base.html:35
+#: themes/epictheme/templates/registration/login.html:3
+#: themes/epictheme/templates/registration/login.html:6
+#: themes/epictheme/templates/registration/login.html:16
+#: themes/epictheme/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Daxil ol"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+#: themes/epictheme/templates/base.html:36
+#: themes/epictheme/templates/registration/register.html:3
+#: themes/epictheme/templates/registration/register.html:18
+msgid "Register"
+msgstr "Qeydiyyat"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+#: themes/epictheme/templates/base.html:29
+msgid "Sign out"
+msgstr "Çıxış"
+
+#: templates/admin/accounts/apikey/change_list.html:6
+#: templates/admin/apikey_generate.html:5
+msgid "Generate API key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:9
+msgid "Your new API key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:9
+msgid "copy it now, it won't be shown again:"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:11
+msgid "Copied ✓"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:11
+msgid "Copy key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:12
+#, fuzzy
+#| msgid "API keys"
+msgid "Back to API keys"
+msgstr "API açarları"
+
+#: templates/admin/apikey_generate.html:16
+msgid "Create an API key for a user. Use it with the header"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:17
+msgid "The raw key is shown only once."
+msgstr ""
+
+#: templates/admin/apikey_generate.html:23
+msgid "Generate key"
+msgstr ""
+
+#: templates/admin/apikey_generate.html:24
+#: templates/admin/assign_issue.html:29
+msgid "Cancel"
+msgstr ""
+
+#: templates/admin/assign_issue.html:5
+#, fuzzy
+#| msgid "No articles in this issue."
+msgid "Assign articles to an issue"
+msgstr "Bu sayda məqalə yoxdur."
+
+#: templates/admin/assign_issue.html:7
+msgid ""
+"OJS-style flow: articles are published as part of an issue. Assign these "
+"articles to an issue; if the issue is already published they go live "
+"immediately, otherwise they become SCHEDULED and are released when you "
+"publish the issue."
+msgstr ""
+
+#: templates/admin/assign_issue.html:16
+#, fuzzy
+#| msgid "current"
+msgid "currently"
+msgstr "cari"
+
+#: templates/admin/assign_issue.html:19
+#: themes/broadsheet/templates/web/issue.html:7
+#: themes/epictheme/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Say"
+
+#: templates/admin/assign_issue.html:21
+msgid "Select an issue"
+msgstr ""
+
+#: templates/admin/assign_issue.html:23
+#, fuzzy
+#| msgid "No published issues."
+msgid "published"
+msgstr "Nəşr olunmuş say yoxdur."
+
+#: templates/admin/assign_issue.html:23
+msgid "unpublished"
+msgstr ""
+
+#: templates/admin/assign_issue.html:28
+#, fuzzy
+#| msgid "In this issue"
+msgid "Assign to issue"
+msgstr "Bu sayda"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django sayt administrasiyası"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Redaksiya axını"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Boş"
+
+#: templates/admin/publications/pdftemplate/change_form.html:42
+msgid ""
+"This template is in Custom HTML/CSS mode — the visual designer is disabled. "
+"Switch Mode to “Visual designer” to use the controls."
+msgstr ""
+"Bu şablon Custom HTML/CSS rejimindədir — vizual dizayner deaktivdir. "
+"İdarəetmələr üçün Rejimi “Visual designer”ə keçirin."
+
+#: templates/admin/publications/pdftemplate/change_form.html:46
+msgid "Preview PDF"
+msgstr "PDF önizləmə"
+
+#: templates/admin/publications/pdftemplate/change_form.html:47
+msgid "Reset to default"
+msgstr "Standarta sıfırla"
+
+#: templates/admin/publications/pdftemplate/change_form.html:48
+msgid "Changes apply to the preview instantly; click Save to keep them."
+msgstr ""
+"Dəyişikliklər önizləməyə dərhal tətbiq olunur; saxlamaq üçün Yadda saxla."
+
+#: templates/admin/publications/pdftemplate/change_form.html:53
+msgid "Colors"
+msgstr "Rənglər"
+
+#: templates/admin/publications/pdftemplate/change_form.html:54
+msgid "Accent (titles, links, rule)"
+msgstr "Vurğu (başlıqlar, linklər, xətt)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:55
+msgid "Secondary accent"
+msgstr "İkincil vurğu"
+
+#: templates/admin/publications/pdftemplate/change_form.html:56
+msgid "Body text"
+msgstr "Mətn"
+
+#: templates/admin/publications/pdftemplate/change_form.html:57
+msgid "Muted text"
+msgstr "Solğun mətn"
+
+#: templates/admin/publications/pdftemplate/change_form.html:58
+msgid "Meta panel background"
+msgstr "Meta panel fonu"
+
+#: templates/admin/publications/pdftemplate/change_form.html:61
+msgid "Typography & logo"
+msgstr "Tipoqrafiya və logo"
+
+#: templates/admin/publications/pdftemplate/change_form.html:62
+msgid "Heading font"
+msgstr "Başlıq şrifti"
+
+#: templates/admin/publications/pdftemplate/change_form.html:63
+msgid "Body font"
+msgstr "Mətn şrifti"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Logo position"
+msgstr "Logo mövqeyi"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Left"
+msgstr "Sol"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Center"
+msgstr "Mərkəz"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Right"
+msgstr "Sağ"
+
+#: templates/admin/publications/pdftemplate/change_form.html:64
+msgid "Hidden"
+msgstr "Gizli"
+
+#: templates/admin/publications/pdftemplate/change_form.html:65
+msgid "Logo height (px)"
+msgstr "Logo hündürlüyü (px)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:68
+msgid "Badge & rule"
+msgstr "Nişan və xətt"
+
+#: templates/admin/publications/pdftemplate/change_form.html:69
+msgid "Show badge (e.g. RESEARCH ARTICLE)"
+msgstr "Nişanı göstər (məs. RESEARCH ARTICLE)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:70
+msgid "Badge text"
+msgstr "Nişan mətni"
+
+#: templates/admin/publications/pdftemplate/change_form.html:71
+msgid "Badge color"
+msgstr "Nişan rəngi"
+
+#: templates/admin/publications/pdftemplate/change_form.html:72
+#| msgid "Read online"
+msgid "Header underline"
+msgstr "Başlıq alt xətti"
+
+#: templates/admin/publications/pdftemplate/change_form.html:75
+msgid "Page"
+msgstr "Səhifə"
+
+#: templates/admin/publications/pdftemplate/change_form.html:76
+msgid "Size"
+msgstr "Ölçü"
+
+#: templates/admin/publications/pdftemplate/change_form.html:77
+msgid "Top / bottom margin (cm)"
+msgstr "Üst / alt kənar (sm)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:78
+msgid "Side margin (cm)"
+msgstr "Yan kənar (sm)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:79
+msgid "Footer text"
+msgstr "Alt bilgi mətni"
+
+#: templates/admin/publications/pdftemplate/change_form.html:80
+msgid "Show page numbers"
+msgstr "Səhifə nömrələrini göstər"
+
+#: templates/admin/publications/pdftemplate/change_form.html:85
+msgid "Sections — drag to reorder, toggle to show/hide"
+msgstr "Bölmələr — sıralamaq üçün sürüşdür, göstər/gizlət üçün keçid"
+
+#: templates/admin/publications/pdftemplate/change_form.html:86
+msgid "The order here is the order on the page."
+msgstr "Buradakı sıra səhifədəki sıradır."
+
+#: templates/admin/publications/pdftemplate/change_form.html:91
+#| msgid "Peer review"
+msgid "Live preview"
+msgstr "Canlı önizləmə"
+
+#: templates/admin/publications/pdftemplate/change_form.html:92
+#| msgid "Peer review"
+msgid "Refresh preview"
+msgstr "Önizləməni yenilə"
+
+#: templates/admin/publications/pdftemplate/change_form.html:104
+msgid "Journal name + logo"
+msgstr "Jurnal adı + logo"
+
+#: templates/admin/publications/pdftemplate/change_form.html:104
+msgid "Badge"
+msgstr "Nişan"
+
+#: templates/admin/publications/pdftemplate/change_form.html:105
+msgid "Title"
+msgstr "Başlıq"
+
+#: templates/admin/publications/pdftemplate/change_form.html:105
+msgid "Subtitle"
+msgstr "Alt başlıq"
+
+#: templates/admin/publications/pdftemplate/change_form.html:106
+msgid "Authors"
+msgstr "Müəlliflər"
+
+#: templates/admin/publications/pdftemplate/change_form.html:106
+#| msgid "Publications"
+msgid "Affiliations"
+msgstr "Mənsubiyyətlər"
+
+#: templates/admin/publications/pdftemplate/change_form.html:107
+msgid "Meta (DOI, date, license)"
+msgstr "Meta (DOI, tarix, lisenziya)"
+
+#: templates/admin/publications/pdftemplate/change_form.html:107
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+#: themes/epictheme/templates/web/article.html:63
+msgid "Abstract"
+msgstr "Xülasə"
+
+#: templates/admin/publications/pdftemplate/change_form.html:108
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+#: themes/epictheme/templates/web/article.html:70
+msgid "Keywords"
+msgstr "Açar sözlər"
+
+#: templates/admin/publications/pdftemplate/change_form.html:108
+msgid "Full text body"
+msgstr "Tam mətn"
+
+#: templates/admin/publications/pdftemplate/change_form.html:177
+msgid "Reset all visual settings to the default design?"
+msgstr "Bütün vizual parametrlər standart dizayna sıfırlansın?"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Qəbul edildi"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Müraciətiniz qəbul edildi"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Formalara qayıt"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr ""
+"Əlyazmalarınızı və digər müraciətlərinizi aşağıdakı formalar vasitəsilə "
+"göndərin."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Forma"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Formanı aç"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Hazırda əlçatan forma yoxdur."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Təşəkkür edirik"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Cavabınız qeydə alındı. Bizə bildirdiyiniz üçün minnətdarıq."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Rəyiniz redaksiya komandasına göndərildi. Töhfəniz üçün təşəkkür edirik."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Rəy"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Rəyi göndər"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Rəy dəvəti"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Ekspert rəyi dəvəti"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Bu əlyazmanı dəyərləndirmək üçün dəvət olunmusunuz."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Son tarix"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Fayllar"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Rəyi qəbul et"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "İmtina et"
+
+#: templates/submissions/author_work.html:6
+msgid "Submission workspace"
+msgstr "Göndəriş iş sahəsi"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Mərhələ"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Status"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Düzəliş edilmiş əlyazmanızı yükləyin"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Redaktə edilmiş faylı geri göndərin"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Düzəldilmiş yoxlama nüsxəsini yükləyin"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Redaksiya komandası faylınızı gözləyir. Yüklədikdən sonra avtomatik xəbərdar"
+" olunacaqlar."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Yüklə"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Hazırda sizdən heç bir əməliyyat tələb olunmur. Redaktorların ehtiyacı "
+"olarsa, e-poçt alacaqsınız."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Fayl tarixçəsi"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Hələ fayl yoxdur."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Bütün elanlar"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Hələ elan yoxdur."
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:89
+#: themes/epictheme/templates/web/article.html:85
+msgid "How to cite"
+msgstr "Necə istinad etməli"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:95
+#: themes/epictheme/templates/web/article.html:91
+msgid "Funding"
+msgstr "Maliyyələşdirmə"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:104
+#: themes/epictheme/templates/web/article.html:100
+msgid "Versions"
+msgstr "Versiyalar"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+#: themes/epictheme/templates/web/archive.html:3
+#: themes/epictheme/templates/web/base.html:123
+msgid "Archive"
+msgstr "Arxiv"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Kateqoriya yoxdur."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kateqoriya"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Bu kateqoriyada hələ məqalə yoxdur."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Məqaləyə qayıt"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Yüklə"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Cari say"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Son məqalələr"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Texniki işlər"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Bu jurnal hazırlanır"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Zəhmət olmasa bir azdan yenidən baxın."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Jurnalınızı qurun"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Jurnal yarat"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Abunəlik tələb olunur"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Bu məqalə abunəlik tələb edən sayın bir hissəsidir. Zəhmət olmasa abunə "
+"hesabı ilə daxil olun və ya jurnalla əlaqə saxlayın."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+#: themes/epictheme/templates/base.html:13
+#: themes/epictheme/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Məzmuna keç"
+
+#: themes/broadsheet/templates/base.html:20
+#: themes/epictheme/templates/base.html:21
+msgid "User"
+msgstr "İstifadəçi"
+
+#: themes/broadsheet/templates/base.html:22
+#: themes/epictheme/templates/base.html:23
+msgid "New submission"
+msgstr "Yeni göndəriş"
+
+#: themes/broadsheet/templates/base.html:23
+#: themes/epictheme/templates/base.html:24
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+#: themes/epictheme/templates/base.html:25
+#: themes/epictheme/templates/base.html:31
+#: themes/epictheme/templates/web/base.html:68
+msgid "Toggle dark mode"
+msgstr "Qaranlıq rejimi dəyiş"
+
+#: themes/broadsheet/templates/registration/login.html:7
+#: themes/epictheme/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Redaksiya panelinizə və göndərişlərinizə daxil olun."
+
+#: themes/broadsheet/templates/registration/login.html:10
+#: themes/epictheme/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "E-poçt və ya şifrə yanlışdır."
+
+#: themes/broadsheet/templates/registration/login.html:11
+#: themes/epictheme/templates/registration/login.html:11
+msgid "Email"
+msgstr "E-poçt"
+
+#: themes/broadsheet/templates/registration/login.html:13
+#: themes/epictheme/templates/registration/login.html:13
+msgid "Password"
+msgstr "Şifrə"
+
+#: themes/broadsheet/templates/registration/login.html:18
+#: themes/epictheme/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Hesabınız yoxdur?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+#: themes/epictheme/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Hesab yaradın"
+
+#: themes/broadsheet/templates/registration/register.html:6
+#: themes/epictheme/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Hesab yarat"
+
+#: themes/broadsheet/templates/registration/register.html:7
+#: themes/epictheme/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Əlyazma göndərmək və gedişatını izləmək üçün qeydiyyatdan keçin."
+
+#: themes/broadsheet/templates/registration/register.html:20
+#: themes/epictheme/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Artıq hesabınız var?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+#: themes/epictheme/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Say arxivi"
+
+#: themes/broadsheet/templates/web/archive.html:13
+#: themes/epictheme/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Nəşr olunmuş say yoxdur."
+
+#: themes/broadsheet/templates/web/article.html:44
+#: themes/epictheme/templates/web/article.html:42
+msgid "Version"
+msgstr "Versiya"
+
+#: themes/broadsheet/templates/web/article.html:45
+#: themes/epictheme/templates/web/article.html:43
+msgid "views"
+msgstr "baxış"
+
+#: themes/broadsheet/templates/web/article.html:45
+#: themes/epictheme/templates/web/article.html:43
+msgid "downloads"
+msgstr "yükləmə"
+
+#: themes/broadsheet/templates/web/article.html:52
+#: themes/epictheme/templates/web/article.html:49
+msgid "Read online"
+msgstr "Onlayn oxu"
+
+#: themes/broadsheet/templates/web/article.html:83
+#: themes/epictheme/templates/web/article.html:79
+#, fuzzy
+#| msgid "Full issue"
+msgid "Full text"
+msgstr "Tam say"
+
+#: themes/broadsheet/templates/web/article.html:107
+#: themes/epictheme/templates/web/article.html:102
+msgid "current"
+msgstr "cari"
+
+#: themes/broadsheet/templates/web/article.html:115
+#: themes/epictheme/templates/web/article.html:109
+msgid "License"
+msgstr "Lisenziya"
+
+#: themes/broadsheet/templates/web/article.html:121
+#: themes/epictheme/templates/web/article.html:115
+msgid "Metadata"
+msgstr "Metadata"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+#: themes/epictheme/templates/web/base.html:31
+#: themes/epictheme/templates/web/base.html:81
+msgid "Primary"
+msgstr "Əsas"
+
+#: themes/broadsheet/templates/web/base.html:56
+#: themes/epictheme/templates/web/base.html:52
+msgid "Search…"
+msgstr "Axtar…"
+
+#: themes/broadsheet/templates/web/base.html:57
+#: themes/epictheme/templates/web/base.html:52
+msgid "Search articles"
+msgstr "Məqalə axtar"
+
+#: themes/broadsheet/templates/web/base.html:67
+#: themes/epictheme/templates/web/base.html:59
+msgid "Language"
+msgstr "Dil"
+
+#: themes/broadsheet/templates/web/base.html:95
+#: themes/epictheme/templates/web/base.html:75
+msgid "Menu"
+msgstr "Menyu"
+
+#: themes/broadsheet/templates/web/base.html:141
+#: themes/epictheme/templates/web/base.html:119
+msgid "Browse"
+msgstr "Gözdən keçir"
+
+#: themes/broadsheet/templates/web/base.html:152
+#: themes/epictheme/templates/web/base.html:129
+msgid "Open"
+msgstr "Açıq"
+
+#: themes/broadsheet/templates/web/home.html:12
+#: themes/epictheme/templates/web/home.html:14
+msgid "Peer-reviewed journal"
+msgstr "Resenziyalı elmi jurnal"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+#: themes/epictheme/templates/web/home.html:26
+#: themes/epictheme/templates/web/home.html:29
+#: themes/epictheme/templates/web/home.html:32
+msgid "Submit a manuscript"
+msgstr "Əlyazma göndər"
+
+#: themes/broadsheet/templates/web/home.html:27
+#: themes/epictheme/templates/web/home.html:35
+msgid "Browse archive"
+msgstr "Arxivə bax"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Məqalə, müəllif, açar söz axtar…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "məqalə"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Mündəricata bax"
+
+#: themes/broadsheet/templates/web/home.html:64
+#: themes/epictheme/templates/web/home.html:56
+msgid "In this issue"
+msgstr "Bu sayda"
+
+#: themes/broadsheet/templates/web/home.html:65
+#: themes/epictheme/templates/web/home.html:57
+msgid "Full issue"
+msgstr "Tam say"
+
+#: themes/broadsheet/templates/web/home.html:83
+#: themes/epictheme/templates/web/home.html:81
+msgid "No issue has been published yet."
+msgstr "Hələ heç bir say nəşr olunmayıb."
+
+#: themes/broadsheet/templates/web/home.html:91
+#: themes/epictheme/templates/web/home.html:89
+msgid "Latest articles"
+msgstr "Son məqalələr"
+
+#: themes/broadsheet/templates/web/issue.html:29
+#: themes/epictheme/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Bu sayda məqalə yoxdur."
+
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/epictheme/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Başlıq, müəllif, açar söz axtar…"
+
+#: themes/broadsheet/templates/web/search.html:11
+#: themes/epictheme/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "nəticə"
+msgstr[1] "nəticə"
+
+#: themes/broadsheet/templates/web/search.html:22
+#: themes/epictheme/templates/web/search.html:21
+msgid "Nothing found."
+msgstr "Heç nə tapılmadı."
+
+#: themes/epictheme/templates/web/home.html:44
+#, fuzzy
+#| msgid "People & access"
+msgid "Open access"
+msgstr "İnsanlar və giriş"
+
+#: themes/epictheme/templates/web/home.html:45
+#, fuzzy
+#| msgid "Peer review"
+msgid "Peer-reviewed"
+msgstr "Ekspert rəyi"
+
+#: themes/epictheme/templates/web/home.html:46
+#, fuzzy
+#| msgid "Issue archive"
+msgid "Indexed & archived"
+msgstr "Say arxivi"
+
+#~ msgid "Preview your unsaved edits with a real article from this journal:"
+#~ msgstr ""
+#~ "Saxlanılmamış dəyişikliklərinizi bu jurnaldan real məqalə ilə önizləyin:"
+
+#~ msgid "Preview unsaved changes"
+#~ msgstr "Saxlanılmamışı önizlə"

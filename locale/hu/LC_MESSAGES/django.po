@@ -1,0 +1,748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Szerkesztőség"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Irányítópult"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Beküldések"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Publikációk"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Lapszámok"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Műfajok (fájltípusok)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Szakmai lektorálás"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Bírálati körök"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Bírálati kijelölések"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Szerkesztőségi döntések"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Szakasz-kijelölések"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Megbeszélések"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Bírálói kör"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Bírálói érdeklődések"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Tartalom és webhely"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Folyóirat"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Rovatok"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategóriák"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Ellenőrzőlista elemei"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Statikus oldalak"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Közlemények"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Űrlapok"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Űrlapbeküldések"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navigáció (menük és lábléc)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Témák"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone-ok (OAI törölt)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Kommunikáció"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "E-mail sablonok"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "E-mail napló"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Értesítések"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Web push eszközök"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS eszközök"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM eszközök"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS eszközök"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Személyek és hozzáférés"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Felhasználók"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Szerepek (csoportok)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Szerepmátrix"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Folyóirat-tagságok"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API-kulcsok"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Előfizetések"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Előfizetési típusok"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Fizetések"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Rendszer"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Konfiguráció (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Futásidejű beállítások"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Bővítmények"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Bővítménybeállítások"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Funkciójelzők"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Kapcsolók"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Minták"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Auditnapló"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Mérőszámok (napi)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Jelentések (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Eszközök"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Fordítások (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Téma telepítése (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API-dokumentáció (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH végpont"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Oldaltérkép"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS-hírcsatorna"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Állapotellenőrzés"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Webhely megtekintése"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Kezdőlap"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Archívumok"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Keresés"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Beküldés"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Bejelentkezés"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Regisztráció"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Kijelentkezés"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django webhelyadminisztráció"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Szerkesztőségi folyamat"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Üres"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Beérkezett"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Beküldés beérkezett"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Vissza az űrlapokhoz"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Kéziratokat és egyéb kérelmeket az alábbi űrlapokon küldhet be."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Űrlap"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Űrlap megnyitása"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Jelenleg nincs elérhető űrlap."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Köszönjük"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Válaszát rögzítettük. Köszönjük, hogy jelezte nekünk."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Bírálatát továbbítottuk a szerkesztőségnek. Köszönjük a hozzájárulását."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Bírálat"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Bírálat beküldése"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Bírálati felkérés"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Felkérés szakmai lektorálásra"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Felkérést kapott e kézirat bírálatára."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Határidő"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Absztrakt"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Fájlok"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Bírálat elfogadása"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Elutasítás"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Beküldés munkaterülete"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Szakasz"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Állapot"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Töltse fel az átdolgozott kéziratát"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Küldje vissza a szerkesztett fájlt"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Töltse fel a javított korrektúrát"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"A szerkesztőség várja a fájlját. A feltöltés után automatikusan értesítést "
+"kap."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Feltöltés"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Jelenleg nincs szükség teendőre az Ön részéről. E-mailt kap, ha a "
+"szerkesztőségnek szüksége van valamire."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Fájlelőzmények"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Még nincsenek fájlok."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Összes közlemény"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Még nincsenek közlemények."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Kulcsszavak"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Hivatkozás módja"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Finanszírozás"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Verziók"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Archívum"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Nincsenek kategóriák."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategória"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Ebben a kategóriában még nincsenek cikkek."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Vissza a cikkhez"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Letöltés"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Aktuális lapszám"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Friss cikkek"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Karbantartás"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "A folyóirat beállítás alatt áll"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Kérjük, nézzen vissza hamarosan."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Állítsa be a folyóiratát"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Folyóirat létrehozása"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Előfizetés szükséges"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Ez a cikk előfizetéses lapszám része. Jelentkezzen be előfizetői fiókkal, "
+"vagy lépjen kapcsolatba a folyóirattal."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Ugrás a tartalomra"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Felhasználó"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Új beküldés"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Sötét mód váltása"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Hozzáférés a szerkesztőségi panelhez és a beküldéseihez."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Érvénytelen e-mail vagy jelszó."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "E-mail"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Jelszó"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Nincs fiókja?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Hozzon létre egyet"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Fiók létrehozása"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Regisztráljon kéziratok beküldéséhez és állapotuk követéséhez."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Már van fiókja?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Lapszám-archívum"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Nincsenek publikált lapszámok."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Verzió"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "megtekintés"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "letöltés"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Olvasás online"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "aktuális"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Licenc"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metaadatok"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Elsődleges"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Keresés…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Cikkek keresése"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Nyelv"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menü"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Böngészés"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Nyílt"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Lektorált folyóirat"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Kézirat beküldése"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Archívum böngészése"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Cikkek, szerzők, kulcsszavak keresése…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "cikk"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Tartalomjegyzék megtekintése"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Ebben a lapszámban"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Teljes lapszám"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Még nem jelent meg lapszám."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Legújabb cikkek"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Lapszám"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Nincsenek cikkek ebben a lapszámban."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Keresés cím, szerző, kulcsszó szerint…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "találat"
+msgstr[1] "találat"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Nincs találat."

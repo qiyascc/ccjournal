@@ -1,0 +1,750 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Erredakzioa"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Aginte-panela"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Bidalketak"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Argitalpenak"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Zenbakiak"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Generoak (fitxategi motak)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Parekideen ebaluazioa"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Ebaluazio-txandak"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Ebaluazio-esleipenak"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Erredakzio-erabakiak"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Fase-esleipenak"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Eztabaidak"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Ebaluatzaileen multzoa"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Ebaluatzaileen interesak"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Edukia eta gunea"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Aldizkaria"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Atalak"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategoriak"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Egiaztapen-zerrendako elementuak"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Orri estatikoak"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Iragarkiak"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Inprimakiak"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Inprimaki-bidalketak"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Nabigazioa (menuak eta orri-oina)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Gaiak"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone erregistroak (OAI ezabatuak)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Komunikazioa"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Posta-txantiloiak"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Posta-erregistroa"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Jakinarazpenak"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Web push gailuak"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS gailuak"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM gailuak"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS gailuak"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Pertsonak eta sarbidea"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Erabiltzaileak"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Rolak (taldeak)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Rolen matrizea"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Aldizkariko kidetzak"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API gakoak"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Harpidetzak"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Harpidetza motak"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Ordainketak"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Sistema"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Konfigurazioa (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Exekuzio-ezarpenak"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Pluginak"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Plugin-ezarpenak"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Funtzio-banderak"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Etengailuak"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Laginak"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Auditoria-erregistroa"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Metrikak (egunerokoak)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Txostenak (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Tresnak"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Itzulpenak (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Instalatu gaia (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API dokumentazioa (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH amaiera-puntua"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Gunearen mapa"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS jarioa"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Egoera-egiaztapena"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Ikusi gunea"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Hasiera"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Artxiboak"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Bilatu"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Bidali"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Hasi saioa"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Erregistratu"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Amaitu saioa"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django gunearen administrazioa"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Erredakzio-fluxua"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Hutsik"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Jasota"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Bidalketa jaso da"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Itzuli inprimakietara"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Bidali eskuizkribuak eta bestelako eskaerak beheko inprimakien bidez."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Inprimakia"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Ireki inprimakia"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Une honetan ez dago inprimakirik erabilgarri."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Eskerrik asko"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Zure erantzuna erregistratu da. Eskerrik asko jakinarazteagatik."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Zure ebaluazioa erredakzio-taldeari bidali zaio. Eskerrik asko zure "
+"ekarpenagatik."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Ebaluazioa"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Bidali ebaluazioa"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Ebaluazio-gonbidapena"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Parekideen ebaluaziorako gonbidapena"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Eskuizkribu hau ebaluatzera gonbidatu zaituzte."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Epemuga"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Laburpena"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Fitxategiak"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Onartu ebaluazioa"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Ezetsi"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Bidalketaren lan-eremua"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Fasea"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Egoera"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Igo zure eskuizkribu berrikusia"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Itzuli zuzendutako fitxategia"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Igo zuzendutako proba"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Erredakzio-taldea zure fitxategiaren zain dago. Igo ondoren, automatikoki "
+"jakinaraziko zaie."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Igo"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Une honetan ez da zure ekintzarik behar. Mezu elektroniko bat jasoko duzu "
+"erredakzioak zerbait behar badu."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Fitxategien historia"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Oraindik ez dago fitxategirik."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Iragarki guztiak"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Oraindik ez dago iragarkirik."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Gako-hitzak"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Nola aipatu"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Finantzaketa"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Bertsioak"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Artxiboa"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Ez dago kategoriarik."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategoria"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Oraindik ez dago artikulurik kategoria honetan."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Itzuli artikulura"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Deskargatu"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Uneko zenbakia"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Azken artikuluak"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Mantentze-lanak"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Aldizkari hau konfiguratzen ari da"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Itzuli laster, mesedez."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Konfiguratu zure aldizkaria"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Sortu aldizkaria"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Harpidetza behar da"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Artikulu hau harpidetza bidezko zenbaki baten zatia da. Hasi saioa "
+"harpidedun kontu batekin edo jarri harremanetan aldizkariarekin."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Joan edukira"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Erabiltzailea"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Bidalketa berria"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Txandakatu modu iluna"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Sartu zure erredakzio-panelean eta bidalketetan."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Posta edo pasahitz baliogabea."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Posta elektronikoa"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Pasahitza"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Konturik ez?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Sortu bat"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Sortu kontua"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr ""
+"Erregistratu eskuizkribuak bidaltzeko eta haien bilakaera jarraitzeko."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Baduzu konturik?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Zenbakien artxiboa"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Ez dago argitaratutako zenbakirik."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Bertsioa"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "ikustaldi"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "deskarga"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Irakurri sarean"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "unekoa"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Lizentzia"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metadatuak"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Nagusia"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Bilatu…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Bilatu artikuluak"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Hizkuntza"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menua"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Arakatu"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Irekia"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Parekideek ebaluatutako aldizkaria"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Bidali eskuizkribu bat"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Arakatu artxiboa"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Bilatu artikuluak, egileak, gako-hitzak…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "artikulu"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Ikusi aurkibidea"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Zenbaki honetan"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Zenbaki osoa"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Oraindik ez da zenbakirik argitaratu."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Artikulu berrienak"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Zenbakia"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Ez dago artikulurik zenbaki honetan."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Bilatu izenburuz, egilez, gako-hitzez…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "emaitza"
+msgstr[1] "emaitza"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Ez da ezer aurkitu."

@@ -1,0 +1,747 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Ban biên tập"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Bảng điều khiển"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Bài gửi"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Ấn phẩm"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Số tạp chí"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Thể loại (loại tệp)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Phản biện đồng nghiệp"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Vòng phản biện"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Phân công phản biện"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Quyết định biên tập"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Phân công giai đoạn"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Thảo luận"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Nhóm phản biện"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Lĩnh vực quan tâm của phản biện"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Nội dung & trang web"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Tạp chí"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Chuyên mục"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Danh mục"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Mục danh sách kiểm tra"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Trang tĩnh"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Thông báo"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Biểu mẫu"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Bài gửi biểu mẫu"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Điều hướng (menu & chân trang)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Giao diện"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Bản ghi Tombstone (OAI đã xóa)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Liên lạc"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Mẫu email"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Nhật ký email"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Thông báo"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Thiết bị Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "Thiết bị APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "Thiết bị FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "Thiết bị WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Con người & quyền truy cập"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Người dùng"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Vai trò (nhóm)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Ma trận vai trò"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Tư cách thành viên tạp chí"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "Khóa API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Đăng ký"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Loại đăng ký"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Thanh toán"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Hệ thống"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Cấu hình (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Cài đặt thời gian chạy"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Plugin"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Cài đặt plugin"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Cờ tính năng"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Công tắc"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Mẫu"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Nhật ký kiểm tra"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Số liệu (hằng ngày)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Báo cáo (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Công cụ"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Bản dịch (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Cài đặt giao diện (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "Tài liệu API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "Điểm cuối OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Sơ đồ trang"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "Nguồn RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Kiểm tra tình trạng"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Xem trang web"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Trang chủ"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Kho lưu trữ"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Gửi bài"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Đăng nhập"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Đăng ký"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Đăng xuất"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Quản trị trang Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Quy trình biên tập"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Trống"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Đã nhận"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Đã nhận bài gửi"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Quay lại biểu mẫu"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Gửi bản thảo và các yêu cầu khác qua các biểu mẫu bên dưới."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Biểu mẫu"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Mở biểu mẫu"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Hiện không có biểu mẫu nào."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Cảm ơn"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Phản hồi của bạn đã được ghi nhận. Cảm ơn bạn đã cho chúng tôi biết."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Phản biện của bạn đã được gửi tới ban biên tập. Cảm ơn đóng góp của bạn."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Phản biện"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Gửi phản biện"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Lời mời phản biện"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Lời mời phản biện đồng nghiệp"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Bạn được mời phản biện bản thảo này."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Hạn chót"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Tóm tắt"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Tệp"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Nhận phản biện"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Từ chối"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Không gian làm việc bài gửi"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Giai đoạn"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Trạng thái"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Tải lên bản thảo đã sửa của bạn"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Trả lại tệp đã biên tập"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Tải lên bản in thử đã sửa"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Ban biên tập đang chờ tệp của bạn. Sau khi tải lên, họ sẽ được thông báo tự "
+"động."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Tải lên"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Hiện tại bạn không cần thực hiện thao tác nào. Bạn sẽ nhận được email nếu "
+"ban biên tập cần điều gì."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Lịch sử tệp"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Chưa có tệp nào."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Tất cả thông báo"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Chưa có thông báo nào."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Từ khóa"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Cách trích dẫn"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Tài trợ"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Phiên bản"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Kho lưu trữ"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Không có danh mục."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Danh mục"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Chưa có bài viết nào trong danh mục này."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Quay lại bài viết"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Tải xuống"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Số hiện tại"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Bài viết gần đây"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Bảo trì"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Tạp chí này đang được thiết lập"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Vui lòng quay lại sau."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Thiết lập tạp chí của bạn"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Tạo tạp chí"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Yêu cầu đăng ký"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Bài viết này thuộc số tạp chí cần đăng ký. Vui lòng đăng nhập bằng tài khoản"
+" đã đăng ký hoặc liên hệ tạp chí."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Chuyển đến nội dung"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Người dùng"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Bài gửi mới"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Quản trị"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Chuyển chế độ tối"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Truy cập bảng điều khiển biên tập và các bài gửi của bạn."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Email hoặc mật khẩu không hợp lệ."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Email"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Chưa có tài khoản?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Tạo một tài khoản"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Tạo tài khoản"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Đăng ký để gửi bản thảo và theo dõi tiến trình."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Đã có tài khoản?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Kho lưu trữ số"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Chưa có số nào được xuất bản."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Phiên bản"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "lượt xem"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "lượt tải"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Đọc trực tuyến"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "hiện tại"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Giấy phép"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Siêu dữ liệu"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Chính"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Tìm kiếm…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Tìm bài viết"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menu"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Duyệt"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Mở"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Tạp chí có phản biện"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Gửi bản thảo"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Duyệt kho lưu trữ"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Tìm bài viết, tác giả, từ khóa…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "bài viết"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Xem mục lục"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Trong số này"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Toàn bộ số"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Chưa có số nào được xuất bản."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Bài viết mới nhất"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Số"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Không có bài viết nào trong số này."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Tìm theo tiêu đề, tác giả, từ khóa…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "kết quả"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Không tìm thấy gì."

@@ -1,0 +1,748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Redaksi"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Dasbor"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Naskah masuk"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Publikasi"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Edisi"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Genre (jenis berkas)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Penelaahan sejawat"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Putaran telaah"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Penugasan telaah"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Keputusan editorial"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Penugasan tahap"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Diskusi"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Kumpulan penelaah"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Minat penelaah"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Konten & situs"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Jurnal"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Bagian"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategori"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Butir daftar periksa"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Halaman statis"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Pengumuman"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Formulir"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Kiriman formulir"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navigasi (menu & footer)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Tema"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone (OAI terhapus)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Komunikasi"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Templat email"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Log email"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Notifikasi"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Perangkat Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "Perangkat APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "Perangkat FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "Perangkat WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Orang & akses"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Pengguna"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Peran (grup)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Matriks peran"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Keanggotaan jurnal"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "Kunci API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Langganan"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Jenis langganan"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Pembayaran"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Sistem"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Konfigurasi (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Pengaturan runtime"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Plugin"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Pengaturan plugin"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Flag fitur"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Sakelar"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Sampel"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Log audit"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Metrik (harian)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Laporan (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Perkakas"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Terjemahan (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Pasang tema (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "Dokumentasi API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "Endpoint OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Peta situs"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "Umpan RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Pemeriksaan kesehatan"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Lihat situs"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Beranda"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Arsip"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Cari"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Kirim"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Masuk"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Daftar"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Keluar"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Administrasi situs Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Alur editorial"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Kosong"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Diterima"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Naskah diterima"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Kembali ke formulir"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Kirim naskah dan permintaan lainnya melalui formulir di bawah ini."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Formulir"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Buka formulir"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Tidak ada formulir yang tersedia saat ini."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Terima kasih"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Tanggapan Anda telah dicatat. Terima kasih telah memberi tahu kami."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Telaah Anda telah dikirim ke tim editorial. Terima kasih atas kontribusi "
+"Anda."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Telaah"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Kirim telaah"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Undangan telaah"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Undangan penelaahan sejawat"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Anda diundang untuk menelaah naskah ini."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Tenggat"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Abstrak"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Berkas"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Terima telaah"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Tolak"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Ruang kerja naskah"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Tahap"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Status"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Unggah naskah revisi Anda"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Kembalikan berkas yang telah disunting"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Unggah pruf yang telah dikoreksi"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Tim editorial menunggu berkas Anda. Setelah diunggah, mereka akan diberi "
+"tahu secara otomatis."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Unggah"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Saat ini tidak ada tindakan yang diperlukan dari Anda. Anda akan menerima "
+"email jika editor membutuhkan sesuatu."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Riwayat berkas"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Belum ada berkas."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Semua pengumuman"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Belum ada pengumuman."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Kata kunci"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Cara mengutip"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Pendanaan"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Versi"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Arsip"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Tidak ada kategori."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategori"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Belum ada artikel dalam kategori ini."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Kembali ke artikel"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Unduh"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Edisi terkini"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Artikel terbaru"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Pemeliharaan"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Jurnal ini sedang disiapkan"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Silakan kembali lagi nanti."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Siapkan jurnal Anda"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Buat jurnal"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Perlu langganan"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Artikel ini bagian dari edisi berlangganan. Silakan masuk dengan akun "
+"pelanggan atau hubungi jurnal."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Lompat ke konten"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Pengguna"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Naskah baru"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Alihkan mode gelap"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Akses dasbor editorial dan naskah Anda."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Email atau kata sandi tidak valid."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Email"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Kata sandi"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Belum punya akun?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Buat satu"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Buat akun"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Daftar untuk mengirim naskah dan memantau perkembangannya."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Sudah punya akun?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Arsip edisi"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Belum ada edisi terbit."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Versi"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "dilihat"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "unduhan"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Baca daring"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "terkini"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Lisensi"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metadata"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Utama"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Cari…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Cari artikel"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Bahasa"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menu"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Jelajahi"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Terbuka"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Jurnal tertelaah sejawat"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Kirim naskah"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Jelajahi arsip"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Cari artikel, penulis, kata kunci…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "artikel"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Lihat daftar isi"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Dalam edisi ini"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Edisi lengkap"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Belum ada edisi yang diterbitkan."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Artikel terbaru"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Edisi"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Tidak ada artikel dalam edisi ini."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Cari judul, penulis, kata kunci…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "hasil"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Tidak ditemukan apa pun."

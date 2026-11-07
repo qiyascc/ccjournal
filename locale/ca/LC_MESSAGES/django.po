@@ -1,0 +1,751 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Editorial"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Tauler de control"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Trameses"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Publicacions"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Números"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Gèneres (tipus de fitxer)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Avaluació per parells"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Rondes d'avaluació"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Assignacions d'avaluació"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Decisions editorials"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Assignacions per etapa"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Discussions"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Banc d'avaluadors"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Interessos dels avaluadors"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Contingut i lloc"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Revista"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Seccions"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Categories"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Elements de la llista de comprovació"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Pàgines estàtiques"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Anuncis"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Formularis"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Trameses de formularis"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navegació (menús i peu de pàgina)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Temes"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstones (OAI suprimits)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Comunicació"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Plantilles de correu"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Registre de correus"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Notificacions"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Dispositius Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "Dispositius APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "Dispositius FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "Dispositius WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Persones i accés"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Usuaris"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Rols (grups)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Matriu de rols"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Membres de la revista"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "Claus API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Subscripcions"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Tipus de subscripció"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Pagaments"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Sistema"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Configuració (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Paràmetres d'execució"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Connectors"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Paràmetres dels connectors"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Indicadors de funcions"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Interruptors"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Mostres"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Registre d'auditoria"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Mètriques (diàries)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Informes (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Eines"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Traduccions (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Instal·la un tema (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "Documentació de l'API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "Punt d'accés OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Mapa del lloc"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "Canal RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Comprovació d'estat"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Visualitza el lloc"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Inici"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Arxius"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Cerca"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Tramet"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Inicia la sessió"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Registra't"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Tanca la sessió"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Administració del lloc Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Flux editorial"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Buit"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Rebut"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Tramesa rebuda"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Torna als formularis"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr ""
+"Trameteu manuscrits i altres sol·licituds mitjançant els formularis "
+"següents."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Formulari"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Obre el formulari"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Ara mateix no hi ha formularis disponibles."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Gràcies"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "La vostra resposta s'ha registrat. Gràcies per informar-nos."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"La vostra avaluació s'ha enviat a l'equip editorial. Gràcies per la vostra "
+"contribució."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Avaluació"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Tramet l'avaluació"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Invitació a avaluar"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Invitació a l'avaluació per parells"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Heu estat convidat a avaluar aquest manuscrit."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Termini"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Resum"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Fitxers"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Accepta l'avaluació"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Declina"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Espai de treball de la tramesa"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Etapa"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Estat"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Pugeu el manuscrit revisat"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Retorneu el fitxer corregit"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Pugeu la prova corregida"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"L'equip editorial espera el vostre fitxer. Després de la pujada, se'l "
+"notificarà automàticament."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Puja"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"De moment no es requereix cap acció per part vostra. Rebreu un correu si la "
+"redacció necessita alguna cosa."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Historial de fitxers"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Encara no hi ha fitxers."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Tots els anuncis"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Encara no hi ha anuncis."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Paraules clau"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Com citar"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Finançament"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Versions"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Arxiu"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "No hi ha categories."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Categoria"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Encara no hi ha articles en aquesta categoria."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Torna a l'article"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Baixa"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Número actual"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Articles recents"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Manteniment"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Aquesta revista s'està configurant"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Torneu aviat, si us plau."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Configureu la vostra revista"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Crea la revista"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Cal subscripció"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Aquest article forma part d'un número per subscripció. Inicieu la sessió amb"
+" un compte subscriptor o contacteu amb la revista."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Vés al contingut"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Usuari"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Tramesa nova"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Commuta el mode fosc"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Accediu al vostre tauler editorial i a les vostres trameses."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Correu o contrasenya no vàlids."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Correu electrònic"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Contrasenya"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "No teniu compte?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Creeu-ne un"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Crea un compte"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Registreu-vos per trametre manuscrits i seguir-ne el progrés."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Ja teniu un compte?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Arxiu de números"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "No hi ha números publicats."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Versió"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "visualitzacions"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "baixades"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Llegeix en línia"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "actual"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Llicència"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metadades"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Principal"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Cerca…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Cerca articles"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Llengua"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menú"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Explora"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Obert"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Revista avaluada per parells"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Trameteu un manuscrit"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Explora l'arxiu"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Cerqueu articles, autors, paraules clau…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "articles"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Mostra el sumari"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "En aquest número"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Número complet"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Encara no s'ha publicat cap número."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Articles més recents"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Número"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "No hi ha articles en aquest número."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Cerca per títol, autor, paraula clau…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "resultat"
+msgstr[1] "resultats"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "No s'ha trobat res."

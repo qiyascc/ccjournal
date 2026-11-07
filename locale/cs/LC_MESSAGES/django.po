@@ -1,0 +1,748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Redakce"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Nástěnka"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Příspěvky"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Publikace"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Čísla"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Žánry (typy souborů)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Recenzní řízení"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Recenzní kola"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Přidělení recenzí"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Redakční rozhodnutí"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Přidělení fází"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Diskuse"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Skupina recenzentů"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Zájmy recenzentů"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Obsah a web"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Časopis"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Sekce"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategorie"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Položky kontrolního seznamu"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Statické stránky"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Oznámení"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Formuláře"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Odeslané formuláře"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navigace (menu a patička)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Motivy"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstony (OAI smazané)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Komunikace"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "E-mailové šablony"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "E-mailový protokol"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Upozornění"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Zařízení Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "Zařízení APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "Zařízení FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "Zařízení WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Lidé a přístup"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Uživatelé"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Role (skupiny)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Matice rolí"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Členství v časopise"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API klíče"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Předplatná"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Typy předplatného"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Platby"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Systém"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Konfigurace (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Běhová nastavení"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Pluginy"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Nastavení pluginů"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Příznaky funkcí"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Přepínače"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Vzorky"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Auditní protokol"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Metriky (denně)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Sestavy (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Nástroje"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Překlady (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Instalovat motiv (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "Dokumentace API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "Koncový bod OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Mapa webu"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS kanál"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Kontrola stavu"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Zobrazit web"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Domů"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Archivy"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Hledat"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Odeslat"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Přihlásit se"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Registrovat"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Odhlásit se"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Správa webu Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Redakční proces"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Prázdné"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Přijato"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Příspěvek přijat"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Zpět na formuláře"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Odesílejte rukopisy a další žádosti pomocí níže uvedených formulářů."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Formulář"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Otevřít formulář"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Momentálně nejsou k dispozici žádné formuláře."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Děkujeme"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Vaše odpověď byla zaznamenána. Děkujeme, že jste nám dali vědět."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "Vaše recenze byla předána redakčnímu týmu. Děkujeme za váš příspěvek."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Recenze"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Odeslat recenzi"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Pozvánka k recenzi"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Pozvánka k recenznímu řízení"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Byli jste pozváni k recenzi tohoto rukopisu."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Termín"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Abstrakt"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Soubory"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Přijmout recenzi"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Odmítnout"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Pracovní prostor příspěvku"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Fáze"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Stav"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Nahrajte revidovaný rukopis"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Vraťte redigovaný soubor"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Nahrajte opravenou korekturu"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Redakční tým čeká na váš soubor. Po nahrání bude automaticky upozorněn."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Nahrát"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"V tuto chvíli se od vás nevyžaduje žádná akce. Pokud bude redakce něco "
+"potřebovat, dostanete e-mail."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Historie souborů"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Zatím žádné soubory."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Všechna oznámení"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Zatím žádná oznámení."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Klíčová slova"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Jak citovat"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Financování"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Verze"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Archiv"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Žádné kategorie."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategorie"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "V této kategorii zatím nejsou žádné články."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Zpět na článek"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Stáhnout"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Aktuální číslo"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Nedávné články"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Údržba"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Tento časopis se právě nastavuje"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Vraťte se prosím brzy."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Nastavte svůj časopis"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Vytvořit časopis"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Vyžadováno předplatné"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Tento článek je součástí předplatitelského čísla. Přihlaste se "
+"předplatitelským účtem nebo kontaktujte časopis."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Přeskočit na obsah"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Uživatel"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Nový příspěvek"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Přepnout tmavý režim"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Přístup k redakčnímu panelu a vašim příspěvkům."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Neplatný e-mail nebo heslo."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "E-mail"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Heslo"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Nemáte účet?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Vytvořte si jej"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Vytvořit účet"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr ""
+"Zaregistrujte se, abyste mohli odesílat rukopisy a sledovat jejich stav."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Už máte účet?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Archiv čísel"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Žádná publikovaná čísla."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Verze"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "zobrazení"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "stažení"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Číst online"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "aktuální"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Licence"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metadata"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Primární"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Hledat…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Hledat články"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Jazyk"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Menu"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Procházet"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Otevřený"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Recenzovaný časopis"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Odeslat rukopis"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Procházet archiv"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Hledat články, autory, klíčová slova…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "článků"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Zobrazit obsah"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "V tomto čísle"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Celé číslo"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Zatím nebylo publikováno žádné číslo."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Nejnovější články"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Číslo"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "V tomto čísle nejsou žádné články."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Hledat podle názvu, autora, klíčového slova…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "výsledek"
+msgstr[1] "výsledky"
+msgstr[2] "výsledků"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Nic nenalezeno."

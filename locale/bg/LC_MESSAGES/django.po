@@ -1,0 +1,748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Редакция"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Табло"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Подадени материали"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Публикации"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Броеве"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Жанрове (типове файлове)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Рецензиране"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Рецензентски кръгове"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Назначения за рецензии"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Редакционни решения"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Назначения по етапи"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Дискусии"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Пул от рецензенти"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Интереси на рецензентите"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Съдържание и сайт"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Списание"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Раздели"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Категории"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Елементи от контролния списък"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Статични страници"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Съобщения"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Формуляри"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Подадени формуляри"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Навигация (менюта и долен колонтитул)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Теми"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone записи (OAI изтрити)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Комуникация"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Имейл шаблони"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Имейл дневник"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Известия"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Web push устройства"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS устройства"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM устройства"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS устройства"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Хора и достъп"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Потребители"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Роли (групи)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Матрица на ролите"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Членства в списанието"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API ключове"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Абонаменти"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Типове абонаменти"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Плащания"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Система"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Конфигурация (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Настройки по време на изпълнение"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Добавки"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Настройки на добавките"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Флагове на функции"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Превключватели"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Извадки"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Одитен дневник"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Метрики (дневно)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Отчети (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Инструменти"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Преводи (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Инсталиране на тема (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API документация (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH крайна точка"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Карта на сайта"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS емисия"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Проверка на състоянието"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Преглед на сайта"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Начало"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Архиви"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Търсене"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Подай"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Вход"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Регистрация"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Изход"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Администрация на Django сайта"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Редакционен поток"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Празно"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Получено"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Материалът е получен"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Назад към формулярите"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Подавайте ръкописи и други заявки чрез формулярите по-долу."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Формуляр"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Отвори формуляра"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "В момента няма налични формуляри."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Благодарим"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Вашият отговор е записан. Благодарим, че ни уведомихте."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Вашата рецензия е изпратена на редакционния екип. Благодарим за приноса ви."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Рецензия"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Изпрати рецензия"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Покана за рецензия"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Покана за рецензиране"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Поканени сте да рецензирате този ръкопис."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Срок"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Резюме"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Файлове"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Приеми рецензията"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Откажи"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Работна област на материала"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Етап"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Статус"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Качете преработения си ръкопис"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Върнете редактирания файл"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Качете коригираната коректура"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Редакционният екип очаква вашия файл. След качването ще бъде уведомен "
+"автоматично."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Качи"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"В момента не се изисква действие от ваша страна. Ще получите имейл, ако "
+"редакторите се нуждаят от нещо."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "История на файловете"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Все още няма файлове."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Всички съобщения"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Все още няма съобщения."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Ключови думи"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Как да цитирате"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Финансиране"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Версии"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Архив"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Няма категории."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Категория"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Все още няма статии в тази категория."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Назад към статията"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Изтегли"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Текущ брой"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Скорошни статии"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Поддръжка"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Това списание се настройва"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Моля, проверете отново скоро."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Настройте вашето списание"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Създай списание"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Изисква се абонамент"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Тази статия е част от абонаментен брой. Влезте с абонаментен акаунт или се "
+"свържете със списанието."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Към съдържанието"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Потребител"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Нов материал"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Админ"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Превключи тъмен режим"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Достъп до редакционното табло и вашите материали."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Невалиден имейл или парола."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Имейл"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Парола"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Нямате акаунт?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Създайте си"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Създай акаунт"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Регистрирайте се, за да подавате ръкописи и да следите напредъка им."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Вече имате акаунт?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Архив на броевете"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Няма публикувани броеве."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Версия"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "прегледи"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "изтегляния"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Чети онлайн"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "текущ"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Лиценз"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Метаданни"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Основен"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Търси…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Търси статии"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Език"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Меню"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Разгледай"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Отворен"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Рецензирано списание"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Подай ръкопис"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Разгледай архива"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Търси статии, автори, ключови думи…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "статии"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Виж съдържанието"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "В този брой"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Целият брой"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Все още не е публикуван брой."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Най-нови статии"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Брой"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Няма статии в този брой."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Търси по заглавие, автор, ключова дума…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "резултат"
+msgstr[1] "резултата"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Нищо не е намерено."

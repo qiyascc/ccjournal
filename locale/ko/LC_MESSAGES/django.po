@@ -1,0 +1,740 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "편집"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "대시보드"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "투고"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "출판물"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "호"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "장르(파일 유형)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "동료 심사"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "심사 라운드"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "심사 배정"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "편집 결정"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "단계 배정"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "토론"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "심사자 풀"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "심사자 관심 분야"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "콘텐츠 및 사이트"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "저널"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "섹션"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "카테고리"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "체크리스트 항목"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "정적 페이지"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "공지사항"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "양식"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "양식 제출"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "내비게이션(메뉴 및 푸터)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "테마"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone 기록(OAI 삭제됨)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "커뮤니케이션"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "이메일 템플릿"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "이메일 로그"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "알림"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "웹 푸시 기기"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS 기기"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM 기기"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS 기기"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "사용자 및 접근"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "사용자"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "역할(그룹)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "역할 매트릭스"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "저널 멤버십"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API 키"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "구독"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "구독 유형"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "결제"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "시스템"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "설정(config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "런타임 설정"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "플러그인"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "플러그인 설정"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "기능 플래그"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "스위치"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "샘플"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "감사 로그"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "지표(일별)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "보고서(CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "도구"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "번역(Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "테마 설치(.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API 문서(Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH 엔드포인트"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "사이트맵"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS 피드"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "상태 점검"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "사이트 보기"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "홈"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "아카이브"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "검색"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "투고하기"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "로그인"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "회원가입"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "로그아웃"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django 사이트 관리"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "편집 파이프라인"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "비어 있음"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "접수됨"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "투고가 접수되었습니다"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "양식으로 돌아가기"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "아래 양식을 통해 원고와 기타 요청을 제출하세요."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "양식"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "양식 열기"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "현재 이용 가능한 양식이 없습니다."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "감사합니다"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "응답이 기록되었습니다. 알려주셔서 감사합니다."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "심사 의견이 편집팀에 전달되었습니다. 기여해 주셔서 감사합니다."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "심사"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "심사 제출"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "심사 초대"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "동료 심사 초대"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "이 원고의 심사를 요청받으셨습니다."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "마감일"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "초록"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "파일"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "심사 수락"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "거절"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "투고 작업 공간"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "단계"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "상태"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "수정한 원고를 업로드하세요"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "교정된 파일을 반환하세요"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "교정된 교정쇄를 업로드하세요"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr "편집팀이 파일을 기다리고 있습니다. 업로드 후 자동으로 알림이 전송됩니다."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "업로드"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr "현재 귀하가 취할 조치는 없습니다. 편집자가 필요한 것이 있으면 이메일을 받게 됩니다."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "파일 기록"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "아직 파일이 없습니다."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "모든 공지사항"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "아직 공지사항이 없습니다."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "키워드"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "인용 방법"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "연구비 지원"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "버전"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "아카이브"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "카테고리가 없습니다."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "카테고리"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "이 카테고리에는 아직 논문이 없습니다."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "논문으로 돌아가기"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "다운로드"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "최신 호"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "최근 논문"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "점검 중"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "이 저널은 설정 중입니다"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "잠시 후 다시 확인해 주세요."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "저널을 설정하세요"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "저널 만들기"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "구독 필요"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr "이 논문은 구독 호에 포함되어 있습니다. 구독 계정으로 로그인하거나 저널에 문의하세요."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "본문 바로가기"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "사용자"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "새 투고"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "관리자"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "다크 모드 전환"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "편집 대시보드와 투고에 접근하세요."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "이메일 또는 비밀번호가 올바르지 않습니다."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "이메일"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "비밀번호"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "계정이 없으신가요?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "만들기"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "계정 만들기"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "원고를 투고하고 진행 상황을 확인하려면 가입하세요."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "이미 계정이 있으신가요?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "호 아카이브"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "발행된 호가 없습니다."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "버전"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "조회"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "다운로드"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "온라인으로 읽기"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "현재"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "라이선스"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "메타데이터"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "기본"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "검색…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "논문 검색"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "언어"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "메뉴"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "둘러보기"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "공개"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "동료 심사 저널"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "원고 투고"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "아카이브 둘러보기"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "논문, 저자, 키워드 검색…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "논문"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "목차 보기"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "이번 호"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "전체 호"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "아직 발행된 호가 없습니다."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "최신 논문"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "호"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "이번 호에는 논문이 없습니다."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "제목, 저자, 키워드로 검색…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "결과"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "검색 결과가 없습니다."

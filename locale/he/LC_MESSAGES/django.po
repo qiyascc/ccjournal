@@ -1,0 +1,742 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "מערכת"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "לוח בקרה"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "הגשות"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "פרסומים"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "גיליונות"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "ז'אנרים (סוגי קבצים)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "ביקורת עמיתים"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "סבבי ביקורת"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "שיבוצי ביקורת"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "החלטות מערכת"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "שיבוצי שלבים"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "דיונים"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "מאגר סוקרים"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "תחומי עניין של סוקרים"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "תוכן ואתר"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "כתב עת"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "מדורים"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "קטגוריות"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "פריטי רשימת בדיקה"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "עמודים סטטיים"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "הודעות"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "טפסים"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "הגשות טפסים"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "ניווט (תפריטים וכותרת תחתונה)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "ערכות נושא"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "רשומות Tombstone ‏(OAI שנמחקו)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "תקשורת"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "תבניות דוא\"ל"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "יומן דוא\"ל"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "התראות"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "מכשירי Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "מכשירי APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "מכשירי FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "מכשירי WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "אנשים וגישה"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "משתמשים"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "תפקידים (קבוצות)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "מטריצת תפקידים"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "חברויות בכתב העת"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "מפתחות API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "מנויים"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "סוגי מנויים"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "תשלומים"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "מערכת"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "תצורה (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "הגדרות זמן ריצה"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "תוספים"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "הגדרות תוספים"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "דגלי תכונות"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "מתגים"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "דגימות"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "יומן ביקורת"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "מדדים (יומי)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "דוחות (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "כלים"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "תרגומים (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "התקנת ערכת נושא (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "תיעוד API ‏(Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "נקודת קצה OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "מפת אתר"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "הזנת RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "בדיקת תקינות"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "צפייה באתר"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "דף הבית"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "ארכיונים"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "חיפוש"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "הגשה"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "התחברות"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "הרשמה"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "התנתקות"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "ניהול אתר Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "תהליך מערכתי"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "ריק"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "התקבל"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "ההגשה התקבלה"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "חזרה לטפסים"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "הגישו כתבי יד ובקשות נוספות באמצעות הטפסים שלהלן."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "טופס"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "פתיחת טופס"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "אין טפסים זמינים כרגע."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "תודה"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "תשובתך נרשמה. תודה שעדכנת אותנו."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "הביקורת שלך נשלחה לצוות המערכת. תודה על תרומתך."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "ביקורת"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "שליחת ביקורת"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "הזמנה לביקורת"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "הזמנה לביקורת עמיתים"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "הוזמנת לבקר כתב יד זה."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "מועד אחרון"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "תקציר"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "קבצים"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "קבלת הביקורת"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "סירוב"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "סביבת עבודה של ההגשה"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "שלב"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "סטטוס"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "העלו את כתב היד המתוקן שלכם"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "החזירו את הקובץ הערוך"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "העלו את ההגהה המתוקנת"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr "צוות המערכת ממתין לקובץ שלך. לאחר ההעלאה הוא יקבל הודעה אוטומטית."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "העלאה"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr "לא נדרשת ממך פעולה כרגע. תקבל אימייל אם המערכת תזדקק למשהו."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "היסטוריית קבצים"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "אין קבצים עדיין."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "כל ההודעות"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "אין הודעות עדיין."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "מילות מפתח"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "כיצד לצטט"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "מימון"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "גרסאות"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "ארכיון"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "אין קטגוריות."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "קטגוריה"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "אין עדיין מאמרים בקטגוריה זו."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "חזרה למאמר"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "הורדה"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "גיליון נוכחי"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "מאמרים אחרונים"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "תחזוקה"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "כתב עת זה בתהליך הקמה"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "אנא חזרו בקרוב."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "הגדירו את כתב העת שלכם"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "יצירת כתב עת"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "נדרש מנוי"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr "מאמר זה הוא חלק מגיליון במנוי. התחברו עם חשבון מנוי או פנו לכתב העת."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "דילוג לתוכן"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "משתמש"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "הגשה חדשה"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "מנהל"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "החלפת מצב כהה"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "גישה ללוח המערכת ולהגשות שלך."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "דוא\"ל או סיסמה שגויים."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "דוא\"ל"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "סיסמה"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "אין חשבון?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "צרו אחד"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "יצירת חשבון"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "הירשמו כדי להגיש כתבי יד ולעקוב אחר התקדמותם."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "כבר יש לכם חשבון?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "ארכיון גיליונות"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "אין גיליונות שפורסמו."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "גרסה"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "צפיות"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "הורדות"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "קריאה מקוונת"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "נוכחי"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "רישיון"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "מטא-נתונים"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "ראשי"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "חיפוש…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "חיפוש מאמרים"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "שפה"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "תפריט"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "עיון"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "פתוח"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "כתב עת שפיט"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "הגשת כתב יד"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "עיון בארכיון"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "חיפוש מאמרים, מחברים, מילות מפתח…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "מאמרים"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "צפייה בתוכן העניינים"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "בגיליון זה"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "הגיליון המלא"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "טרם פורסם גיליון."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "המאמרים האחרונים"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "גיליון"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "אין מאמרים בגיליון זה."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "חיפוש לפי כותרת, מחבר, מילת מפתח…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "תוצאה"
+msgstr[1] "תוצאות"
+msgstr[2] "תוצאות"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "לא נמצא דבר."

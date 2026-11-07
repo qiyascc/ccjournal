@@ -1,0 +1,749 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Խմբագրական"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Կառավարման վահանակ"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Ներկայացումներ"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Հրապարակումներ"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Համարներ"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Ժանրեր (ֆայլի տեսակներ)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Գրախոսում"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Գրախոսման փուլեր"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Գրախոսման նշանակումներ"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Խմբագրական որոշումներ"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Փուլերի նշանակումներ"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Քննարկումներ"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Գրախոսների բազա"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Գրախոսների հետաքրքրություններ"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Բովանդակություն և կայք"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Հանդես"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Բաժիններ"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Կատեգորիաներ"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Ստուգաթերթի կետեր"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Ստատիկ էջեր"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Հայտարարություններ"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Ձևեր"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Ձևերի ուղարկումներ"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Նավիգացիա (մենյուներ և ստորագիր)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Թեմաներ"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstone գրառումներ (OAI ջնջված)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Հաղորդակցություն"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Էլ. նամակների ձևանմուշներ"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Էլ. նամակների մատյան"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Ծանուցումներ"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Web push սարքեր"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS սարքեր"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM սարքեր"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS սարքեր"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Մարդիկ և մուտք"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Օգտատերեր"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Դերեր (խմբեր)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Դերերի մատրիցա"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Հանդեսի անդամակցություններ"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API բանալիներ"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Բաժանորդագրություններ"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Բաժանորդագրության տեսակներ"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Վճարումներ"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Համակարգ"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Կարգավորում (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Աշխատաժամանակի կարգավորումներ"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Հավելումներ"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Հավելումների կարգավորումներ"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Ֆունկցիաների դրոշներ"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Անջատիչներ"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Նմուշներ"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Աուդիտի մատյան"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Չափումներ (օրական)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Հաշվետվություններ (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Գործիքներ"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Թարգմանություններ (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Տեղադրել թեմա (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API փաստաթղթեր (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH վերջնակետ"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Կայքի քարտեզ"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS հոսք"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Վիճակի ստուգում"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Դիտել կայքը"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Գլխավոր"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Արխիվներ"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Որոնում"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Ուղարկել"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Մուտք"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Գրանցում"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Ելք"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django կայքի կառավարում"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Խմբագրական հոսք"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Դատարկ"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Ստացված է"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Ներկայացումը ստացված է"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Վերադառնալ ձևերին"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Ուղարկեք ձեռագրեր և այլ հարցումներ ստորև բերված ձևերի միջոցով։"
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Ձև"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Բացել ձևը"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Այս պահին հասանելի ձևեր չկան։"
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Շնորհակալություն"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Ձեր պատասխանը գրանցվել է։ Շնորհակալ ենք տեղեկացնելու համար։"
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Ձեր գրախոսությունն ուղարկվել է խմբագրական թիմին։ Շնորհակալ ենք ներդրման "
+"համար։"
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Գրախոսություն"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Ուղարկել գրախոսությունը"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Գրախոսման հրավեր"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Գրախոսման հրավեր"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Դուք հրավիրված եք գրախոսելու այս ձեռագիրը։"
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Վերջնաժամկետ"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Ամփոփագիր"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Ֆայլեր"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Ընդունել գրախոսումը"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Մերժել"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Ներկայացման աշխատանքային տարածք"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Փուլ"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Կարգավիճակ"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Վերբեռնեք ձեր վերանայված ձեռագիրը"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Վերադարձրեք խմբագրված ֆայլը"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Վերբեռնեք ուղղված սրբագրությունը"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Խմբագրական թիմը սպասում է ձեր ֆայլին։ Վերբեռնելուց հետո այն ավտոմատ "
+"կտեղեկացվի։"
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Վերբեռնել"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Այս պահին ձեզնից գործողություն չի պահանջվում։ Եթե խմբագիրներին որևէ բան "
+"անհրաժեշտ լինի, կստանաք նամակ։"
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Ֆայլերի պատմություն"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Դեռ ֆայլեր չկան։"
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Բոլոր հայտարարությունները"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Հայտարարություններ դեռ չկան։"
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Բանալի բառեր"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Ինչպես մեջբերել"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Ֆինանսավորում"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Տարբերակներ"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Արխիվ"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Կատեգորիաներ չկան։"
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Կատեգորիա"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Այս կատեգորիայում դեռ հոդվածներ չկան։"
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Վերադառնալ հոդվածին"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Ներբեռնել"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Ընթացիկ համար"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Վերջին հոդվածներ"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Սպասարկում"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Այս հանդեսը կարգավորվում է"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Խնդրում ենք շուտով կրկին այցելել։"
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Կարգավորեք ձեր հանդեսը"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Ստեղծել հանդես"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Պահանջվում է բաժանորդագրություն"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Այս հոդվածը բաժանորդագրային համարի մաս է։ Մուտք գործեք բաժանորդի հաշվով կամ "
+"կապվեք հանդեսի հետ։"
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Անցնել բովանդակությանը"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Օգտատեր"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Նոր ներկայացում"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Ադմին"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Փոխել մուգ ռեժիմը"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Մուտք գործեք ձեր խմբագրական վահանակ և ներկայացումներ։"
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Անվավեր էլ. փոստ կամ գաղտնաբառ։"
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Էլ. փոստ"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Գաղտնաբառ"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Չունե՞ք հաշիվ"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Ստեղծեք"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Ստեղծել հաշիվ"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Գրանցվեք՝ ձեռագրեր ուղարկելու և դրանց ընթացքին հետևելու համար։"
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Արդեն ունե՞ք հաշիվ"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Համարների արխիվ"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Հրապարակված համարներ չկան։"
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Տարբերակ"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "դիտում"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "ներբեռնում"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Կարդալ առցանց"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "ընթացիկ"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Լիցենզիա"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Մետատվյալներ"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Հիմնական"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Որոնել…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Որոնել հոդվածներ"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Լեզու"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Մենյու"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Թերթել"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Բաց"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Գրախոսվող հանդես"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Ուղարկել ձեռագիր"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Թերթել արխիվը"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Որոնեք հոդվածներ, հեղինակներ, բանալի բառեր…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "հոդված"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Դիտել բովանդակությունը"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Այս համարում"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Ամբողջ համարը"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Դեռ ոչ մի համար չի հրապարակվել։"
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Նորագույն հոդվածներ"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Համար"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Այս համարում հոդվածներ չկան։"
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Որոնել վերնագրով, հեղինակով, բանալի բառով…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "արդյունք"
+msgstr[1] "արդյունք"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Ոչինչ չի գտնվել։"

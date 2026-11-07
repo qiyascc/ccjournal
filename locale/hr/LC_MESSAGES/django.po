@@ -1,0 +1,748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Uredništvo"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Nadzorna ploča"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Prijave"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Publikacije"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Brojevi"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Žanrovi (vrste datoteka)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Recenzija"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Recenzijski krugovi"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Dodjele recenzija"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Uredničke odluke"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Dodjele faza"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Rasprave"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Baza recenzenata"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Interesi recenzenata"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Sadržaj i stranica"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Časopis"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Rubrike"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Kategorije"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Stavke kontrolne liste"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Statične stranice"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Obavijesti"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Obrasci"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Predaje obrazaca"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Navigacija (izbornici i podnožje)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Teme"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstoni (OAI izbrisani)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Komunikacija"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Predlošci e-pošte"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Dnevnik e-pošte"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Obavijesti"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Web push uređaji"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "APNS uređaji"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "FCM uređaji"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "WNS uređaji"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Ljudi i pristup"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Korisnici"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Uloge (grupe)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Matrica uloga"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Članstva u časopisu"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "API ključevi"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Pretplate"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Vrste pretplata"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Plaćanja"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Sustav"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Konfiguracija (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Postavke izvođenja"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Dodaci"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Postavke dodataka"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Zastavice značajki"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Prekidači"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Uzorci"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Dnevnik revizije"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Metrike (dnevno)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Izvještaji (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Alati"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Prijevodi (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Instaliraj temu (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "API dokumentacija (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "OAI-PMH krajnja točka"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Karta stranice"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "RSS kanal"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Provjera stanja"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Pogledaj stranicu"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Početna"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Arhive"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Pretraga"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Predaj"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Prijava"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Registracija"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Odjava"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Administracija Django stranice"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Urednički tijek"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Prazno"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Zaprimljeno"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Prijava zaprimljena"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Natrag na obrasce"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Predajte rukopise i druge zahtjeve putem obrazaca u nastavku."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Obrazac"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Otvori obrazac"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Trenutno nema dostupnih obrazaca."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Hvala"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Vaš odgovor je zabilježen. Hvala što ste nam javili."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr "Vaša recenzija je proslijeđena uredničkom timu. Hvala na doprinosu."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Recenzija"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Pošalji recenziju"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Poziv na recenziju"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Poziv na recenziju"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Pozvani ste recenzirati ovaj rukopis."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Rok"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Sažetak"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Datoteke"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Prihvati recenziju"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Odbij"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Radni prostor prijave"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Faza"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Status"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Učitajte revidirani rukopis"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Vratite lektorisanu datoteku"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Učitajte ispravljeni otisak"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Urednički tim čeka vašu datoteku. Nakon učitavanja bit će automatski "
+"obaviješten."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Učitaj"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Trenutno se od vas ne traži nikakva radnja. Ako uredništvu nešto zatreba, "
+"primit ćete e-poštu."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Povijest datoteka"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Još nema datoteka."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Sve obavijesti"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Još nema obavijesti."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Ključne riječi"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Kako citirati"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Financiranje"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Verzije"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Arhiv"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Nema kategorija."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Kategorija"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "U ovoj kategoriji još nema članaka."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Natrag na članak"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Preuzmi"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Trenutni broj"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Nedavni članci"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Održavanje"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Ovaj časopis se postavlja"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Molimo provjerite uskoro."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Postavite svoj časopis"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Stvori časopis"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Potrebna pretplata"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Ovaj članak je dio pretplatničkog broja. Prijavite se pretplatničkim računom"
+" ili kontaktirajte časopis."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Preskoči na sadržaj"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Korisnik"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Nova prijava"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Admin"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Prebaci tamni način"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Pristupite uredničkoj ploči i svojim prijavama."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Neispravan e-mail ili lozinka."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "E-mail"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Lozinka"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Nemate račun?"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Stvorite ga"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Stvori račun"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr "Registrirajte se za predaju rukopisa i praćenje njihova statusa."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Već imate račun?"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Arhiv brojeva"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Nema objavljenih brojeva."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Verzija"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "pregleda"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "preuzimanja"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Čitaj online"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "trenutni"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Licenca"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Metapodaci"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Primarni"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Pretraži…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Pretraži članke"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Jezik"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Izbornik"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Pregledaj"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Otvoreno"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Recenzirani časopis"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Predaj rukopis"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Pregledaj arhiv"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Pretraži članke, autore, ključne riječi…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "članaka"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Pogledaj sadržaj"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "U ovom broju"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Cijeli broj"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Još nije objavljen nijedan broj."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Najnoviji članci"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Broj"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Nema članaka u ovom broju."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Pretraži po naslovu, autoru, ključnoj riječi…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "rezultat"
+msgstr[1] "rezultata"
+msgstr[2] "rezultata"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Ništa nije pronađeno."

@@ -1,0 +1,751 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 10:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/sidebar.py:18
+msgid "Editorial"
+msgstr "Συντακτική ομάδα"
+
+#: apps/core/sidebar.py:21 apps/navigation/models.py:38
+msgid "Dashboard"
+msgstr "Πίνακας ελέγχου"
+
+#: apps/core/sidebar.py:23
+msgid "Submissions"
+msgstr "Υποβολές"
+
+#: apps/core/sidebar.py:25
+msgid "Publications"
+msgstr "Δημοσιεύσεις"
+
+#: apps/core/sidebar.py:27
+msgid "Issues"
+msgstr "Τεύχη"
+
+#: apps/core/sidebar.py:29
+msgid "Genres (file types)"
+msgstr "Είδη (τύποι αρχείων)"
+
+#: apps/core/sidebar.py:34 templates/review/form.html:6
+msgid "Peer review"
+msgstr "Ομότιμη αξιολόγηση"
+
+#: apps/core/sidebar.py:37
+msgid "Review rounds"
+msgstr "Γύροι αξιολόγησης"
+
+#: apps/core/sidebar.py:39
+msgid "Review assignments"
+msgstr "Αναθέσεις αξιολόγησης"
+
+#: apps/core/sidebar.py:41
+msgid "Editorial decisions"
+msgstr "Συντακτικές αποφάσεις"
+
+#: apps/core/sidebar.py:43
+msgid "Stage assignments"
+msgstr "Αναθέσεις σταδίων"
+
+#: apps/core/sidebar.py:45
+msgid "Discussions"
+msgstr "Συζητήσεις"
+
+#: apps/core/sidebar.py:47
+msgid "Reviewer pool"
+msgstr "Δεξαμενή αξιολογητών"
+
+#: apps/core/sidebar.py:49
+msgid "Review interests"
+msgstr "Ενδιαφέροντα αξιολογητών"
+
+#: apps/core/sidebar.py:54
+msgid "Content & site"
+msgstr "Περιεχόμενο & ιστότοπος"
+
+#: apps/core/sidebar.py:57
+msgid "Journal"
+msgstr "Περιοδικό"
+
+#: apps/core/sidebar.py:59
+msgid "Sections"
+msgstr "Ενότητες"
+
+#: apps/core/sidebar.py:61 apps/navigation/models.py:33
+#: templates/web/categories.html:3 templates/web/categories.html:5
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: apps/core/sidebar.py:63
+msgid "Checklist items"
+msgstr "Στοιχεία λίστας ελέγχου"
+
+#: apps/core/sidebar.py:65
+msgid "Static pages"
+msgstr "Στατικές σελίδες"
+
+#: apps/core/sidebar.py:67 apps/navigation/models.py:32
+#: templates/web/announcements.html:3 templates/web/announcements.html:6
+msgid "Announcements"
+msgstr "Ανακοινώσεις"
+
+#: apps/core/sidebar.py:69 templates/formbuilder/form.html:6
+#: templates/formbuilder/home.html:3 templates/formbuilder/home.html:5
+msgid "Forms"
+msgstr "Φόρμες"
+
+#: apps/core/sidebar.py:71
+msgid "Form submissions"
+msgstr "Υποβολές φορμών"
+
+#: apps/core/sidebar.py:73
+msgid "Navigation (menus & footer)"
+msgstr "Πλοήγηση (μενού & υποσέλιδο)"
+
+#: apps/core/sidebar.py:75
+msgid "Themes"
+msgstr "Θέματα"
+
+#: apps/core/sidebar.py:77
+msgid "Tombstones (OAI deleted)"
+msgstr "Tombstones (διαγραμμένα OAI)"
+
+#: apps/core/sidebar.py:82
+msgid "Communication"
+msgstr "Επικοινωνία"
+
+#: apps/core/sidebar.py:85
+msgid "Email templates"
+msgstr "Πρότυπα email"
+
+#: apps/core/sidebar.py:87
+msgid "Email log"
+msgstr "Αρχείο email"
+
+#: apps/core/sidebar.py:89
+msgid "Notifications"
+msgstr "Ειδοποιήσεις"
+
+#: apps/core/sidebar.py:91
+msgid "Web push devices"
+msgstr "Συσκευές Web Push"
+
+#: apps/core/sidebar.py:93
+msgid "APNS devices"
+msgstr "Συσκευές APNS"
+
+#: apps/core/sidebar.py:95
+msgid "FCM devices"
+msgstr "Συσκευές FCM"
+
+#: apps/core/sidebar.py:97
+msgid "WNS devices"
+msgstr "Συσκευές WNS"
+
+#: apps/core/sidebar.py:102
+msgid "People & access"
+msgstr "Άτομα & πρόσβαση"
+
+#: apps/core/sidebar.py:105
+msgid "Users"
+msgstr "Χρήστες"
+
+#: apps/core/sidebar.py:107
+msgid "Roles (groups)"
+msgstr "Ρόλοι (ομάδες)"
+
+#: apps/core/sidebar.py:109
+msgid "Role matrix"
+msgstr "Πίνακας ρόλων"
+
+#: apps/core/sidebar.py:111
+msgid "Journal memberships"
+msgstr "Συμμετοχές στο περιοδικό"
+
+#: apps/core/sidebar.py:113
+msgid "API keys"
+msgstr "Κλειδιά API"
+
+#: apps/core/sidebar.py:118 apps/core/sidebar.py:123
+msgid "Subscriptions"
+msgstr "Συνδρομές"
+
+#: apps/core/sidebar.py:121
+msgid "Subscription types"
+msgstr "Τύποι συνδρομών"
+
+#: apps/core/sidebar.py:125
+msgid "Payments"
+msgstr "Πληρωμές"
+
+#: apps/core/sidebar.py:130
+msgid "System"
+msgstr "Σύστημα"
+
+#: apps/core/sidebar.py:133
+msgid "Configuration (config.ini)"
+msgstr "Διαμόρφωση (config.ini)"
+
+#: apps/core/sidebar.py:135
+msgid "Runtime settings"
+msgstr "Ρυθμίσεις εκτέλεσης"
+
+#: apps/core/sidebar.py:137
+msgid "Plugins"
+msgstr "Πρόσθετα"
+
+#: apps/core/sidebar.py:139
+msgid "Plugin settings"
+msgstr "Ρυθμίσεις προσθέτων"
+
+#: apps/core/sidebar.py:141
+msgid "Feature flags"
+msgstr "Σημαίες λειτουργιών"
+
+#: apps/core/sidebar.py:143
+msgid "Switches"
+msgstr "Διακόπτες"
+
+#: apps/core/sidebar.py:145
+msgid "Samples"
+msgstr "Δείγματα"
+
+#: apps/core/sidebar.py:147
+msgid "Audit log"
+msgstr "Αρχείο ελέγχου"
+
+#: apps/core/sidebar.py:149
+msgid "Metrics (daily)"
+msgstr "Μετρήσεις (ημερήσιες)"
+
+#: apps/core/sidebar.py:151
+msgid "Reports (CSV)"
+msgstr "Αναφορές (CSV)"
+
+#: apps/core/sidebar.py:156
+msgid "Tools"
+msgstr "Εργαλεία"
+
+#: apps/core/sidebar.py:160
+msgid "Translations (Rosetta)"
+msgstr "Μεταφράσεις (Rosetta)"
+
+#: apps/core/sidebar.py:162
+msgid "Install theme (.zip)"
+msgstr "Εγκατάσταση θέματος (.zip)"
+
+#: apps/core/sidebar.py:164
+msgid "API docs (Swagger)"
+msgstr "Τεκμηρίωση API (Swagger)"
+
+#: apps/core/sidebar.py:166
+msgid "OAI-PMH endpoint"
+msgstr "Σημείο OAI-PMH"
+
+#: apps/core/sidebar.py:168
+msgid "Sitemap"
+msgstr "Χάρτης ιστότοπου"
+
+#: apps/core/sidebar.py:169
+msgid "RSS feed"
+msgstr "Ροή RSS"
+
+#: apps/core/sidebar.py:170
+msgid "Health check"
+msgstr "Έλεγχος κατάστασης"
+
+#: apps/core/sidebar.py:172
+msgid "View site"
+msgstr "Προβολή ιστότοπου"
+
+#: apps/navigation/models.py:29
+msgid "Home"
+msgstr "Αρχική"
+
+#: apps/navigation/models.py:30
+msgid "Archives"
+msgstr "Αρχεία"
+
+#: apps/navigation/models.py:31 templates/web/search.html:6
+#: templates/web/search.html:9 themes/broadsheet/templates/web/base.html:60
+#: themes/broadsheet/templates/web/base.html:147
+#: themes/broadsheet/templates/web/home.html:30
+#: themes/broadsheet/templates/web/home.html:31
+#: themes/broadsheet/templates/web/search.html:3
+#: themes/broadsheet/templates/web/search.html:5
+#: themes/broadsheet/templates/web/search.html:7
+#: themes/broadsheet/templates/web/search.html:8
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: apps/navigation/models.py:34 templates/formbuilder/form.html:20
+msgid "Submit"
+msgstr "Υποβολή"
+
+#: apps/navigation/models.py:35 templates/web/subscription_required.html:9
+#: themes/broadsheet/templates/base.html:34
+#: themes/broadsheet/templates/registration/login.html:3
+#: themes/broadsheet/templates/registration/login.html:6
+#: themes/broadsheet/templates/registration/login.html:16
+#: themes/broadsheet/templates/registration/register.html:21
+msgid "Sign in"
+msgstr "Σύνδεση"
+
+#: apps/navigation/models.py:36 themes/broadsheet/templates/base.html:35
+#: themes/broadsheet/templates/registration/register.html:3
+#: themes/broadsheet/templates/registration/register.html:18
+msgid "Register"
+msgstr "Εγγραφή"
+
+#: apps/navigation/models.py:37 themes/broadsheet/templates/base.html:28
+msgid "Sign out"
+msgstr "Αποσύνδεση"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Διαχείριση ιστότοπου Django"
+
+#: templates/admin/index.html:22
+msgid "Editorial pipeline"
+msgstr "Συντακτική ροή"
+
+#: templates/admin/index.html:41
+msgid "Empty"
+msgstr "Κενό"
+
+#: templates/formbuilder/done.html:3
+msgid "Received"
+msgstr "Ελήφθη"
+
+#: templates/formbuilder/done.html:9
+msgid "Submission received"
+msgstr "Η υποβολή ελήφθη"
+
+#: templates/formbuilder/done.html:11
+msgid "Back to forms"
+msgstr "Πίσω στις φόρμες"
+
+#: templates/formbuilder/home.html:6
+msgid "Submit manuscripts and other requests through the forms below."
+msgstr "Υποβάλετε χειρόγραφα και άλλα αιτήματα μέσω των παρακάτω φορμών."
+
+#: templates/formbuilder/home.html:10
+msgid "Form"
+msgstr "Φόρμα"
+
+#: templates/formbuilder/home.html:13
+msgid "Open form"
+msgstr "Άνοιγμα φόρμας"
+
+#: templates/formbuilder/home.html:16
+msgid "No forms are available right now."
+msgstr "Δεν υπάρχουν διαθέσιμες φόρμες αυτή τη στιγμή."
+
+#: templates/review/done.html:3 templates/review/done.html:9
+msgid "Thank you"
+msgstr "Ευχαριστούμε"
+
+#: templates/review/done.html:11
+msgid "Your response has been recorded. We appreciate you letting us know."
+msgstr "Η απάντησή σας καταγράφηκε. Ευχαριστούμε που μας ενημερώσατε."
+
+#: templates/review/done.html:12
+msgid ""
+"Your review has been submitted to the editorial team. We are grateful for "
+"your contribution."
+msgstr ""
+"Η αξιολόγησή σας στάλθηκε στη συντακτική ομάδα. Ευχαριστούμε για τη συμβολή "
+"σας."
+
+#: templates/review/form.html:3
+msgid "Review"
+msgstr "Αξιολόγηση"
+
+#: templates/review/form.html:27
+msgid "Submit review"
+msgstr "Υποβολή αξιολόγησης"
+
+#: templates/review/landing.html:3
+msgid "Review invitation"
+msgstr "Πρόσκληση αξιολόγησης"
+
+#: templates/review/landing.html:6
+msgid "Peer review invitation"
+msgstr "Πρόσκληση ομότιμης αξιολόγησης"
+
+#: templates/review/landing.html:9
+msgid "You have been invited to review this manuscript."
+msgstr "Προσκληθήκατε να αξιολογήσετε αυτό το χειρόγραφο."
+
+#: templates/review/landing.html:10
+msgid "Due"
+msgstr "Προθεσμία"
+
+#: templates/review/landing.html:15 templates/web/article.html:57
+#: themes/broadsheet/templates/web/article.html:67
+msgid "Abstract"
+msgstr "Περίληψη"
+
+#: templates/review/landing.html:21
+msgid "Files"
+msgstr "Αρχεία"
+
+#: templates/review/landing.html:29
+msgid "Accept review"
+msgstr "Αποδοχή αξιολόγησης"
+
+#: templates/review/landing.html:30
+msgid "Decline"
+msgstr "Άρνηση"
+
+#: templates/submissions/author_work.html:6
+#| msgid "Submission received"
+msgid "Submission workspace"
+msgstr "Χώρος εργασίας υποβολής"
+
+#: templates/submissions/author_work.html:9
+msgid "Stage"
+msgstr "Στάδιο"
+
+#: templates/submissions/author_work.html:9
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: templates/submissions/author_work.html:17
+msgid "Upload your revised manuscript"
+msgstr "Μεταφορτώστε το αναθεωρημένο χειρόγραφό σας"
+
+#: templates/submissions/author_work.html:18
+msgid "Return the copyedited file"
+msgstr "Επιστρέψτε το επιμελημένο αρχείο"
+
+#: templates/submissions/author_work.html:19
+msgid "Upload the corrected proof"
+msgstr "Μεταφορτώστε το διορθωμένο δοκίμιο"
+
+#: templates/submissions/author_work.html:22
+msgid ""
+"The editorial team is waiting for your file. After uploading, they will be "
+"notified automatically."
+msgstr ""
+"Η συντακτική ομάδα περιμένει το αρχείο σας. Μετά τη μεταφόρτωση, θα "
+"ειδοποιηθεί αυτόματα."
+
+#: templates/submissions/author_work.html:27
+msgid "Upload"
+msgstr "Μεταφόρτωση"
+
+#: templates/submissions/author_work.html:32
+msgid ""
+"No action is required from you at this moment. You'll receive an email if "
+"the editors need anything."
+msgstr ""
+"Προς το παρόν δεν απαιτείται καμία ενέργεια από εσάς. Θα λάβετε email αν η "
+"σύνταξη χρειαστεί κάτι."
+
+#: templates/submissions/author_work.html:36
+msgid "File history"
+msgstr "Ιστορικό αρχείων"
+
+#: templates/submissions/author_work.html:47
+msgid "No files yet."
+msgstr "Δεν υπάρχουν αρχεία ακόμη."
+
+#: templates/web/announcement_detail.html:10
+msgid "All announcements"
+msgstr "Όλες οι ανακοινώσεις"
+
+#: templates/web/announcements.html:20
+msgid "No announcements yet."
+msgstr "Δεν υπάρχουν ακόμη ανακοινώσεις."
+
+#: templates/web/article.html:64
+#: themes/broadsheet/templates/web/article.html:74
+msgid "Keywords"
+msgstr "Λέξεις-κλειδιά"
+
+#: templates/web/article.html:74
+#: themes/broadsheet/templates/web/article.html:82
+msgid "How to cite"
+msgstr "Τρόπος παραπομπής"
+
+#: templates/web/article.html:80
+#: themes/broadsheet/templates/web/article.html:88
+msgid "Funding"
+msgstr "Χρηματοδότηση"
+
+#: templates/web/article.html:89
+#: themes/broadsheet/templates/web/article.html:97
+msgid "Versions"
+msgstr "Εκδόσεις"
+
+#: templates/web/base.html:80 themes/broadsheet/templates/web/archive.html:3
+#: themes/broadsheet/templates/web/base.html:146
+msgid "Archive"
+msgstr "Αρχείο"
+
+#: templates/web/categories.html:18
+msgid "No categories."
+msgstr "Δεν υπάρχουν κατηγορίες."
+
+#: templates/web/category.html:5
+msgid "Category"
+msgstr "Κατηγορία"
+
+#: templates/web/category.html:22
+msgid "No articles in this category yet."
+msgstr "Δεν υπάρχουν ακόμη άρθρα σε αυτή την κατηγορία."
+
+#: templates/web/galley_view.html:8
+msgid "Back to article"
+msgstr "Πίσω στο άρθρο"
+
+#: templates/web/galley_view.html:11
+msgid "Download"
+msgstr "Λήψη"
+
+#: templates/web/home.html:8 themes/broadsheet/templates/web/home.html:50
+msgid "Current issue"
+msgstr "Τρέχον τεύχος"
+
+#: templates/web/home.html:31
+msgid "Recent articles"
+msgstr "Πρόσφατα άρθρα"
+
+#: templates/web/maintenance.html:4
+msgid "Maintenance"
+msgstr "Συντήρηση"
+
+#: templates/web/needs_setup.html:9
+msgid "This journal is being set up"
+msgstr "Αυτό το περιοδικό ρυθμίζεται"
+
+#: templates/web/needs_setup.html:10
+msgid "Please check back soon."
+msgstr "Παρακαλούμε ελέγξτε ξανά σύντομα."
+
+#: templates/web/setup.html:5 templates/web/setup.html:9
+msgid "Set up your journal"
+msgstr "Ρυθμίστε το περιοδικό σας"
+
+#: templates/web/setup.html:21
+msgid "Create journal"
+msgstr "Δημιουργία περιοδικού"
+
+#: templates/web/subscription_required.html:3
+#: templates/web/subscription_required.html:6
+msgid "Subscription required"
+msgstr "Απαιτείται συνδρομή"
+
+#: templates/web/subscription_required.html:7
+msgid ""
+"This article is part of a subscription issue. Please sign in with a "
+"subscribing account or contact the journal."
+msgstr ""
+"Αυτό το άρθρο ανήκει σε τεύχος συνδρομής. Συνδεθείτε με συνδρομητικό "
+"λογαριασμό ή επικοινωνήστε με το περιοδικό."
+
+#: themes/broadsheet/templates/base.html:13
+#: themes/broadsheet/templates/web/base.html:15
+msgid "Skip to content"
+msgstr "Μετάβαση στο περιεχόμενο"
+
+#: themes/broadsheet/templates/base.html:20
+msgid "User"
+msgstr "Χρήστης"
+
+#: themes/broadsheet/templates/base.html:22
+msgid "New submission"
+msgstr "Νέα υποβολή"
+
+#: themes/broadsheet/templates/base.html:23
+msgid "Admin"
+msgstr "Διαχειριστής"
+
+#: themes/broadsheet/templates/base.html:24
+#: themes/broadsheet/templates/base.html:30
+#: themes/broadsheet/templates/web/base.html:82
+msgid "Toggle dark mode"
+msgstr "Εναλλαγή σκοτεινής λειτουργίας"
+
+#: themes/broadsheet/templates/registration/login.html:7
+msgid "Access your editorial dashboard and submissions."
+msgstr "Πρόσβαση στον συντακτικό πίνακα και τις υποβολές σας."
+
+#: themes/broadsheet/templates/registration/login.html:10
+msgid "Invalid email or password."
+msgstr "Μη έγκυρο email ή κωδικός."
+
+#: themes/broadsheet/templates/registration/login.html:11
+msgid "Email"
+msgstr "Email"
+
+#: themes/broadsheet/templates/registration/login.html:13
+msgid "Password"
+msgstr "Κωδικός πρόσβασης"
+
+#: themes/broadsheet/templates/registration/login.html:18
+msgid "No account?"
+msgstr "Δεν έχετε λογαριασμό;"
+
+#: themes/broadsheet/templates/registration/login.html:19
+msgid "Create one"
+msgstr "Δημιουργήστε έναν"
+
+#: themes/broadsheet/templates/registration/register.html:6
+msgid "Create an account"
+msgstr "Δημιουργία λογαριασμού"
+
+#: themes/broadsheet/templates/registration/register.html:7
+msgid "Register to submit manuscripts and track their progress."
+msgstr ""
+"Εγγραφείτε για να υποβάλλετε χειρόγραφα και να παρακολουθείτε την πορεία "
+"τους."
+
+#: themes/broadsheet/templates/registration/register.html:20
+msgid "Already have an account?"
+msgstr "Έχετε ήδη λογαριασμό;"
+
+#: themes/broadsheet/templates/web/archive.html:5
+msgid "Issue archive"
+msgstr "Αρχείο τευχών"
+
+#: themes/broadsheet/templates/web/archive.html:13
+msgid "No published issues."
+msgstr "Δεν υπάρχουν δημοσιευμένα τεύχη."
+
+#: themes/broadsheet/templates/web/article.html:44
+msgid "Version"
+msgstr "Έκδοση"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "views"
+msgstr "προβολές"
+
+#: themes/broadsheet/templates/web/article.html:45
+msgid "downloads"
+msgstr "λήψεις"
+
+#: themes/broadsheet/templates/web/article.html:52
+msgid "Read online"
+msgstr "Ανάγνωση online"
+
+#: themes/broadsheet/templates/web/article.html:100
+msgid "current"
+msgstr "τρέχουσα"
+
+#: themes/broadsheet/templates/web/article.html:108
+msgid "License"
+msgstr "Άδεια"
+
+#: themes/broadsheet/templates/web/article.html:114
+msgid "Metadata"
+msgstr "Μεταδεδομένα"
+
+#: themes/broadsheet/templates/web/base.html:30
+#: themes/broadsheet/templates/web/base.html:104
+msgid "Primary"
+msgstr "Κύριο"
+
+#: themes/broadsheet/templates/web/base.html:56
+msgid "Search…"
+msgstr "Αναζήτηση…"
+
+#: themes/broadsheet/templates/web/base.html:57
+msgid "Search articles"
+msgstr "Αναζήτηση άρθρων"
+
+#: themes/broadsheet/templates/web/base.html:67
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: themes/broadsheet/templates/web/base.html:95
+msgid "Menu"
+msgstr "Μενού"
+
+#: themes/broadsheet/templates/web/base.html:141
+msgid "Browse"
+msgstr "Περιήγηση"
+
+#: themes/broadsheet/templates/web/base.html:152
+msgid "Open"
+msgstr "Ανοικτό"
+
+#: themes/broadsheet/templates/web/home.html:12
+msgid "Peer-reviewed journal"
+msgstr "Περιοδικό με ομότιμη αξιολόγηση"
+
+#: themes/broadsheet/templates/web/home.html:18
+#: themes/broadsheet/templates/web/home.html:21
+#: themes/broadsheet/templates/web/home.html:24
+msgid "Submit a manuscript"
+msgstr "Υποβάλετε χειρόγραφο"
+
+#: themes/broadsheet/templates/web/home.html:27
+msgid "Browse archive"
+msgstr "Περιήγηση στο αρχείο"
+
+#: themes/broadsheet/templates/web/home.html:30
+msgid "Search articles, authors, keywords…"
+msgstr "Αναζήτηση άρθρων, συγγραφέων, λέξεων-κλειδιών…"
+
+#: themes/broadsheet/templates/web/home.html:52
+msgid "articles"
+msgstr "άρθρα"
+
+#: themes/broadsheet/templates/web/home.html:53
+msgid "View table of contents"
+msgstr "Προβολή περιεχομένων"
+
+#: themes/broadsheet/templates/web/home.html:64
+msgid "In this issue"
+msgstr "Σε αυτό το τεύχος"
+
+#: themes/broadsheet/templates/web/home.html:65
+msgid "Full issue"
+msgstr "Πλήρες τεύχος"
+
+#: themes/broadsheet/templates/web/home.html:83
+msgid "No issue has been published yet."
+msgstr "Δεν έχει δημοσιευθεί ακόμη τεύχος."
+
+#: themes/broadsheet/templates/web/home.html:91
+msgid "Latest articles"
+msgstr "Νεότερα άρθρα"
+
+#: themes/broadsheet/templates/web/issue.html:7
+msgid "Issue"
+msgstr "Τεύχος"
+
+#: themes/broadsheet/templates/web/issue.html:29
+msgid "No articles in this issue."
+msgstr "Δεν υπάρχουν άρθρα σε αυτό το τεύχος."
+
+#: themes/broadsheet/templates/web/search.html:7
+msgid "Search titles, authors, keywords…"
+msgstr "Αναζήτηση με τίτλο, συγγραφέα, λέξη-κλειδί…"
+
+#: themes/broadsheet/templates/web/search.html:11
+msgid "result"
+msgid_plural "results"
+msgstr[0] "αποτέλεσμα"
+msgstr[1] "αποτελέσματα"
+
+#: themes/broadsheet/templates/web/search.html:22
+msgid "Nothing found."
+msgstr "Δεν βρέθηκε τίποτα."
