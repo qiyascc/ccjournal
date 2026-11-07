@@ -1,0 +1,95 @@
+; ccjournal yapılandırması (OJS config.inc.php benzeri)
+; Dosya birincil kaynaktır; değerler açılışta DB'ye tohumlanır.
+; Admin'den düzenlenince hem bu dosya hem DB güncellenir.
+; general/database bölümleri "bootstrap"tır: değişiklik yeniden başlatma ister.
+;
+; GÜVENLİK: Hassas değerler ortam değişkeniyle geçersiz kılınabilir (env > dosya):
+;   CCJOURNAL_SECRET_KEY, CCJOURNAL_DEBUG, CCJOURNAL_VAPID_PRIVATE_KEY
+; secret_key boş/varsayılan bırakılırsa kalıcı rastgele bir anahtar üretilip
+; BASE_DIR/.secret_key dosyasına yazılır (git-ignore'lu). Prod'da debug=false zorunlu.
+
+[general]
+; Boş bırak → otomatik güçlü anahtar üretilir (.secret_key). Prod'da env öner.
+secret_key =
+debug = false
+allowed_hosts = example.org
+site_url = https://example.org
+time_zone = Asia/Baku
+
+[database]
+engine = sqlite
+name = db.sqlite3
+
+[email]
+host =
+port = 587
+user =
+password =
+use_tls = true
+from = ccjournal <noreply@example.org>
+
+[oai]
+repository_name = ccjournal
+repository_id = ccjournal.local
+admin_email = admin@example.org
+page_size = 50
+
+[crossref]
+depositor_name = ccjournal
+depositor_email = doi@example.org
+registrant = ccjournal
+
+[orcid]
+; ORCID ile giriş (opsiyonel). Boşsa buton gizli, uçlar kapalı.
+; orcid.org/developer-tools'tan Client ID/Secret alın; redirect URI:
+;   https://<site>/accounts/orcid/callback/
+client_id =
+client_secret =
+sandbox = false
+; ORCID push (MEMBER API gerektirir): yayımlanan makale, ORCID ile giriş yapmış
+; yazarların ORCID kayıtlarına "work" olarak yazılır. Girişte /activities/update
+; kapsamı istenir. Public API kimlik bilgileriyle çalışmaz.
+push = false
+
+[security]
+; İki adımlı doğrulama (Google Authenticator/TOTP). VARSAYILAN KAPALI.
+; Açıkken yalnız Developer + superuser için zorunlu olur.
+otp_enabled = false
+otp_issuer = CC Journal
+; HTTPS zorlaması (nginx X-Forwarded-Proto gönderiyorsa güvenle açılabilir).
+ssl_redirect = false
+hsts_seconds = 31536000
+; Content-Security-Policy: site self-host olduğu için sıkı politika uygulanır.
+; Bir şey bozarsa: csp_report_only=true (yalnız raporla) veya csp=<tam override>.
+csp_report_only = false
+
+[logging]
+; ccjournal uygulama logger seviyesi (DEBUG/INFO/WARNING/ERROR).
+level = INFO
+; Log çıktısı: text (insan) veya json (log toplayıcı/observability).
+format = text
+
+[tasks]
+; İş kuyruğu modu. true (varsayılan): işler inline (worker gerekmez).
+; Worker çalıştırıyorsanız (`manage.py run_worker`) false yapın → non-blocking.
+always_eager = true
+
+[sentry]
+; Opsiyonel hata izleme. DSN boşsa hiç yüklenmez (sıfır maliyet).
+; Etkinleştirmek için: pip install sentry-sdk  +  dsn=... (veya CCJOURNAL_SENTRY_DSN env).
+dsn =
+traces_sample_rate = 0
+
+[repository]
+; Self-restore source for `manage.py failnow`.
+; If repo_url is set, the factory snapshot is downloaded from this GitHub
+; repository (API tarball) and VALIDATED before anything is overwritten —
+; if it does not look like a CC Journal codebase, restore aborts with a
+; "wrong repository" error. Leave repo_url empty to keep the classic
+; behaviour (bundled repository/snapshot.tar.gz built via `buildrepo`).
+;   repo_url     = https://github.com/<owner>/<repo>   (or <owner>/<repo>)
+;   github_token = fine-grained token with read access (private repos only)
+;   ref          = branch / tag / commit (empty = default branch)
+repo_url =
+github_token =
+ref =

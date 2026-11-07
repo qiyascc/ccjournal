@@ -1,0 +1,6 @@
+# Geliştirme/CI bağımlılıkları (üretime dahil değil).
+#   pip install -r requirements-dev.txt
+-r requirements.txt
+pytest>=8
+pytest-django>=4.9
+ruff>=0.6

@@ -1,0 +1,21 @@
+*.pyc
+__pycache__/
+db.sqlite3*
+test_db.sqlite3*
+/media/
+/staticfiles/
+config.ini
+.secret_key
+venv/
+
+# Frontend build (Tailwind/Alpine self-host)
+frontend/node_modules/
+# not: frontend/package-lock.json bilerek izlenir (yeniden üretilebilir build)
+
+# WhatsApp sidecar runtime
+plugins/*/sidecar/node_modules/
+plugins/*/sidecar/auth/
+var/run/
+var/log/
+backups/
+.git-credentials

@@ -1,0 +1,26 @@
+# CC Journal — geliştirici araç yapılandırması (test + lint).
+# Test:  ./venv/bin/pytest
+# Lint:  ./venv/bin/ruff check .
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = ["test_*.py", "tests.py", "*_tests.py"]
+testpaths = ["tests"]
+addopts = "-q --tb=short --reuse-db"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["venv", "staticfiles", "frontend", "**/migrations/*"]
+
+[tool.ruff.lint]
+# Yüksek sinyal: pyflakes (gerçek hatalar), bugbear (olası hatalar), pyupgrade.
+select = ["F", "B", "UP"]
+ignore = [
+    "B904",   # "raise ... from" — mevcut kodda yaygın; ayrı tur
+    "UP031",  # printf-string (%s) — regex/OAI-XML'de bilinçli; ayrı tur
+]
+
+[tool.ruff.lint.per-file-ignores]
+"config/settings.py" = ["F401", "E402"]  # geç/koşullu import'lar bilinçli
+"**/__init__.py" = ["F401"]              # yeniden dışa aktarımlar
