@@ -1,0 +1,19 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Forms" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<h1 class="display font-extrabold text-3xl md:text-4xl mb-3">{% trans "Forms" %}</h1>
+<p class="mb-10 text-sm" style="color:var(--ink-soft)">{% trans "Submit manuscripts and other requests through the forms below." %}</p>
+<div class="grid sm:grid-cols-2 gap-5">
+  {% for f in forms %}
+    <a href="{% url 'formbuilder:detail' f.slug %}" class="surface hairline rounded-xl p-6 block hover:!border-[color:var(--accent)] transition-colors">
+      <div class="label mb-2">{% trans "Form" %}</div>
+      <h2 class="display font-bold text-xl mb-2">{{ f.title }}</h2>
+      {% if f.description %}<p class="text-sm leading-relaxed" style="color:var(--ink-soft)">{{ f.description|truncatechars:140 }}</p>{% endif %}
+      <span class="link text-sm mt-4 inline-block">{% trans "Open form" %} →</span>
+    </a>
+  {% empty %}
+    <p style="color:var(--ink-soft)">{% trans "No forms are available right now." %}</p>
+  {% endfor %}
+</div>
+{% endblock %}

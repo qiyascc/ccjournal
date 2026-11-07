@@ -1,0 +1,13 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Received" %} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-xl py-10 text-center mx-auto">
+  <div class="w-14 h-14 rounded-full mx-auto mb-6 flex items-center justify-center" style="background:var(--accent);color:var(--accent-ink)">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>
+  </div>
+  <h1 class="display font-extrabold text-3xl mb-4">{% trans "Submission received" %}</h1>
+  <p class="text-sm leading-relaxed mb-8" style="color:var(--ink-soft)">{{ form_obj.success_message }}</p>
+  <a class="btn" href="{% url 'formbuilder:home' %}">{% trans "Back to forms" %}</a>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "web/base.html" %}
+{% load i18n %}
+{% block title %}{{ form_obj.title }} — {{ site_title }}{% endblock %}
+{% block content %}
+<div class="max-w-2xl">
+  <div class="label mb-3"><a class="navlink" href="{% url 'formbuilder:home' %}">{% trans "Forms" %}</a></div>
+  <h1 class="display font-extrabold text-3xl md:text-4xl mb-3">{{ form_obj.title }}</h1>
+  {% if form_obj.description %}<p class="mb-10 text-sm leading-relaxed" style="color:var(--ink-soft)">{{ form_obj.description }}</p>{% endif %}
+  <form method="post" enctype="multipart/form-data" class="space-y-6" novalidate>
+    {% csrf_token %}
+    {% if dform.non_field_errors %}<div class="px-4 py-3 rounded-lg hairline text-sm" style="background:color-mix(in srgb,var(--accent) 10%,transparent)">{{ dform.non_field_errors.0 }}</div>{% endif %}
+    {% for field in dform %}
+      <div>
+        <label class="label block mb-1.5" for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %} *{% endif %}</label>
+        {{ field }}
+        {% if field.help_text %}<p class="text-xs mt-1" style="color:var(--ink-faint)">{{ field.help_text }}</p>{% endif %}
+        {% if field.errors %}<p class="text-sm mt-1" style="color:var(--accent)">{{ field.errors.0 }}</p>{% endif %}
+      </div>
+    {% endfor %}
+    <button class="btn" type="submit">{% trans "Submit" %}</button>
+  </form>
+</div>
+{% endblock %}

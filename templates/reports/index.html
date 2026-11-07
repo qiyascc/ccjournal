@@ -1,0 +1,32 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h1>Reports</h1>
+{% if tools %}
+<ul style="line-height:2">
+  {% for label, href in tools %}
+  <li><a href="{{ href }}">{{ label }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% if pages %}
+<ul style="line-height:2">
+  {% for label, urlname in pages %}
+  <li><a href="{% url urlname %}">📊 {{ label }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+<p>Download editorial data as CSV.</p>
+<ul style="line-height:2">
+  {% for label, urlname in reports %}
+  <li><a href="{% url urlname %}">⬇ {{ label }} (CSV)</a></li>
+  {% endfor %}
+</ul>
+{% if exports %}
+<p>Indexing &amp; deposit exports.</p>
+<ul style="line-height:2">
+  {% for label, urlname in exports %}
+  <li><a href="{% url urlname %}">⬇ {{ label }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
